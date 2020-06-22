@@ -1,0 +1,117 @@
+.block_all_your_shop {background-color: #0e1939;margin-top: -3vw;float: left;}
+	.block_all_your_shop_text {width:50%;float:right;background-color: #0e1939;}
+	.block_all_your_shop_video {width:50%;float:left;background-color: #0e1939;}
+	.block_all_your_shop h1 {
+		color: #fff;
+		text-align: left;
+		margin: 20% auto 7vw auto;
+		font-size: 3.5vw;
+		font-family: 'SFProDisplay-light';
+		letter-spacing: 3px;
+	}
+	
+	.block_all_your_shop p {
+		font-size: 1vw;
+		text-align: left;
+		color: #fff;
+		line-height: 1.75vw;
+		font-family: 'SFProDisplay-light';
+		letter-spacing: 1px;
+	}
+	
+	
+	input.sign-btn{
+		border: 0;
+		line-height: 2.5;
+		padding: 5px 20px;
+		font-size: 0.85vw;
+		text-align: center;
+		color: #fff;
+		background-color: #d9784c;
+		width: 24%;
+		margin: 1.5vw 0% 4vw 0%;
+		letter-spacing: 1.5px;
+		font-family: 'SFProDisplay-light';
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		border: 1px solid #d9784c; 
+	}
+	
+	input.sign-btn:hover {
+		cursor:pointer;
+		color: #d9784c;
+		background-color: #fff; 
+		
+	}
+	
+	.btn_app_google {
+		margin-top: -2.5vw;
+	}
+	
+	.btn_app_google .bouton-aligne {
+		width: 20%;
+		display: inline-block;
+		margin-right: 1%;
+	}
+	.btn_app_google input[type="image"] {
+		width: 100%;
+	}
+	
+/* ==========================> 	END block_all_your_shop =================================================*/
+
+@media screen and (max-width: 767px) {
+.block_all_your_shop {margin-top: 0vw !important;float: none!important;}
+	.block_all_your_shop_text {width:100% !important;float:none !important;height:auto !important;}
+	.block_all_your_shop h1 {
+		font-size: 7vw !important;
+		text-align: center !important;
+		letter-spacing: 0.25px !important;
+		margin: -1% auto 7vw auto !important;
+	}
+
+	
+	.block_all_your_shop p {
+		text-align: center !important;
+		font-size: 2.5vw !important;
+		line-height: 3.25vw !important;
+		letter-spacing: 2px !important;
+		padding: 0 14% !important;
+	}
+	
+	
+	
+	input.sign-btn{
+		
+		font-size: 2.5vw !important;
+		margin: 5vw 32.5% 4vw 32.5% !important;
+		width: 35% !important;
+		
+	}
+	
+	.btn_app_google {
+		margin-top: -2.5vw !important;
+		margin-bottom: -0.05vw !important;
+		margin-left: -3% !important;
+	}
+		
+	.bouton-aligne{
+		display:inline-block;
+		width:25%;	
+	}
+	
+	.bouton-aligne:first-of-type{margin:5vw 5% 5vw 27%;}
+	
+	.bouton-aligne input[type="image"] {
+		width: 120%;
+	}
+	
+/*========= video =============*/
+
+	.block_all_your_shop_video {width:100% !important;float:none !important;height:auto !important;}
+
+	video#video_background {
+		margin-bottom: -21vw;
+	}
+
+}

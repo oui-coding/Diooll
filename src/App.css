@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+body {
+	color:#414042;
+	margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: 'SFProDisplay-medium';
+    src: url('./font/fonts/SFProDisplay-Medium.eot');
+    src: url('./font/fonts/SFProDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+    url('./font/fonts/SFProDisplay-Medium.woff2') format('woff2'),
+    url('./font/fonts/SFProDisplay-Medium.woff') format('woff'),
+    url('./font/fonts/SFProDisplay-Medium.ttf') format('truetype'),
+    url('./font/fonts/SF-Pro-Display-Medium.otf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+	font-family: 'SFProDisplay-bold';
+	src: url('./font/fonts/SFProDisplay-Bold.eot');
+	src: url('./font/fonts/SFProDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+	url('./font/fonts/SFProDisplay-Bold.woff2') format('woff2'),
+	url('./font/fonts/SFProDisplay-Bold.woff') format('woff'),
+	url('./font/fonts/SFProDisplay-Bold.ttf') format('truetype'),
+	url('./font/fonts/SF-Pro-Display-Bold.otf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+    font-family: 'SFProDisplay-regular';
+    src: url('./font/fonts/SFProDisplay-Regular.eot');
+    src: url('./font/fonts/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./font/fonts/SFProDisplay-Regular.woff2') format('woff2'),
+    url('./font/fonts/SFProDisplay-Regular.woff') format('woff'),
+    url('./font/fonts/SFProDisplay-Regular.ttf') format('truetype'),
+    url('./font/fonts/SF-Pro-Display-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+    font-family: 'SFProDisplay-light';
+	src: url('./font/fonts/SFProDisplay-Light.eot');
+	src: url('./font/fonts/SFProDisplay-Light.eot?#iefix') format('embedded-opentype'),
+	url('./font/fonts/SFProDisplay-Light.woff2') format('woff2'),
+	url('./font/fonts/SFProDisplay-Light.woff') format('woff'),
+	url('./font/fonts/SFProDisplay-Light.ttf') format('truetype'),
+  url('./font/fonts/SF-Pro-Display-Light.otf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;  
 }

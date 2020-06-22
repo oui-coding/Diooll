@@ -1,0 +1,150 @@
+.estimate_revenues {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 3vw 0 8vw 0;
+  float: left;
+}
+
+.estimate_revenues h1 {
+  color: #414042;
+  text-align: center;
+  margin: 0 auto 0vw auto;
+  font-size: 3.5vw;
+  font-family: "SFProDisplay-bold";
+  letter-spacing: 1.25px;
+  padding-top: 0vw;
+  margin-bottom: 7vw;
+}
+
+.estimate_revenues h2 {
+  font-size: 2vw;
+  text-align: left;
+  padding-top: 0vw;
+  margin-bottom: -1vw;
+}
+
+.estimate_revenues form,
+.result_form {
+  width: 35%;
+  float: left;
+  padding: 0 7.5%;
+}
+
+/*=========== select style =========*/
+
+.select_activity_sector {
+  width: 100%;
+  margin: 2vw 0%;
+}
+
+.labelselectstyle {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.labelselectstyle:before {
+  background: none repeat scroll 0 0 #ffffff;
+  content: "";
+  display: block;
+  height: 33px;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  width: 35px;
+}
+
+.select_activity_sector select {
+  -moz-appearance: none;
+  background: none repeat scroll 0 0 #ffffff;
+  border: medium none;
+  color: #414042;
+  cursor: pointer;
+  display: inline-block;
+  height: 35px;
+  margin: 0;
+  outline: medium none;
+  white-space: normal;
+  width: 100%;
+  text-align: left;
+  text-align-last: left;
+  padding-left: 1%;
+}
+
+.labelselectstyle:after {
+  color: #414042;
+  content: "<";
+  font: 25px "Consolas", monospace;
+  padding: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 12px;
+  top: -4px;
+  transform: rotate(270deg);
+  font-weight: bold;
+}
+
+.estimate_revenues input[type="submit"] {
+  border: 0;
+  background-color: #414042;
+  color: #ffffff;
+  padding: 1vw 10%;
+  margin: 0;
+  display: block;
+  font-size: 1vw;
+  letter-spacing: 1.5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/******/
+
+@media screen and (max-width: 767px) {
+  .result_form {
+    display: none;
+  }
+  .estimate_revenues {
+    padding: 10vw 0 !important;
+  }
+
+  .estimate_revenues form,
+  .result_form {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .estimate_revenues h1 {
+    font-size: 7vw !important;
+    letter-spacing: 1.25px !important;
+    padding-top: 4vw !important;
+  }
+
+  .estimate_revenues h2 {
+    font-size: 4vw !important;
+    margin-bottom: 0vw !important;
+    text-align: center !important;
+    padding-top: 7vw !important;
+  }
+
+  /* ======= select style ===========*/
+
+  .select_activity_sector {
+    width: 90% !important;
+    margin: 2vw 5% !important;
+  }
+
+  .select_activity_sector select {
+    text-align: center !important;
+    text-align-last: center !important;
+    padding-left: 0 !important;
+  }
+
+  /* ========= input submit ====*/
+
+  .estimate_revenues input[type="submit"] {
+    font-size: 4vw !important;
+    margin: 10vw auto 15vw auto !important;
+    padding: 2.5vw 10% !important;
+  }
+}
