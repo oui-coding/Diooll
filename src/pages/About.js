@@ -9,12 +9,12 @@ const About = () => {
     <div className="Home">
       <Header />
 	  <div class="container-page template_page_index_ about">
-      <div class="block_all_your_shop">
-				<div class="block_all_your_shop_text">
+      <div class="block_all_your_shop"  style={{width:"100%"}} >
+				<div class="block_all_your_shop_text" style={{float:'left'}}>
 					
-					<h2 className="about-title">	
+					<h1 className="about-title" style={{marginLeft:"5vw"}}>	
 					The Diool Manifesto
-					</h2>
+					</h1>
 					
 					
 				</div>

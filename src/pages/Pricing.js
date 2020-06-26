@@ -11,12 +11,12 @@ const Pricing = () => {
         <h1>Start collecting and making payments</h1>
         <h3>Accessible to any registered business</h3>
         <div class="checkbox_period">
-          <h2>pay monthly</h2>
+          <h2 style={{fontFamily:'MontserratAlternates-bold'}}>pay monthly</h2>
           <div class="check_pay">
             <input type="checkbox" hidden="hidden" id="username" />
             <label class="switch" for="username"></label>
           </div>
-          <h2>pay annually</h2>
+          <h2 >pay annually</h2>
         </div>
         <div class="pricing_all_item">
           <div class="pricing_ first_type">

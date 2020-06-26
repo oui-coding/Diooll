@@ -95,7 +95,7 @@ console.log('data',data)
 
       <FeatureList />
 			<div class="estimate_revenues">
-				<h1>Estimate your Revenues</h1>
+				<h1>Estimate your commissions revenues</h1>
 				<form action=""  style={size.width>767 ? {} : {display:estimate ? 'block' : 'none'}}>
 					<h2>
 						What shop do you have ?

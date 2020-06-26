@@ -1,10 +1,22 @@
 .container-page.pricing {padding: 5vw;}
 	
-	.container-page.pricing h1, .container-page.pricing h2, .container-page.pricing h3{  
+	.container-page.pricing h3{  
 		font-family: 'Montserrat Alternates', sans-serif;
 		text-align: center;
 	}
-	
+	.container-page.pricing h1{
+		font-size: 3vw;
+		font-family: 'MontserratAlternates-bold';
+		letter-spacing: 3px;
+		text-align: center;
+		color:  #000000;
+	}
+
+	.container-page.pricing h2{
+		font-family: 'MontserratAlternates';
+		text-align: center;
+		color:  #1A1F3A;
+	}
 	.checkbox_period {text-align: center;}
 	
 	
