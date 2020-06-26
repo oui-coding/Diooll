@@ -54,3 +54,11 @@ body {
     font-style: normal;
     font-display: swap;  
 }
+
+@font-face {
+    font-family: 'MontserratAlternates';
+    src: url('./font/fonts/MontserratAlternates-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
