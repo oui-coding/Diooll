@@ -23,13 +23,13 @@ const Introduction = () => (
       <input className="sign-btn" type="button" value="Sign up" />
       <div className="btn_app_google">
         <div className="bouton-aligne">
-          <input
+         <a href="https://play.google.com/store/apps/details?id=com.diool"> <input
             type="image"
             src={require("../images/static/app_store.png")}
             name="Submit_app"
             value="Envoyer"
             alt="app_store icon"
-          />
+          /></a>
         </div>
         <div className="bouton-aligne">
           <input

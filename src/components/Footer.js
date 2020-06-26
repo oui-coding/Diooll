@@ -25,31 +25,31 @@ const Footer = () => (
 						<li><a href="#">Community</a></li>
 					</ul>
 				</div>
-				<div class="footer_blck">
+				<div class="footer_blck lastfooter">
 					<span>Get our newsletter</span>
 					<form action="" method="post" >
 						 <input type="email" name="email"  value="Enter your email" id="email-footer" />
-						 <input type="submit" value="Suscribe" />
+						 <input className="subscribe-btn" type="submit" value="Subscribe" />
 					</form>
-					<div class="rs_">
-						<ul>
-							<li>
-								<a href="" target="_blank">
-									<i class="fa fa-twitter" aria-hidden="true"></i>
+				
+					<ul className="lastfooter-socialContai">
+							<li className="socialMedia-item" >
+								<a href="https://twitter.com/DioolApp" target="_blank">
+									<img   src={require("../images/twitter.svg")}/>
 								</a>
 							</li>
-							<li>
-								<a href="" target="_blank">
-									<i class="fa fa-facebook-official" aria-hidden="true"></i>
+							<li className="socialMedia-item">
+								<a href="https://www.facebook.com/dioolapp/" target="_blank">
+								<img   src={require("../images/facebook.svg")}/>
 								</a>
 							</li>
-							<li>
-								<a href="" target="_blank">
-									<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+							<li className="socialMedia-item">
+								<a href="https://www.linkedin.com/showcase/diool-for-merchants/" target="_blank">
+								<img   src={require("../images/linkedin.svg")}/>
 								</a>
 							</li>
 						</ul>
-					</div>
+						
 				</div>
 			</div>
 		</footer>

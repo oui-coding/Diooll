@@ -136,6 +136,7 @@
 	font-family: 'SFProDisplay-bold';
 	letter-spacing: 1.25px;
 	padding-top: 0.5vw;
+	color:#0f1941;
 }
 
 
@@ -152,7 +153,7 @@
 
 
 .block_Features h1 {
-	color: #414042;
+	color:#0f1941;
 	text-align: left;
 	margin: 4vw auto 5vw auto;
 	font-size: 3.5vw;
@@ -180,6 +181,7 @@
 .col-idool-12 input.sign-btn {
 	width:15%;
 	margin-left: 40%;
+	font-weight: bold;
 }
 
 

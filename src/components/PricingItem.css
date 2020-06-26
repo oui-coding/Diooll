@@ -1,0 +1,212 @@
+.container-page.pricing {padding: 5vw;}
+	
+	.container-page.pricing h1, .container-page.pricing h2, .container-page.pricing h3{  
+		font-family: 'Montserrat Alternates', sans-serif;
+		text-align: center;
+	}
+	
+	.checkbox_period {text-align: center;}
+	
+	
+	.container-page.pricing h1 {  font-size: 2vw;}
+	
+	
+
+	.checkbox_period h2 {
+		font-size: 1.25vw;
+		padding: 0;
+		margin: -2vw auto 4vw auto;
+		display:inline-block;
+	}
+	
+	.check_pay {
+		display:inline-block;
+		margin: 0 0.5%;
+	}
+	
+	.container-page.pricing h3 {
+		font-size: 1vw;
+		margin-bottom: 1vw;
+		font-family: 'SFProDisplay-light';
+		letter-spacing: 2px;
+		margin-bottom: 5vw;
+	}
+	
+	
+	
+	
+/*=========================== START   button switch ==============================*/	
+	.switch {
+		display: inline-block;
+		position: relative;
+		width: 45px;
+		height: 20px;
+		border-radius: 20px;
+		background: #000;
+		transition: background 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+		vertical-align: middle;
+		cursor: pointer;
+	}
+	.switch::before {
+		content: '';
+		position: absolute;
+		top: 1.5px;
+		left: 1.5px;
+		width: 17px;
+		height: 17px;
+		background: #fafafa;
+		border-radius: 50%;
+		transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	.switch:active::before {
+		box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(128,128,128,0.1);
+	}
+	input:checked + .switch {
+		background: #000;
+	}
+	input:checked + .switch::before {
+		left: 27px;
+		background: #fff;
+	}
+	input:checked + .switch:active::before {
+		box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(0,150,136,0.2);
+	}
+	
+/*=========================== END  button switch ==============================*/	
+	
+	.pricing_all_item {
+		width: 100%;
+		padding-left: 1.5%;
+	}
+	
+	.pricing_ {
+		width: 22%;
+		float: left;
+		margin-right:3%;
+		font-family: 'SFProDisplay-light';
+	}
+	
+	.pricing__container {padding: 10%;}
+	
+	
+	.pricing_.first_type {margin-right:3%;}
+	
+	.pricing_.first_type .pricing__container {background-color:#0C183B;}
+	.pricing_.first_type .pricing__container label, 	.pricing_.first_type .pricing__container label + p {color:#FFF;}
+	
+	.pricing_ .pricing__container {background-color:#C4C4C4;}
+	.pricing_ .pricing_01 {background-color:#FFFFFF; padding-left: 2%;}
+	.pricing_01 .fa {    color: #3B67A9;}
+	.pricing_ .pricing__container label {color:#000;}
+	.pricing_ .pricing__container p.sup {
+		text-align: center;
+		font-size: 1.25vw;
+		font-family: 'SFProDisplay-bold';
+		color: #000;
+	}
+	
+	.pricing__container input.sign-btn {
+		width: 90%;
+		margin: 0 5%;
+	}
+	
+	
+	
+	.pricing_ .pricing__container p {
+		font-family: 'SFProDisplay-regular';
+		color: #000;
+		font-weight: 500;
+		text-align: center;
+		font-size: 1vw;
+	}
+	
+	.pricing_01 p{
+		font-weight: bold;
+		font-size: 0.9vw;
+		letter-spacing: 0.75px;
+	}
+	
+	
+	.pricing_01 p.nb {
+	
+		font-weight: 100;
+		
+	}
+	
+	.pricing_01 p.nb .fa, .pricing_01 p.plus_ .fa {visibility:hidden;}
+	
+	
+	.pricing__container label {
+		font-family: 'SFProDisplay-bold';
+		font-size: 1.5vw;
+		text-align: center;
+		letter-spacing: 1px;
+		display: block;
+	}
+	
+	
+	@media screen and (max-width: 767px) { 
+		body.layout-full-width-page-index header { height: 90px;}
+		.pricing_:last-of-type {margin-right:0 !important;}
+		.pricing_ {margin-bottom: 2% !important;}
+		.pricing_.first_type {margin-left:0 !important;}
+		.container-page.pricing h1 {font-size: 3.5vw !important;}
+		.checkbox_period h2 {font-size: 3.25vw !important;}
+		.container-page.pricing h3 {font-size: 2.5vw !important;}
+		.pricing__container input.sign-btn{
+			margin: 5vw 17.5% 4vw 17.5% !important;
+			width: 65% !important;
+		}
+		
+	}
+	
+	@media (min-width: 500px) and (max-width: 767px) { 
+	
+		.pricing_ {
+			width: 48% !important;
+			margin-right: 2% !important;
+		}
+		
+		.pricing__container label {
+			font-size: 4.5vw !important;	
+		}
+		
+		.pricing_ .pricing__container p.sup {
+			font-size: 2.25vw !important;
+		}
+		
+		.pricing__container input.sign-btn {
+			font-size: 2vw !important;
+			margin: 5vw 20% 4vw 20% !important;
+			width: 60% !important;
+		}
+		
+		.pricing_01 p {
+			font-size: 1.9vw !important;
+		}
+		
+	}
+	
+	
+	@media screen and (max-width: 499px) { 
+		
+		.container-page.pricing {
+			padding: 15vw !important;
+		}
+	
+		.pricing_ {
+			width: 100% !important;
+			margin-right: 0 !important;
+		}
+		
+		.pricing__container label {
+			font-size: 5.5vw !important;	
+		}
+		
+		.pricing_ .pricing__container p.sup {font-size: 3.25vw !important;}
+		.pricing_01 p {font-size: 3.5vw !important;}
+	}
+	
+	
+	
+	

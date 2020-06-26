@@ -33,7 +33,7 @@ const FeatureList = () => (
 	})}
 	</div>
 	<div class="col-idool-12">
-					<input class="sign-btn" type="button" value="Sign in" />
+					<a href="https://register.diool.com/#/login/merchant"><input class="sign-btn" type="button" value="Sign in" /></a>
 				</div>
 	</div>
 );

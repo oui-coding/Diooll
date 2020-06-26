@@ -1,0 +1,15 @@
+.distributor .block_all_your_shop {margin-top: -4vw;}
+.distributor .block_all_your_shop {width: 100%;}
+
+.distributor .block_all_your_shop_text {float: left; padding-left: 5%;}
+.distributor .block_all_your_shop_video {float: right;margin-left: -5%;}
+.distributor .block_all_your_shop_video img { margin: 20% auto 7vw auto;width: 95%;}
+
+
+
+@media screen and (max-width: 767px) { 
+	.distributor .block_all_your_shop_text {padding-left: 0% !important;}
+	.distributor .block_all_your_shop_video { margin-left: 0% !important;}
+	.distributor .block_all_your_shop_video img {margin: 20% 5% 7vw 5%!important;width: 90%!important;}
+
+}

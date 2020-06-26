@@ -25,9 +25,9 @@ const Home = () => {
 				]
 				
   const [estimate, setEstimate] = useState(true)
-  const [value, setValue] = useState('Kiosque de Rue')
+  const [value, setValue] = useState("Please select an option ")
   const [capitals, setCapitals] = useState([{value:"0" , dropvalues:[50000,150000,400000,1000000,2000000]}])
-  const [capitalsvalue, setCapitalsvalue] = useState(50000)
+  const [capitalsvalue, setCapitalsvalue] = useState()
   const [data, setData] = useState([])
  const capitalsValues =[{value:"0" , dropvalues:[50000,150000,400000,1000000,2000000]},{value:"1" , dropvalues:[150000,400000,1000000]},{value:"2" , dropvalues:[150000,400000,1000000]},{value:"3" , dropvalues:[500000,1250000,2500000,3000000]}]
  
@@ -46,7 +46,7 @@ const Home = () => {
 	const [windowSize, setWindowSize] = useState(getSize);
   
 	useEffect(() => {
-		setValue('0')
+		setValue("Please select an option ")
 	  if (!isClient) {
 		return false;
 	  }
@@ -102,7 +102,8 @@ console.log('data',data)
 					</h2>
 					<div class="select_activity_sector">
 						<label class="labelselectstyle">
-							<select id="what_shop"  value={value} onChange={handlechangeShop}>
+							<select id="what_shop" defaultValue="Please select an option" onChange={handlechangeShop}>
+							<option disabled={true} defaultValue>Please select an option</option>
 								<option value="0">Kiosque de Rue</option>
 								<option value="1">Hotel, Bar, Restaurant</option>
 								<option value="2">Epicerie, Commerce Général</option>
@@ -115,7 +116,8 @@ console.log('data',data)
 					</h2>
 					<div class="select_activity_sector">
 						<label class="labelselectstyle">
-							<select id="mach_capital" onChange={handlechangeCapital} >
+							<select id="mach_capital"  defaultValue="Please select an option" onChange={handlechangeCapital} >
+							<option disabled={true} defaultValue>Please select an option</option>
 								{capitals.length>0 && capitals[0]!==undefined? capitals[0].dropvalues.map((elm, i)=>{
 									return <option value={elm}>{elm}</option> 
 								}) : capitalsValues.map((elm, i)=>{

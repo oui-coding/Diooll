@@ -6,7 +6,7 @@
 }
 
 .estimate_revenues h1 {
-  color: #414042;
+  color: #0f1941;
   text-align: center;
   margin: 0 auto 0vw auto;
   font-size: 3.5vw;
@@ -21,6 +21,7 @@
   text-align: left;
   padding-top: 0vw;
   margin-bottom: -1vw;
+  color: #0f1941;
 }
 
 .estimate_revenues form,
