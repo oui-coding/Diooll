@@ -26,7 +26,7 @@ const Distributor = () => {
 				</div>
 				
 				<div class="block_all_your_shop_video">
-					<img src="http://sandbox2.n-3rd.com/team/nizar/diool/images/block_overview.png" />
+					<img src={require("../images/static/diool_for_distributors.png")} />
 				</div>
 			</div>
         <FeatureList />
