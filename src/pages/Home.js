@@ -93,8 +93,9 @@ console.log('data',data)
     <div class="container-page">
       <Introduction />
 
-      <FeatureList />
+      
 			<div class="estimate_revenues">
+				<div className="estimate_revenues_container">
 				<h1>Estimate your commissions revenues</h1>
 				<form action=""  style={size.width>767 ? {} : {display:estimate ? 'block' : 'none'}}>
 					<h2>
@@ -138,7 +139,8 @@ console.log('data',data)
 				</div>
 			</div>
 			</div>
-
+			<FeatureList />
+			</div>
  <Footer />
   </div>)
   }

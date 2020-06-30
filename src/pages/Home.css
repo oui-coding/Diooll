@@ -1,21 +1,30 @@
 .estimate_revenues {
   width: 100%;
-  background-color: #f2f2f2;
-  padding: 3vw 0 8vw 0;
+  /* background-color: #f2f2f2; */
+  padding: 5vw 0 5vw 0;
   float: left;
 }
 
 .estimate_revenues h1 {
   color: #0f1941;
   text-align: center;
-  margin: 0 auto 0vw auto;
-  font-size: 3vw;
+  margin: 1vw auto 0vw auto;
+  font-size: 3.4vw;
   font-family: "Montserrat";
   letter-spacing: 1.25px;
   padding-top: 0vw;
   margin-bottom: 7vw;
 }
 
+.estimate_revenues_container{
+  width: 86.9vw;
+  background: #E7E8EC;
+  border-radius: 10px;
+  height: 46vw;
+  margin: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
 .estimate_revenues h2 {
   font-size: 2vw;
   text-align: left;
@@ -87,7 +96,7 @@
 
 .estimate_revenues input[type="submit"] {
   border: 0;
-  background-color: #414042;
+  background: #191745;
   color: #ffffff;
   padding: 1vw 10%;
   margin: 0;
@@ -106,9 +115,12 @@
     display: none;
   }
   .estimate_revenues {
-    padding: 10vw 0 !important;
+    padding: 31vw 0 2vw !important;
   }
 
+  .estimate_revenues_container{
+  height: 112vw;
+  }
   .estimate_revenues form,
   .result_form {
     width: 100% !important;

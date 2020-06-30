@@ -1,17 +1,41 @@
-.about-title {
-  font-family: "Montserrat Alternates", sans-serif;
+.aboutIntro {
+  background: #ffffff;
+  padding: 0 15vw;
+}
+
+.aboutIntro h1 {
+  font-family: "MontserratAlternates";
+  font-weight: bold;
+  text-align: center;
+}
+
+.aboutIntro {
+  background: #ffffff;
+  width: 80%;
+}
+
+.aboutIntro-Item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 70%;
+  margin-bottom: 3vw;
+}
+.aboutIntro-firstTitle {
+  color: #1a1f3a;
+  font-size: 3.4vw;
+}
+.aboutIntro-secondTitle {
+  color: #e56b36;
   font-size: 3vw;
-  color: #fff;
-  text-align: left;
 }
 
-.template_page_index_.about .block_all_your_shop_video {
-  padding-top: 7%;
-}
-
-.about .block_all_your_shop p {
-  font-size: 0.85vw;
-  padding-right: 15%;
+.aboutIntro-text {
+  color: #000000;
+  font-family: "Montserrat";
+  width: 80%;
+  font-size: 1vw;
 }
 
 p.clr_ {
@@ -20,4 +44,21 @@ p.clr_ {
 
 p.clt_0 {
   color: #e77340;
+}
+
+@media screen and (max-width: 767px) {
+  .aboutIntro-firstTitle {
+  font-size: 7.4vw;
+  }
+  .aboutIntro-secondTitle {
+    font-size: 7vw;
+  }
+  .aboutIntro-text {
+    font-size: 2.5vw;
+  }
+  .aboutIntro {
+    background: #ffffff;
+    width: 100%;
+    padding:0;
+  }
 }

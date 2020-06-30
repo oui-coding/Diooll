@@ -5,69 +5,34 @@ import Footer from "../components/Footer";
 import "./About.css";
 
 const About = () => {
+	const aboutIntro=[{
+		firstTitle:'Our Vision',
+		secondTitle:'simpler retail financial services using tech, data and financial products',
+		text:'Much of our access to financial services is done through technologies adapting slowly to our daily lives This is especially true in Africa where most products are designed far from their users, missing the cultural link Our goal is to bring to life ways of accessing services that reflect more our habits and our culture'
+	
+	},
+	{
+		firstTitle:'Our Mission',
+		secondTitle:'help merchants accept payments from customers and pay suppliers easily',
+		text:'Merchants have always represented the cornerstone of our lives. In the age of mobile money, they’re still left to use 3 or 4 terminals to serve customers and run their business Our current journey aims to offer easier ways of collecting payment, paying suppliers and earning revenue, day after day'
+	
+	}]
   return (
     <div className="Home">
       <Header />
 	  <div class="container-page template_page_index_ about">
-      <div class="block_all_your_shop"  style={{width:"100%"}} >
-				<div class="block_all_your_shop_text" style={{float:'left'}}>
-					
-					<h1 className="about-title" style={{marginLeft:"5vw"}}>	
-					The Diool Manifesto
-					</h1>
-					
-					
-				</div>
-				
-				<div class="block_all_your_shop_video">
-					<p>
-						Why Diool?
-					</p>
-					<p>
-						It starts with a conviction that technology can help find and scale solutions for our communities need...
-					</p>
-					<p>
-						It fuels our drive to build things that make our lives simpler.
-					</p>
-					<p>
-						We need only three weapons : expertise, creativity and determination.
-					</p>
-					<p>
-						Our age is a fantastic one, with mobile connectivity, and unbridled innovation... 
-					</p>
-					<p>
-						It's become easy to connect with almost anyone anywhere.
-					</p>
-					<p>
-						Mobile payments are such an innovation.
-					</p>
-					<p>
-						It’s become easy to exchange money with almost anyone anywhere. 
-					</p>
-					<p>
-						Our focus is on small merchants, a cornerstone of retail ecosystems
-					</p>
-					<p class="clr_">Our mission is to improve retail finance for those merchants.</p>
-					<p>	
-						Their goals, their needs are shaped by cultural habits, influenced by enabling technologies. 
-					</p>
-					<p>
-						For the engineer, the designer, the builder in us, it's a powerful stage.
-						One where we can imagine sleeker services and better user experience.
-					</p>
-					<p>
-						To do that, three simple rules guide us:
-					</p>
-					<p class="clt_0">
-						- observe people<br/>
-						- learn their needs<br />
-						- design better solutions.
-					</p>
-					<p>
-						Without restraint, we strive to enrich or improve.
-					</p>
-					<p class="clr_">We have only one goal : make their transactions simpler</p>
-			</div>
+      <div class="aboutIntro" >
+			{
+				aboutIntro.map((elm,i)=>{
+					return(
+						<div className="aboutIntro-Item" key={i}>
+                          <h1 className="aboutIntro-firstTitle">{elm.firstTitle}</h1>
+					<h1 className="aboutIntro-secondTitle">{elm.secondTitle}</h1>
+					<p className="aboutIntro-text">{elm.text}</p>
+						</div>
+					)
+				})
+			}
 	
 			
 		</div>	

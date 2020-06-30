@@ -23,16 +23,20 @@
 	 margin-top:10px
 	}
 	footer h2 {
+		font-family: 'Montserrat';
 		text-align: left;
 		font-size: 2vw;  
 		margin: 3% auto 1vw auto;
 		padding: 0;
+		color : #0E1939
 	}
 	footer label {
-		font-family: 'SFProDisplay-medium';
+		font-family: 'Montserrat';
 		font-size: 1vw;
 		display: block;
 		margin-bottom: 10%;
+		color: #414042;
+		;
 	}
 	
 	footer ul {padding: 0;margin-top: 0vw;}

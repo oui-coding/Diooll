@@ -1,107 +1,4 @@
-/* ==========================> 	START  block_Features =================================================
 
-.block_Features {
-	background-color:#FFFFFF;
-	padding-bottom: 4vw;
-	padding-left:7%;
-	height: 84vw;
-}
-
-.col-idool-3 {
-	width:33.333%;
-	float: left;
-}
-
-.block_Features span {
-	display: block;
-	font-family: 'SFProDisplay-light';
-	text-align: left;
-	font-size: 3vw;
-}
-
-.block_Features h2 {
-	text-align: left;
-	margin: 0 auto ;
-	font-size: 1.5vw;
-	font-family: 'SFProDisplay-bold';
-	letter-spacing: 1.25px;
-	padding-top: 0.5vw;
-}
-
-
-.block_Features p {
-	text-align: left;
-	margin: 1.5vw auto 0vw auto;
-	font-size: 1vw;
-	letter-spacing: 1.25px;
-	font-family: 'SFProDisplay-regular';
-}
-
-
-
-
-
-.block_Features h1 {
-	color: #414042;
-	text-align: left;
-	margin: 4vw auto 5vw auto;
-	font-size: 3.5vw;
-	font-family: 'SFProDisplay-bold';
-	letter-spacing: 1.25px;
-	padding-top: 0;
-	float: left;
-	width: 100%;
-}
-
-.block_Features img {
-	width: 11.25%;
-}
-
-@media screen and (max-width: 767px) {
-	.block_Features {padding-left:0 !important;padding-right:0 !important;}
-
-	.block_Features h1 {
-		text-align: center;
-		margin: 20vw auto 7vw auto !important;
-		font-size: 7vw !important;
-		padding-top: 7vw !important;
-		float: none !important;
-		width: auto !important;
-	}  
-	
-	.col-idool-3 {
-		width:100% !important;
-		background: #fff;
-	}
-  
-	.block_Features span {
-		font-family: 'SFProDisplay-bold'!important;
-		text-align: center !important;
-		font-size: 10vw !important;
-	}
-	
-	.block_Features  h2 {
-		text-align: center !important;
-		font-size: 5vw !important;
-		padding-top: 7vw !important;
-	}
-	
-	.block_Features p {
-		text-align: center !important;
-		margin: 2vw auto 5vw auto !important;
-		font-size: 4vw !important;
-		letter-spacing: 1.25px !important;
-	}
-	
-	.block_Features img {
-		width: 18% !important;
-		text-align: center !important;
-		margin-left: 41% !important;
-		margin-top: 10vw !important;
-	}
-	
-	
-} */
 
 /* ==========================> 	START  block_Features =================================================*/
 
@@ -145,7 +42,7 @@
 	margin: 1.5vw auto 0vw auto;
 	font-size: 1vw;
 	letter-spacing: 1.25px;
-	font-family: 'SFProDisplay-regular';
+	font-family: 'Montserrat';
 }
 
 
@@ -157,7 +54,7 @@
 	text-align: left;
 	margin: 4vw auto 5vw auto;
 	font-size: 3vw;
-	font-family: 'SFProDisplay-bold';
+	font-family: 'MontserratAlternates-bold';
 	letter-spacing: 1.25px;
 	padding-top: 0;
 	float: left;
