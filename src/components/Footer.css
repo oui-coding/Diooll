@@ -3,6 +3,8 @@
 		float: left;
 		background-color: #fff;
 		width: 100%;
+		position: relative;
+		padding-bottom: 3vw;
 	}
 	
 	.padding_footer {padding: 5% 10vw 0% 5vw;}
@@ -10,7 +12,7 @@
 	.footer_blck { float:left;}
 	
 	.footer_blck:first-of-type, .footer_blck:first-of-type + div.footer_blck {width:25%;}
-	.footer_blck:last-of-type {width: 33%; margin-left: 17%;}
+	.footer_blck:last-of-type {width: 33%; margin-left: 12%;}
 	
 	.lastfooter{
     display: flex;
@@ -125,6 +127,12 @@
 		align-items: center;
   font-weight: bold;
 	}
+
+	.messenger-icon{
+  position: absolute;
+  bottom: 23%;
+  WIDTH: 6vw;
+	}
 /* ============================= END footer ==========================*/
 
 @media screen and (max-width: 767px) {
@@ -176,4 +184,10 @@
 	.rs_ ul>li>a {
 		font-size: 5vw !important;
 	} 
+	.messenger-icon {
+		position: absolute;
+		bottom: 23%;
+		WIDTH: 17vw;
+		right: 14vw;
+}
 }

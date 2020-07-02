@@ -6,9 +6,9 @@
 }
 
 .estimate_revenues h1 {
-  color: #0f1941;
+  color:  #0C183B;
   text-align: center;
-  margin: 1vw auto 0vw auto;
+  margin: 3vw auto 0vw auto;
   font-size: 3.4vw;
   font-family: "Montserrat";
   letter-spacing: 1.25px;
@@ -20,7 +20,7 @@
   width: 86.9vw;
   background: #E7E8EC;
   border-radius: 10px;
-  height: 46vw;
+  height:49vw ;
   margin: auto;
   padding-top: 1%;
   padding-bottom: 1%;
@@ -71,11 +71,11 @@
   color: #414042;
   cursor: pointer;
   display: inline-block;
-  height: 35px;
+  height: 3vw;
   margin: 0;
   outline: medium none;
   white-space: normal;
-  width: 100%;
+  width: 23vw;
   text-align: left;
   text-align-last: left;
   padding-left: 1%;
@@ -109,7 +109,120 @@
 }
 
 /******/
+/* ==================================== START PAGE payment_collection ============================*/
 
+.payment_collection {
+	background-color: #E7E8EC;
+	margin: 5vw 7%;
+	float: left;
+	width: 86%;
+}
+.payment_collection h1 {
+    color: #414042;
+    text-align: center;
+    margin: 4vw auto 5vw auto;
+    font-size: 3.5vw;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.25px;
+    padding-top: 0;
+    float: left;
+    width: 100%;
+}
+
+
+.payment_collection table { 
+	width: 90%; 
+	border-collapse: collapse; 
+	margin:50px auto;
+	font-family: 'Montserrat', sans-serif;
+	}
+
+
+
+.payment_collection th { 
+	color: white; 
+	font-weight: bold; 
+	}
+
+.payment_collection td, .payment_collection th { 
+		padding: 10px; 
+		
+		text-align: left; 
+		font-size: 1vw;
+	}
+	
+	.payment_collection table label {
+	background-color: #fff;
+	width: 100%;
+	display: block;
+	padding: 10px 5px;
+	text-align: center;
+	background-color: #fff;
+    height: 50px;
+}
+
+.payment_collection td.last_td {
+	background-color: transparent;
+	position: relative;
+	left: 10px;
+	padding: 0;
+}
+
+.payment_collection td label.padding_td {
+	padding: 30px 5px 0px 5px;
+}
+
+
+.payment_collection td.last_td label { 
+	padding: 0;
+	height: 170px;
+}
+	
+.payment_collection table th label {
+	background-color: #0E1939;
+	font-family: 'Montserrat';
+	font-weight:lighter;
+	padding-top: 17px;
+}
+
+.payment_collection table th label span {
+	font-weight:bolder;
+}
+
+.payment_collection td.last_td label.padding_td {
+	padding-top: 80px;
+	height: 90px;
+	width: 94%;
+}
+
+.payment_collection td label.loyal {
+	padding-top: 20px;
+}
+
+.payment_collection tr.first_top td label {
+	padding-top: 25px;
+	height: 35px;
+}
+.text-mobile-pay{
+  font-size: 2vw;
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: bold;
+line-height: 17px;
+color: #000000;
+text-align: center;
+}
+
+
+/* ==================================== END PAGE payment_collection ============================*/
+
+@media screen and (max-width: 1140PX) {
+  .estimate_revenues_container{
+    height:574px ;
+
+  }
+
+}
 @media screen and (max-width: 767px) {
   .result_form {
     display: none;
@@ -159,5 +272,56 @@
     font-size: 4vw !important;
     margin: 10vw auto 15vw auto !important;
     padding: 2.5vw 10% !important;
+  }
+
+  .mobile-pay-head{
+    text-align: center;
+    background-color: #0E1939;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-weight:lighter;
+    padding-top: 17px;
+    color: white; 
+  font-weight: bold; 
+  height: 10vw;
+  font-size: 4vw;
+  margin: auto;
+  }
+  .mobile-pument-contain{
+    PADDING: 13% 5% 0;
+    margin-bottom:10vw
+  }
+  .mobile-pay-item{
+    display: flex;
+    justify-content: space-between;
+    height: 17vw;
+    margin-bottom: 4vw;
+  }
+.mobile-pay-item-title{
+    width: 32vw;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #FAFBFC;
+    height: 10vw;
+    font-size: 4vw;
+    font-weight: 500;
+}
+  .mobile-pay-item-text {
+    width:32vw;
+    padding: 10px;
+    padding-left: 17px;
+    background-color: #fff;
+    height: 10vw;
+    display: flex;
+   align-items: center;
+   font-size: 4vw;
+   font-weight: bold;
+  }  
+  .text-mobile-pay{
+    font-size: 4vw;
+
   }
 }

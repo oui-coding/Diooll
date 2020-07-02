@@ -1,10 +1,10 @@
-.block_all_your_shop {background-color: #0e1939;margin-top: -3vw;float: left;}
+.block_all_your_shop {background-color: #0e1939;margin-top: -6vw;float: left;}
 	.block_all_your_shop_text {width:50%;float:right;background-color: #0e1939;}
 	.block_all_your_shop_video {width:50%;float:left;background-color: #0e1939;}
 	.block_all_your_shop h1 {
 		color: #fff;
 		text-align: left;
-		margin: 20% auto 7vw auto;
+		margin: 13% auto 7vw auto;
 		font-size: 3vw;
 		font-family: 'MontserratAlternates';
 		letter-spacing: 3px;

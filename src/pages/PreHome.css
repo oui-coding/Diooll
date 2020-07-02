@@ -1,0 +1,63 @@
+
+.payment{
+	width: 100%;
+}
+.payment h1 {
+	text-align: center;
+    margin-top: 9vw;
+    margin-bottom:8vw;
+}
+
+.payment p { 
+	font-family: 'SFProDisplay-light';
+	text-align: center;
+	font-size: 1.25vw;
+	line-height: 2vw;
+}
+
+  
+.customer {
+	width: 60%;
+	margin: 0 20%;
+	float:left;
+	/* padding-bottom: 10vw; */
+}
+
+
+.customer_block_left, .customer_block_right {
+	width: 50%; 
+	text-align: center;
+}
+
+.customer_block_left {
+	float: left;
+}
+
+
+.customer_block_right {
+	float: right;
+}
+
+.customer input.sign-btn {
+	width:40%;	
+	font-size: 1vw;
+	 margin: 1vw 31.5% 14vw 32.5% !important;
+}
+
+@media screen and (max-width: 767px) {
+	
+	.payment h1 {
+		font-size: 4vw !important;
+	}
+	
+	.customer {
+		width: 100% !important;
+		float: none !important;
+		height: 70vw !important;
+		margin: 0 !important;
+	}
+	.customer_block_left, .customer_block_right {
+		width: 100% !important;
+	}
+	
+}

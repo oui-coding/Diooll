@@ -51,6 +51,7 @@ const Footer = () => (
 						</ul>
 						
 				</div>
+				<img className="messenger-icon"  src={require("../images/static/messager.png")} alt="messenger-icon"/>
 			</div>
 		</footer>
 );
