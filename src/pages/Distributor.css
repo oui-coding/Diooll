@@ -5,8 +5,14 @@
 .distributor .block_all_your_shop_video {float: right;margin-left: -5%;}
 .distributor .block_all_your_shop_video img { margin: 15% auto 7vw auto;width: 95%;}
 
-
-
+.dist-vd-contain{
+	margin-top: 5vw;
+	margin-right: 1vw;
+	margin-left: -5%;
+}
+.text-intro-contain{
+	width: 44%;
+}
 @media screen and (max-width: 767px) { 
 	.distributor .block_all_your_shop_text {padding-left: 0% !important;}
 	.distributor .block_all_your_shop_video { margin-left: 0% !important;}

@@ -258,7 +258,7 @@ console.log(size.width)
         <Introduction />
 
         <div class="estimate_revenues">
-          {props && props.location && props.location.query && props.location.query.payment ==="collection"
+          {props && props.location && props.location.query && props.location.query.payment !=="collection"
  ? (
             <div className="estimate_revenues_container">
               <h1>Estimate your commissions revenues</h1>
