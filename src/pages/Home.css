@@ -19,7 +19,7 @@
 .estimate_revenues_container{
   width: 86.9vw;
   background: #E7E8EC;
-  border-radius: 10px;
+  border-radius: 50px;
   height:49vw ;
   margin: auto;
   padding-top: 1%;
@@ -72,20 +72,22 @@
 }
 
 .select_activity_sector select {
+  font-family: 'Montserrat';
   -moz-appearance: none;
   background: none repeat scroll 0 0 #ffffff;
   border: medium none;
-  color: #414042;
+  color: #000000;
   cursor: pointer;
   display: inline-block;
   height: 100%;
   margin: 0;
   outline: medium none;
   white-space: normal;
-  width: 23vw;
+  width: 27vw;
   text-align: left;
   text-align-last: left;
   padding-left: 1%;
+  font-size: 1.4vw;
 }
 .select_activity_sector option{
   font-family: 'Montserrat';
@@ -93,7 +95,7 @@ font-style: normal;
 font-weight: 600;
 font-size: 25px;
 line-height: 30px;
-font-size: 0.5vw;
+font-size: 0.7vw;
 color: #000000;
 }
 
@@ -196,32 +198,45 @@ color: #000000;
 	
 .payment_collection table th label {
 	background-color: #0E1939;
-	font-family: 'Montserrat';
+	/* font-family: 'Montserrat'; */
 	font-weight:lighter;
 	padding-top: 17px;
 }
 
 .payment_collection table th label span {
-	font-weight:bolder;
+	/* font-weight:bolder; */
 }
 
 .payment_collection td.last_td label.padding_td {
 	padding-top: 80px;
 	height: 90px;
-	width: 94%;
+	width: 95%;
 }
 
 .payment_collection td label.loyal {
-	padding-top: 20px;
+  padding-top: 20px;
+  font-family: 'Montserrat-light';
+  color: #0E1939;
+  font-weight: bolder;
 }
 
 .payment_collection tr.first_top td label {
 	padding-top: 25px;
 	height: 35px;
 }
+.table-headtab-text2{
+  font-family: 'Montserrat-light';
+}
+.contact-us-text{
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-size: 1vw;
+  color: #E56B36;
+}
+
 .text-mobile-pay{
   font-size: 2vw;
-  font-family: 'Montserrat';
+  font-family: 'MontserratAlternates-bold';
 font-style: normal;
 font-weight: bold;
 line-height: 17px;
@@ -252,6 +267,7 @@ text-align: center;
 
   .estimate_revenues_container{
   height: 119vw;
+  border-radius: 50px;
   }
   .estimate_revenues form,
   .result_form {
@@ -286,9 +302,11 @@ text-align: center;
     padding-left: 0 !important;
     width: 49vw;
     margin-left: 14vw;
+    font-size: 2.7vw;
+    
   }
   .select_activity_sector option {
-    font-size: 1vw;
+    font-size: 1.5vw;
   }
   /* ========= input submit ====*/
 
@@ -307,6 +325,7 @@ text-align: center;
     font-family: 'Montserrat';
     font-weight:lighter;
     padding-top: 17px;
+    padding-bottom: 17px;
     color: white; 
   font-weight: bold; 
   height: 10vw;
@@ -334,13 +353,14 @@ text-align: center;
     font-weight: 500;
 }
   .mobile-pay-item-text {
-    width:32vw;
+    width:30vw;
     padding: 10px;
     padding-left: 17px;
     background-color: #fff;
     height: 10vw;
     display: flex;
    align-items: center;
+   justify-content:center;
    font-size: 4vw;
    font-weight: bold;
   }  
@@ -354,5 +374,6 @@ text-align: center;
 @media screen and (max-width: 455px) {
   .estimate_revenues_container{
     height: 130vw;
+    border-radius: 50px;
     }
 }

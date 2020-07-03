@@ -4,12 +4,12 @@ import './FeatureList.css';
 const features = [{
 	logo:'images/perCent.svg',
 	title:'Instant Commissions on prepaid products distribution',
-	text:'Receive commissions and grow your capital at each executed transactions',
+	text:'Receive commissions instantly	and grow your capital at each transaction',
 },
 {
 	logo:'images/hand.svg',
 	title:'Top Ups and Withdrawals with many payement methods',
-	text:'Add or withdrax funds using your preferred method of payment',
+	text:'Add or withdraw funds easly using your preferred method of payment',
 },
 {
 	logo:'images/chech_Pay.svg',
@@ -33,7 +33,7 @@ const FeatureList = ({component}) => (
 	})}
 	</div>
 	<div class="col-idool-12">
-					<a href="https://register.diool.com/#/login/merchant"><input class="sign-btn" type="button" value={component==="distributor" ?"Learn More":"Sign in"} /></a>
+					<a href="https://register.diool.com/#/login/merchant"><input class="sign-btn" type="button" value={component==="distributor" ?"Learn More":"Sign up"} /></a>
 				</div>
 	</div>
 );

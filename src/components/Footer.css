@@ -27,14 +27,14 @@
 	footer h2 {
 		font-family: 'Montserrat';
 		text-align: left;
-		font-size: 2vw;  
+		font-size: 1.4vw;  
 		margin: 3% auto 1vw auto;
 		padding: 0;
 		color : #0E1939
 	}
 	footer label {
 		font-family: 'Montserrat';
-		font-size: 1vw;
+		font-size: 0.84vw;
 		display: block;
 		margin-bottom: 10%;
 		color: #414042;
@@ -50,13 +50,13 @@
 	}
 	footer ul>li>a {
 		text-decoration:none;
-		font-family: 'SFProDisplay-medium';
-		font-size: 1vw;
+		font-family: 'Montserrat';
+		font-size: 0.84vw;
 		color: #414042;
 	}
 	
 	footer span {
-		font-family: 'SFProDisplay-medium';
+		font-family: 'Montserrat';
 		font-size: 1vw;
 		display: block;
 		margin: 3% 0 3% 0;
@@ -67,7 +67,7 @@
 	
 	input#email-footer {
 		width: 47%;
-		height: 2vw;
+		height: 2.2vw;
 		border: 1px solid #414042;
 		float: left;
 		-webkit-border-radius: 5px;
@@ -78,6 +78,7 @@
 	}
 	
 	.padding_footer input[type="submit"] {
+		font-family: 'SFProDisplay-regular';
 		border: 0;
 		background-color: #d9784c;
 		color: #FFFFFF;

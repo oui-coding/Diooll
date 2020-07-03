@@ -112,7 +112,7 @@ class Piechart extends React.Component {
     const width = this.props.x * 2;
     const height = this.props.y * 2;
     return (
-      <svg width="90%" height="90%" viewBox={`0 0 ${width} ${height}`}>
+      <svg width="95%" height="95%" viewBox={`0 0 ${width} ${height}`}>
         <g transform={translate}>
           {pie.map((d, i) => this.arcGenerator(d, i))}
         </g>

@@ -353,11 +353,11 @@ console.log(size.width)
 				<thead>
 					<tr>
 						<th><label>Monthly<br/>Transactions</label></th>
-						<th><label><span>500’000</span><br/>xaf / month</label></th>
-						<th><label><span>2’500’000</span><br/>xaf / month</label></th>
-						<th><label><span>5’000’000</span><br/>xaf / month</label></th>
-						<th><label><span>10’000’000</span><br/>xaf / month</label></th>
-						<th><label><span>>50’000’000</span><br/>xaf / month</label></th>
+						<th><label><span>500’000</span><br/><span className="table-headtab-text2">xaf / month</span></label></th>
+						<th><label><span>2’500’000</span><br/><span className="table-headtab-text2">xaf / month</span></label></th>
+						<th><label><span>5’000’000</span><br/><span className="table-headtab-text2">xaf / month</span></label></th>
+						<th><label><span>10’000’000</span><br/><span className="table-headtab-text2">xaf / month</span></label></th>
+						<th><label><span>>50’000’000</span><br/><span className="table-headtab-text2">xaf / month</span></label></th>
 					</tr>
 				</thead>  
 				<tbody>
@@ -367,29 +367,30 @@ console.log(size.width)
 						<td><label class="padding_td">2,25%</label></td>
 						<td><label class="padding_td">2,00%</label></td>
 						<td><label class="padding_td">1.70%</label></td>
-						<td class="last_td" rowspan="2" ><label  class="padding_td"><a href="">Contact Us</a></label></td>
+						<td class="last_td" rowspan="2" ><label  class="padding_td"><a href="#" className="contact-us-text">Contact Us</a></label></td>
 					
 					</tr>
 					<tr class="first_top">
-						<td><label>Cost per transaction</label></td>
+						<td><label class="loyal">Cost per transaction</label></td>
 						<td colspan="4"><label>20 XAF</label></td>
 					</tr>
 				</tbody>
 			</table>
-			<p className="text-mobile-pay"> Instant Settlement in Diool</p>
+			<p className="text-mobile-pay"> Instant Settlement in your Diool Account</p>
 				<p className="text-mobile-pay">T+2 Settlement to your Bank</p>
 			</div>
           ) :  <div className="estimate_revenues_container payment_collection" >
 		        <div className="mobile-pument-contain">
-				<div className="mobile-pay-head">Monthly <br/>Transactions</div>
+				<div className="mobile-pay-head">Accept <br/>local payments from</div>
 				<div className="mobile-pay-item">
-					<p className="mobile-pay-item-title">mobile <br/> money</p> <p className="mobile-pay-item-text">From 2,50%</p>
+					<p className="mobile-pay-item-title">mobile <br/> money</p> <p className="mobile-pay-item-text"> 2,50%</p>
 				</div>
 				<div className="mobile-pay-item">
-					<p className="mobile-pay-item-title">Cost per  <br/> transaction</p> <p className="mobile-pay-item-text" style={{justifyContent:"center"}} >+20 XAF</p></div>	
+					<p className="mobile-pay-item-title">flat fee per <br/> transaction</p> <p className="mobile-pay-item-text" style={{justifyContent:"center"}} >+20 XAF</p></div>	
 				</div> 
 				<p className="text-mobile-pay"> Instant Settlement in Diool</p>
-				<p className="text-mobile-pay">T+2 Settlement to your Bank</p>
+				<p className="text-mobile-pay"> T+2 to your bank </p>
+        <p className="text-mobile-pay"> Lower fees with vol </p>
 			  </div>}
         </div>
         <FeatureList />

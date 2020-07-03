@@ -30,7 +30,7 @@ const Footer = () => (
 					<span>Get our newsletter</span>
 					<form action="" method="post" >
 						 <input type="email" name="email"  value="Enter your email" id="email-footer" />
-						 <input className="subscribe-btn" type="submit" value="Subscribe" />
+						 <input className="subscribe-btn" type="submit" value="Subscribe" style={{paddingBottom:'9%'}} />
 					</form>
 				
 					<ul className="lastfooter-socialContai">

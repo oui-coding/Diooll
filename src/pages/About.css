@@ -1,12 +1,13 @@
 .aboutIntro {
   background: #ffffff;
-  padding: 0 15vw;
+  padding: 0 10vw;
 }
 
 .aboutIntro h1 {
-  font-family: "MontserratAlternates";
+  font-family: 'MontserratAlternates-bold';
   font-weight: bold;
   text-align: center;
+  width: 84%;
 }
 
 .aboutIntro {
@@ -19,7 +20,7 @@
   flex-direction: column;
   align-items: center;
   margin: auto;
-  width: 70%;
+  width: 93%;
   margin-bottom: 3vw;
 }
 .aboutIntro-firstTitle {
@@ -34,8 +35,9 @@
 .aboutIntro-text {
   color: #000000;
   font-family: "Montserrat";
-  width: 80%;
+  width: 100%;
   font-size: 1vw;
+  margin-left: 20vw;
 }
 
 p.clr_ {
@@ -55,10 +57,16 @@ p.clt_0 {
   }
   .aboutIntro-text {
     font-size: 2.5vw;
+    color: #000000;
+    font-family: "Montserrat";
+    width: 81%;
+   margin: auto;
+   margin-top: 3vw;
   }
   .aboutIntro {
     background: #ffffff;
     width: 100%;
     padding:0;
   }
+
 }
