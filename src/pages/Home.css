@@ -39,6 +39,11 @@
   float: left;
   padding: 0 7.5%;
 }
+.second-Contain{
+  width: 48%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
 
 /*=========== select style =========*/
 
@@ -348,6 +353,6 @@ text-align: center;
 
 @media screen and (max-width: 455px) {
   .estimate_revenues_container{
-    height: 126vw;
+    height: 130vw;
     }
 }

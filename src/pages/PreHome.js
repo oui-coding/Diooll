@@ -19,7 +19,7 @@ const PreHome = () => {
 						using any method ?<br/>
 						
 						</p>
-						<Link  to={{ pathname: '/home', query: { payment: 'revenue' } }}>
+						<Link  to={{ pathname: '/home', query: { payment: 'collection' } }}>
        <input class="sign-btn" type="button" value="Enter"/></Link>
 					</div>
 					<div class="customer_block_right">
@@ -27,7 +27,7 @@ const PreHome = () => {
 						prepaid products ?<br/>
 						
 						</p>
-						<Link to={{ pathname: '/home', query: { payment: 'collection' } }}>	<input class="sign-btn" type="button" value="Enter"/> </Link>
+						<Link to={{ pathname: '/home', query: { payment: 'revenue' } }}>	<input class="sign-btn" type="button" value="Enter"/> </Link>
 					</div>
 				</div>
 			</div>

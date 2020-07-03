@@ -258,7 +258,7 @@ console.log(size.width)
         <Introduction />
 
         <div class="estimate_revenues">
-          {props && props.location && props.location.query && props.location.query.payment !=="collection"
+          {props && props.location && props.location.query && props.location.query.payment ==="revenue"
  ? (
             <div className="estimate_revenues_container">
               <h1>Estimate your commissions revenues</h1>
@@ -317,7 +317,7 @@ console.log(size.width)
                 />
               </form>
               <div
-                class="result_form"
+                class="result_form second-Contain"
                 style={
                   size.width > 767
                     ? {}

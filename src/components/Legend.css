@@ -17,20 +17,32 @@
 	  align-items: center;
   }
   .legend-text{
+	  font-family: 'MontserratAlternates-bold';
 font-style: mixed;
 font-size: 1vw;
 line-height: 100%;
 font-weight: bold;
+margin-bottom: 0.5vw;
 }
-
+.legend-text-data{
+	font-family: 'MontserratAlternates';
+	font-style: mixed;
+	font-size: 1vw;
+	line-height: 100%;
+	margin-bottom: 0;
+}
   @media screen and (max-width: 767px) {
 	.arrawbtn {
 		width: 4vw;
 		height: 4vw
 	}
 	.legend-text{
-font-style: mixed;
-line-height: 100%;
 font-size: 2.5vw;
+margin-bottom: 2vw;
+	}
+	.legend-text-data{
+		font-size: 2.5vw;
+		line-height: 100%;
+		margin-bottom: 0;
 	}
 }

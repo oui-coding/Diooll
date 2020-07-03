@@ -1,6 +1,6 @@
 
 .estimation-result {
-  width: 80%;
+  width: 50%;
   background: white;
   border-radius: 10px;
   padding: 0.01% 10%;
@@ -8,16 +8,16 @@
 }
 
 .small-text-white {
-  font-family: 'MontserratAlternates';
+  font-family: 'MontserratAlternates-bold';
   font-style: normal;
-  font-weight: 600;
+  font-weight: bold;
   font-size: 1vw;
   line-height: 17px;
   color:#0C183B
 }
 
 .XAF-text {
-
+  font-family: 'MontserratAlternates-bold';
   font-style: normal;
   font-weight: bold;
   font-size: 1.6vw;
@@ -30,7 +30,7 @@
   margin-left: 0.6vw;
 }
 .number-earn {
-
+  font-family: 'MontserratAlternates-bold';
   height: 47px;
   font-style: normal;
   font-weight: bold;
@@ -49,7 +49,7 @@
 }
 .estimation-textCont{
   position: relative;
-  margin-top: 0.4vw;
+  margin-top: 1vw;
   margin-bottom: 1.6vw;
 
 }
@@ -68,27 +68,25 @@ font-size: 1vw;
 }
 
 .gabarit{
-  width:45%;
+  width:31%;
   position: relative;
 }
 .chart-icon{  
   position: absolute;
-  width: 8.39vw;
-  border-radius: 96px;
-  left: 10%;
-  bottom: 23%;} 
+    width: 5vw;
+    left: 24%;
+    bottom: 41%;
+  } 
 
 @media screen and (max-width: 767px) {
   
 .gabarit{
-  width:37%
+  width:37%;
+  margin-left: 3vw
 }
-.chart-icon{  position: absolute;
-width: 20.8vw;
-background: transparent;
-border-radius: 81px;
-left: 13%;
-bottom: 19%;
+.chart-icon{width: 10.8vw;
+  left: 27%;
+  bottom: 38%
 }
 
   .BlockChat-contain {
