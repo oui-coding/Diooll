@@ -153,6 +153,7 @@ class DoughnutChart extends React.Component {
           innerRadius={78}
           data={data}
         />
+        <img className="chart-icon"  src={require("../images/static/maquette_1.png")} alt="messenger-icon"/>
       </div>
     );
   }

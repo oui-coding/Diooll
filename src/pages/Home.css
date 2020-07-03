@@ -45,12 +45,14 @@
 .select_activity_sector {
   width: 100%;
   margin: 2vw 0%;
+  height: 54px;
 }
 
 .labelselectstyle {
   position: relative;
   width: 100%;
   margin-bottom: 0px;
+  height: 100%;
 }
 
 .labelselectstyle:before {
@@ -71,7 +73,7 @@
   color: #414042;
   cursor: pointer;
   display: inline-block;
-  height: 3vw;
+  height: 100%;
   margin: 0;
   outline: medium none;
   white-space: normal;
@@ -79,6 +81,15 @@
   text-align: left;
   text-align-last: left;
   padding-left: 1%;
+}
+.select_activity_sector option{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 30px;
+font-size: 0.5vw;
+color: #000000;
 }
 
 .labelselectstyle:after {
@@ -221,6 +232,9 @@ text-align: center;
     height:574px ;
 
   }
+  .select_activity_sector{
+    width: 47px;
+  }
 
 }
 @media screen and (max-width: 767px) {
@@ -232,7 +246,7 @@ text-align: center;
   }
 
   .estimate_revenues_container{
-  height: 112vw;
+  height: 119vw;
   }
   .estimate_revenues form,
   .result_form {
@@ -244,6 +258,7 @@ text-align: center;
     font-size: 7vw !important;
     letter-spacing: 1.25px !important;
     padding-top: 4vw !important;
+    margin-bottom: 4vw;
   }
 
   .estimate_revenues h2 {
@@ -264,13 +279,17 @@ text-align: center;
     text-align: center !important;
     text-align-last: center !important;
     padding-left: 0 !important;
+    width: 49vw;
+    margin-left: 14vw;
   }
-
+  .select_activity_sector option {
+    font-size: 1vw;
+  }
   /* ========= input submit ====*/
 
   .estimate_revenues input[type="submit"] {
     font-size: 4vw !important;
-    margin: 10vw auto 15vw auto !important;
+    margin: 5vw auto 15vw auto !important;
     padding: 2.5vw 10% !important;
   }
 
@@ -324,4 +343,11 @@ text-align: center;
     font-size: 4vw;
 
   }
+  
+}
+
+@media screen and (max-width: 455px) {
+  .estimate_revenues_container{
+    height: 126vw;
+    }
 }

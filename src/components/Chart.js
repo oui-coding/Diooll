@@ -6,7 +6,7 @@ import './Chart.css'
 
 function Chart({data}) {
 
-const [state, setState] = useState({dataChart:[{date: "Airtime eRecharges : XAF ", value:16350,opac:"#CBE2F7"},{date:"Bills Collection : XAF ", value: 0, opac:"#8AB0DD"}, {date: "Cash Deposits : XAF ", value: 0, opac:"#3C67A9"},{date: "Cash Withdrawals : XHF ", value: 0,  opac:"#191745"}],
+const [state, setState] = useState({dataChart:[{date: "Prepaid eRecharges : XAF ", value:16350,opac:"#CBE2F7"},{date:"Bills Payment Collection : XAF ", value: 0, opac:"#8AB0DD"}, {date: "Consumer Goods Reselling : XAF ", value: 0, opac:"#3C67A9"},{date: "Cash Deposits & Withdrawals : XHF ", value: 0,  opac:"#191745"}],
 revenue:16350,
 transaction:207,
 })

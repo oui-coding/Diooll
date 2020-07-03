@@ -68,13 +68,27 @@ font-size: 1vw;
 }
 
 .gabarit{
-  width:45%
+  width:45%;
+  position: relative;
 }
+.chart-icon{  
+  position: absolute;
+  width: 8.39vw;
+  border-radius: 96px;
+  left: 10%;
+  bottom: 23%;} 
 
 @media screen and (max-width: 767px) {
   
 .gabarit{
   width:37%
+}
+.chart-icon{  position: absolute;
+width: 20.8vw;
+background: transparent;
+border-radius: 81px;
+left: 13%;
+bottom: 19%;
 }
 
   .BlockChat-contain {
@@ -92,12 +106,12 @@ font-size: 1vw;
   }
   .XAF-text {
     font-size: 3vw;
-    left: 20.5vw;
+    left: 24.5vw;
   }
   .number-earn {
     font-size: 5.4vw;
     top: 1.5vw;
-    left: 29vw;
+    left: 32vw;
   }
   .estimation-textCont {
     margin-top: 2vw;
