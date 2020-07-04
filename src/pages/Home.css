@@ -95,7 +95,7 @@ font-style: normal;
 font-weight: 600;
 font-size: 25px;
 line-height: 30px;
-font-size: 0.7vw;
+font-size: 1.5vw;
 color: #000000;
 }
 
@@ -306,7 +306,7 @@ text-align: center;
     
   }
   .select_activity_sector option {
-    font-size: 1.5vw;
+    font-size: 2.5vw;
   }
   /* ========= input submit ====*/
 
