@@ -15,8 +15,8 @@ function App() {
 
   return (
     <Switch>
-    <Route exact path="/" component={PreHome} />
-    <Route exact path="/home" component={Home} />
+     {/* <Route exact path="/" component={Home} />  */}
+    <Route path="/home" component={Home} />
     <Route exact path="/Pricing" component={Pricing} />
     <Route exact path="/distributor" component={Distributor} />
      <Route exact path="/about" component={About} />

@@ -256,10 +256,10 @@ console.log(size.width)
       <Header />
       <div class="container-page">
         <Introduction />
-
         <div class="estimate_revenues">
-          {props && props.location && props.location.query && props.location.query.payment ==="revenue"
- ? (
+        <div className="aboutIntro" style={{marginBottom:'5vw'}}>
+        <h1 className="aboutIntro-secondTitle" style={{color:'#E56B36' ,marginBottom:'2vw'}}>Earn commissions from reselling</h1>
+        </div>
             <div className="estimate_revenues_container">
               <h1>Estimate your commissions revenues</h1>
               <form
@@ -325,6 +325,7 @@ console.log(size.width)
                 }
               >
                 <Chart data={data[0]} />
+                
                 {size.width > 767 ? (
                   <span></span>
                 ) : (
@@ -346,8 +347,11 @@ console.log(size.width)
                 )}
               </div>
             </div>
-          ) : size.width > 767 ? (
-            <div className="estimate_revenues_container payment_collection" >
+            <div className="aboutIntro" style={{marginTop:'2vw'}}>
+                <h1 className="aboutIntro-secondTitle" style={{color:'#E56B36'}}>Accept merchant payments</h1>
+                </div>
+           { size.width > 767 ? (
+            <div className="estimate_revenues_container payment_collection" style={{marginTop:'0',marginBottom:'0'}}  >
 				<h1>Estimate your cost of payment collection</h1>
 			<table>
 				<thead>
@@ -393,6 +397,9 @@ console.log(size.width)
         <p className="text-mobile-pay"> Lower fees with vol </p>
 			  </div>}
         </div>
+        <div className="aboutIntro" style={{marginTop:'2vw'}}>
+                <h1 className="aboutIntro-secondTitle" style={{color:'#E56B36'}}>Combine all to make more money</h1>
+                </div>
         <FeatureList />
       </div>
       <Footer />

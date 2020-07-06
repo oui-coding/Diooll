@@ -3,33 +3,42 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./Pricing.css";
 
+
 const Pricing = () => {
+  const [pricing, setPrincing] = useState(true) 
+
+  const handlechange = e=>{
+  setPrincing(prevState=>!prevState)
+ //   console.log(e.target.value)
+  }
+
+  console.log('pricing',pricing)
   return (
     <div className="Home">
       <Header />
-      <div class="container-page pricing">
+      <div className="container-page pricing">
         <h1>Start collecting and making payments</h1>
         <h3>Accessible to any registered business</h3>
-        <div class="checkbox_period">
+        <div className="checkbox_period">
           <h2 style={{fontFamily:'MontserratAlternates-bold'}}>pay monthly</h2>
-          <div class="check_pay">
-            <input type="checkbox" hidden="hidden" id="username" />
-            <label class="switch" for="username"></label>
+          <div className="check_pay">
+            <input type="checkbox" hidden="hidden" id="username" onChange={handlechange} />
+            <label className="switch" for="username"></label>
           </div>
           <h2 >pay annually</h2>
         </div>
-        <div class="pricing_all_item">
-          <div class="pricing_ first_type">
-            <div class="pricing__container">
+        <div className="pricing_all_item">
+          <div className="pricing_ first_type">
+            <div className="pricing__container">
               <label>Starter</label>
-              <p class="sup">
+              <p className="sup">
                 <sup>XAF</sup>0/user
                 <br />
                 &nbsp;
               </p>
-              <input class="sign-btn" type="button" value="Sign up" />
+              <input className="sign-btn" type="button" value="Sign up" />
             </div>
-            <div class="pricing_01">
+            <div className="pricing_01">
               <p>
                 <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> up to 3 agents
                 or collaborators
@@ -44,17 +53,21 @@ const Pricing = () => {
               </p>
             </div>
           </div>
-          <div class="pricing_">
+          <div className="pricing_">
             <div class="pricing__container">
               <label>Pro</label>
-              <p class="sup">
-                <sup>XAF</sup> 5.000/user
+             {pricing ? <p className="sup">
+                <sup>XAF</sup> 50.000/user
                 <br />
                 monthly
-              </p>
-              <input class="sign-btn" type="button" value="Sign up" />
+              </p> : <p className="sup">
+                <sup>XAF</sup> 5.000/user
+                <br />
+                annually
+              </p>}
+              <input className="sign-btn" type="button" value="Sign up" />
             </div>
-            <div class="pricing_01">
+            <div className="pricing_01">
               <p>
                 <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> unlimited
                 agents or collaborators
@@ -82,22 +95,26 @@ const Pricing = () => {
               </p>
             </div>
           </div>
-          <div class="pricing_">
-            <div class="pricing__container">
+          <div className="pricing_">
+            <div className="pricing__container">
               <label>Standard</label>
-              <p class="sup">
+              {pricing ? <p className="sup">
                 <sup>XAF</sup> 7.500/user
                 <br />
                 monthly
-              </p>
-              <input class="sign-btn" type="button" value="Sign up" />
+              </p> :  <p className="sup">
+                <sup>XAF</sup>75.000/user
+                <br />
+                annually
+              </p> }
+              <input className="sign-btn" type="button" value="Sign up" />
             </div>
-            <div class="pricing_01">
+            <div className="pricing_01">
               <p>
                 <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> Coupons and
                 Promos{" "}
               </p>
-              <p class="plus_">
+              <p className="plus_">
                 +
               </p>
               <p>
@@ -120,17 +137,21 @@ const Pricing = () => {
               </p>
             </div>
           </div>
-          <div class="pricing_">
-            <div class="pricing__container">
+          <div className="pricing_">
+            <div className="pricing__container">
               <label>Advanced</label>
-              <p class="sup">
+             { pricing ? <p className="sup">
                 <sup>XAF</sup> 12500/user
                 <br />
                 monthly
-              </p>
-              <input class="sign-btn" type="button" value="Sign up" />
+              </p> : <p className="sup">
+                <sup>XAF</sup> 125.000/user
+                <br />
+                annually
+              </p> }
+              <input className="sign-btn" type="button" value="Sign up" />
             </div>
-            <div class="pricing_01">
+            <div className="pricing_01">
               <p>
 			  <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")}/> Coupons and
                 Promos{" "}
