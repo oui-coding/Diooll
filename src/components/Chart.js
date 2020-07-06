@@ -6,10 +6,22 @@ import './Chart.css'
 
 function Chart({data}) {
 
-const [state, setState] = useState({dataChart:[{date: "Prepaid eRecharges : ", value:16350,opac:"#CBE2F7"},{date:"Bills Payment Collection : ", value: 0, opac:"#8AB0DD"}, {date: "Consumer Goods Reselling : ", value: 0, opac:"#3C67A9"},{date: "Cash Deposits & Withdrawals : ", value: 0,  opac:"#191745"}],
-revenue:16350,
-transaction:207,
+const [state, setState] = useState({dataChart:[{date:  "Airtime eRecharges : ", value:21175,opac:"#CBE2F7"},{date:"Bills Collection : ", value:8950, opac:"#8AB0DD"}, {date: "Cash Deposits : ", value: 18760, opac:"#3C67A9"},{date: "Cash Withdrawals : ", value:32915,  opac:"#191745"}],
+revenue:81800,
+transaction:400,
 })
+
+// {
+//   shop: "0",
+//   capital: 400000,
+//   actifDay: 20,
+//   transaction: 400,
+//   revenue: 81800,
+//   recharge: 21175,
+//   retrait: 32915,
+//   paiment: 8950,
+//   services: 18760,
+// },
 //const dataChart= [{date: "Airtime eRecharges : XAF ", value: 8.000, opac:0.1},{date:"Bills Collection : XAF ", value: 2.000, opac:0.3}, {date: "Cash Deposits : XAF ", value: 5.000, opac:0.6},{date: "Cash Withdrawals : XHF ", value: 25.000, opac:0.8}]
 
 // const totalValue=data.reduce((acc,elm)=> acc + elm.value,0)

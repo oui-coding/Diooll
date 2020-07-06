@@ -176,11 +176,11 @@ const Home = (props) => {
   ];
 
   const [estimate, setEstimate] = useState(true);
-  const [value, setValue] = useState("Please select an option ");
+  const [value, setValue] = useState("Kiosque de Rue");
   const [capitals, setCapitals] = useState([
     { value: "0", dropvalues: [50000, 150000, 400000, 1000000, 2000000] },
   ]);
-  const [capitalsvalue, setCapitalsvalue] = useState();
+  const [capitalsvalue, setCapitalsvalue] = useState(400000);
   const [data, setData] = useState([]);
   const capitalsValues = [
     { value: "0", dropvalues: [50000, 150000, 400000, 1000000, 2000000] },
@@ -204,7 +204,7 @@ const Home = (props) => {
     const [windowSize, setWindowSize] = useState(getSize);
 
     useEffect(() => {
-      setValue("Please select an option ");
+      setValue("Kiosque de Rue");
       if (!isClient) {
         return false;
       }
@@ -275,7 +275,7 @@ console.log(size.width)
                   <label class="labelselectstyle">
                     <select
                       id="what_shop"
-                      defaultValue="Please select an option"
+                      defaultValue="Kiosque de Rue"
                       onChange={handlechangeShop}
                     >
                       <option disabled={true} defaultValue>
@@ -293,7 +293,7 @@ console.log(size.width)
                   <label class="labelselectstyle">
                     <select
                       id="mach_capital"
-                      defaultValue="Please select an option"
+                      defaultValue="400000"
                       onChange={handlechangeCapital}
                     >
                       <option disabled={true} defaultValue>

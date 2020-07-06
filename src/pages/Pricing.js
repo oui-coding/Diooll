@@ -57,11 +57,11 @@ const Pricing = () => {
             <div class="pricing__container">
               <label>Pro</label>
              {pricing ? <p className="sup">
-                <sup>XAF</sup> 50.000/user
+                <sup>XAF</sup> 5.000/user
                 <br />
                 monthly
               </p> : <p className="sup">
-                <sup>XAF</sup> 5.000/user
+                <sup>XAF</sup> 50.000/user
                 <br />
                 annually
               </p>}

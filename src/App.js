@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import { Redirect } from 'react-router';
 import Home from './pages/Home'
 import PreHome from './pages/PreHome'
 import Pricing from './pages/Pricing'
@@ -15,7 +16,7 @@ function App() {
 
   return (
     <Switch>
-     {/* <Route exact path="/" component={Home} />  */}
+     <Route exact path="/" component={Home} />  
     <Route path="/home" component={Home} />
     <Route exact path="/Pricing" component={Pricing} />
     <Route exact path="/distributor" component={Distributor} />
