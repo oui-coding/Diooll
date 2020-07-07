@@ -6,7 +6,7 @@ import './Chart.css'
 
 function Chart({data}) {
 
-const [state, setState] = useState({dataChart:[{date:  "Airtime eRecharges : ", value:21175,opac:"#CBE2F7"},{date:"Bills Collection : ", value:8950, opac:"#8AB0DD"}, {date: "Cash Deposits : ", value: 18760, opac:"#3C67A9"},{date: "Cash Withdrawals : ", value:32915,  opac:"#191745"}],
+const [state, setState] = useState({dataChart:[{date:  "Prepaid eRecharges : ", value:21175,opac:"#CBE2F7"},{date:"Bills Payment Collection : ", value:8950, opac:"#8AB0DD"}, {date: "Consumer Goods Reselling : ", value: 18760, opac:"#3C67A9"},{date: "Cash Deposits & Withdrawals : ", value:32915,  opac:"#191745"}],
 revenue:81800,
 transaction:400,
 })
@@ -31,7 +31,7 @@ transaction:400,
 // const [data, setData] = useState([{shop : '0', capital:50000, actifDay:15, transaction: 207, revenue:16350, recharge:16350, retrait:0, paiment:0,services:0 }])
  useEffect(()=>{
    if(data!==undefined){
-  setState({dataChart:[{date: "Airtime eRecharges : ", value: data.recharge, opac:"#CBE2F7"},{date:"Bills Collection : ", value:data.paiment, opac:"#8AB0DD"}, {date: "Cash Deposits : ", value: data.services, opac:"#3C67A9"},{date: "Cash Withdrawals : ", value:data.retrait, opac:"#191745"}],
+  setState({dataChart:[{date: "Prepaid eRecharges : ", value: data.recharge, opac:"#CBE2F7"},{date:"Bills Payment Collection : ", value:data.paiment, opac:"#8AB0DD"}, {date: "Consumer Goods Reselling : ", value: data.services, opac:"#3C67A9"},{date:  "Cash Deposits & Withdrawals : ", value:data.retrait, opac:"#191745"}],
   revenue:data.revenue,
   transaction:data.transaction,
 })

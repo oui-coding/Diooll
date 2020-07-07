@@ -257,11 +257,11 @@ console.log(size.width)
       <div class="container-page">
         <Introduction />
         <div class="estimate_revenues">
-        <div className="aboutIntro" style={{marginBottom:'5vw'}}>
+        <div className="aboutIntro" style={{marginBottom:'3vw'}}>
         <h1 className="aboutIntro-secondTitle" style={{color:'#E56B36' ,marginBottom:'2vw'}}>Earn commissions from reselling</h1>
         </div>
-            <div className="estimate_revenues_container">
-              <h1>Estimate your commissions revenues</h1>
+            <div className="estimate_revenues_container" style={{height: "46vw"}}>
+              <h1>Estimate your revenues</h1>
               <form
                 action=""
                 style={
@@ -310,10 +310,10 @@ console.log(size.width)
                   </label>
                 </div>
                 <input
+                 className='btn-estimate'
                   type="submit"
                   value="Estimate"
 				  onClick={estimateToChart}
-				  style={{marginTop:"3vw"}}
                 />
               </form>
               <div
@@ -347,12 +347,12 @@ console.log(size.width)
                 )}
               </div>
             </div>
-            <div className="aboutIntro" style={{marginTop:'2vw'}}>
-                <h1 className="aboutIntro-secondTitle" style={{color:'#E56B36'}}>Accept merchant payments</h1>
+            <div className="aboutIntro" style={{marginTop:'6vw'}}>
+                <h1 className="aboutIntro-secondTitle" style={{color:'#E56B36', marginBottom:'3vw'}}>Accept merchant payments</h1>
                 </div>
            { size.width > 767 ? (
-            <div className="estimate_revenues_container payment_collection" style={{marginTop:'0',marginBottom:'0'}}  >
-				<h1>Estimate your cost of payment collection</h1>
+            <div className="estimate_revenues_container payment_collection" style={{marginTop:'0',marginBottom:'0',height:'46vw !important'}}  >
+				<h1>Estimate your costs</h1>
 			<table>
 				<thead>
 					<tr>
@@ -366,7 +366,7 @@ console.log(size.width)
 				</thead>  
 				<tbody>
 					<tr>  
-						<td><label class="loyal">Local payments<br/>in mobile money</label></td>
+						<td><label class="loyal" >Local payments<br/>in mobile money</label></td>
 						<td><label class="padding_td">2.50%</label></td>
 						<td><label class="padding_td">2,25%</label></td>
 						<td><label class="padding_td">2,00%</label></td>
@@ -375,7 +375,7 @@ console.log(size.width)
 					
 					</tr>
 					<tr class="first_top">
-						<td><label class="loyal">Cost per transaction</label></td>
+						<td><label class="loyal" style={{height: '24px'}}>Cost per transaction</label></td>
 						<td colspan="4"><label>20 XAF</label></td>
 					</tr>
 				</tbody>
@@ -390,7 +390,7 @@ console.log(size.width)
 					<p className="mobile-pay-item-title">mobile <br/> money</p> <p className="mobile-pay-item-text"> 2,50%</p>
 				</div>
 				<div className="mobile-pay-item">
-					<p className="mobile-pay-item-title">flat fee per <br/> transaction</p> <p className="mobile-pay-item-text" style={{justifyContent:"center"}} >+20 XAF</p></div>	
+					<p className="mobile-pay-item-title">flat fee per <br/> transaction</p> <p className="mobile-pay-item-text" style={{justifyContent:"center",height:"30px"}} >+20 XAF</p></div>	
 				</div> 
 				<p className="text-mobile-pay"> Instant Settlement in Diool</p>
 				<p className="text-mobile-pay"> T+2 to your bank </p>
@@ -398,7 +398,7 @@ console.log(size.width)
 			  </div>}
         </div>
         <div className="aboutIntro" style={{marginTop:'2vw'}}>
-                <h1 className="aboutIntro-secondTitle" style={{color:'#E56B36'}}>Combine all to make more money</h1>
+                <h1 className="aboutIntro-secondTitle" style={{color:'#E56B36',margin:'auto',fontSize:'3.5vw'}}>Combine all to make more money</h1>
                 </div>
         <FeatureList />
       </div>

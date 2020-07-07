@@ -5,10 +5,10 @@ import "./Header.css";
 const Header = () => (
   <header>
     <div className="logo">
-      <img
-        onclick="window.location.href='http://sandbox2.n-3rd.com/team/nizar/diool/landingpage.html;"
-        src="http://sandbox2.n-3rd.com/team/nizar/diool/images/static/logo_Diool.png"
-      />
+      <Link to="/">
+        {" "}
+        <img src={require("../images/static/logo_Diool.png")}/>
+      </Link>
     </div>
 
     <nav className="navbar navbar_plane">
@@ -17,7 +17,7 @@ const Header = () => (
           <Link to="/">Home</Link>
         </li>
         <li>
-        <Link to="/about">About</Link>
+          <Link to="/about">About</Link>
         </li>
         <li>
           <Link to="/pricing">Pricing</Link>

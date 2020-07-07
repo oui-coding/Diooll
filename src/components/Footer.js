@@ -50,9 +50,23 @@ const Footer = () => (
 								</a>
 							</li>
 						</ul>
-						
-				</div>
-				<img className="messenger-icon"  src={require("../images/static/messager.png")} alt="messenger-icon"/>
+						<div style={{display:'flex',alignItems:"center"}}>
+							<span className="switchlang-span">Switch language to : </span> 
+							{/* <label class="labelselectstyle"> */}
+                    <select
+					  id="what_shop"
+					  className="switch-lang-Select"
+					  defaultValue="Français"
+                    //   onChange={handlechangeShop}
+                    >
+                      <option className="switch-lang-option" value="FR" >
+                        Français
+                      </option>
+                      <option  className="switch-lang-option" value="EN">Anglais</option>
+					  </select>
+						</div>
+				</div>  
+				{/* <img className="messenger-icon"  src={require("../images/static/messager.png")} alt="messenger-icon"/> */}
 			</div>
 		</footer>
 );

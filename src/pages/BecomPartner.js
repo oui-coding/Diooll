@@ -44,7 +44,7 @@ const BecomPartner = () => {
       </video>
 				</div>
 			</div>
-        <FeatureList />
+        <FeatureList component="partner" />
       </div>
 	  
 

@@ -20,7 +20,7 @@ const Introduction = () => (
         Pay back suppliers in seconds
       </p>
 
-      <input className="sign-btn" type="button" value="Sign up" style={{marginTop:'0.5vw'}}/>
+      <input className="sign-btn" type="button" value="Try it for free" style={{marginTop:'0.5vw'}}/>
       <div className="btn_app_google">
         <div className="bouton-aligne">
          <a href="https://play.google.com/store/apps/details?id=com.diool"> <input
