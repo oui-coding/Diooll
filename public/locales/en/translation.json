@@ -1,6 +1,10 @@
 {
-    "Thanks": {
-        "1": "Thank you"
+    "Header_Menue": {
+        "home": "Home",
+        "about":"About",
+        "pricing":"Pricing",
+        "API":"API",
+        "distributor":"For Distributor"
     },
     "Why": {
         "1": "For watching this video"

@@ -1,6 +1,10 @@
 {
-  "Thanks": {
-      "1": "Merci "
+  "Header_Menue": {
+    "home": "Accueil",
+    "about":"A propos",
+    "pricing":"Tarif",
+    "API":"API",
+    "distributor":"Distributeurs"
   },
   "Why": {
       "1": "Pour voir cette vidéo"

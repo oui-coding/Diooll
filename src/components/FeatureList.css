@@ -9,7 +9,7 @@
 }
 
 .col-idool-3 {
-	width:32%;
+	width:31%;
 	float: left;
 }
 
@@ -29,7 +29,7 @@
 .block_Features h2 {
 	text-align: left;
 	margin: 0 auto ;
-	font-size: 1.6vw;
+	font-size: 1.5vw;
 	font-family: 'Montserrat-SemiBold';
 	letter-spacing: 1.25px;
 	padding-top: 0.5vw;
@@ -40,7 +40,7 @@
 .block_Features p {
 	text-align: left;
 	margin: 1.5vw auto 0vw auto;
-	font-size: 1.2vw;
+	font-size: 1.04vw;
 	font-style: normal;
 font-weight: 600;
 line-height: 1.5vw;
@@ -54,8 +54,8 @@ line-height: 1.5vw;
 .block_Features h1 {
 	color:#0f1941;
 	text-align: left;
-	margin: 4vw auto 5vw auto;
-	font-size: 3vw;
+	margin: 1.5vw auto 5vw auto;
+	font-size: 2.93vw;
 	font-family: 'MontserratAlternates-bold';
 	letter-spacing: 1.25px;
 	padding-top: 0;
@@ -75,6 +75,7 @@ line-height: 1.5vw;
 	width: 100%;
 	float: left;
 	margin: 5% auto;
+	margin-bottom: 0;
 }
 
 .col-idool-12 input.sign-btn {

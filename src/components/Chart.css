@@ -1,9 +1,10 @@
 
 .estimation-result {
+  height: 7.6vw;
   width: 50%;
   background: white;
   border-radius: 10px;
-  padding: 0.01% 10%;
+  padding: 0.01% 6% 0.01% 4% ;
   margin-top: 2vw;
 }
 
@@ -11,7 +12,7 @@
   font-family: 'MontserratAlternates-bold';
   font-style: normal;
   font-weight: bold;
-  font-size: 1vw;
+  font-size: 0.78vw;
   line-height: 17px;
   color:#0C183B
 }
@@ -20,13 +21,13 @@
   font-family: 'MontserratAlternates-bold';
   font-style: normal;
   font-weight: bold;
-  font-size: 1.6vw;
+  font-size: 1.25vw;
   line-height: 26px;
   color: #E77340;
   height: 26px;
   position: absolute;
   top: 0.4vw;
-  left: 7.5vw;
+  left: 6vw;
   margin-left: 0.6vw;
 }
 .number-earn {
@@ -34,13 +35,13 @@
   height: 47px;
   font-style: normal;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 2.58vw;
   line-height: 26px;
   color: #E77340;
   height: 26px;
   position: absolute;
   top: 1.1vw;
-  left: 12vw;
+  left: 10vw;
 }
 .chart-container {
   display: flex;
@@ -49,12 +50,12 @@
 }
 .estimation-textCont{
   position: relative;
-  margin-top: 1vw;
+  margin-top: 0.8vw;
   margin-bottom: 1.6vw;
 
 }
 .secondtext-estim{
-  margin-top: 2.5vw;
+  margin-top: 1.8vw;
   display: flex;
   justify-content: space-between;
 }

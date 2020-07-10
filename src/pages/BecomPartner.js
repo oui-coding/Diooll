@@ -10,7 +10,7 @@ const BecomPartner = () => {
       <Header />
 	  <div class="container-page distributor">
 			<div class="block_all_your_shop">
-				<div class="block_all_your_shop_text text-intro-contain">
+				<div class="block_all_your_shop_text text-intro-contain" style={{marginBottom: '19%'}}>
 					<h1>Track you channels<br />and market share</h1>
 					<p>	
 						Reseller Network Management, Promos and Coupons

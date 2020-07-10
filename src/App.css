@@ -95,4 +95,10 @@ body {
     font-display: swap;
 }
 
-
+@font-face {
+    font-family: 'MontserratAlternates-ExBold';
+    src: url('./font/fonts/MontserratAlternates-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

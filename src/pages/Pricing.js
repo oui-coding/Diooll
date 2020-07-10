@@ -31,25 +31,26 @@ const Pricing = () => {
           <div className="pricing_ first_type">
             <div className="pricing__container">
               <label>Starter</label>
-              <p className="sup">
-                <sup>XAF</sup>0/user
+              <p className="sup" style={{marginBottom: '10%',marginTop: '17%'}}>
+                <span style={{color:'#1A1F3A'}}>FREE</span>
                 <br />
                 &nbsp;
               </p>
-              <input className="sign-btn" type="button" value="Sign up" />
+              <input className="sign-btn" type="button" value="Sign up" style={{fontWeight:'500',letterSpacing: '0'}} />
             </div>
             <div className="pricing_01">
               <p>
-                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> up to 3 agents
-                or collaborators
+                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> Limited to 3 users
               </p>
               <p>
-                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> up to 1.000.000
-                XAF/month
+                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> Limited to <span style={{fontSize:'0.6vw',position: 'absolute'}}>  XAF </span> <span  style={{marginLeft:'8%'}}> 1.000.000
+               /month</span>
               </p>
               <p>
-                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> community
-                support
+                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} />Sandbox API Tokens
+              </p>
+              <p>
+                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} />community support
               </p>
             </div>
           </div>
@@ -65,12 +66,11 @@ const Pricing = () => {
                 <br />
                 annually
               </p>}
-              <input className="sign-btn" type="button" value="Sign up" />
+              <input className="sign-btn" type="button" value="Sign up"  style={{fontWeight:'500',letterSpacing: '0'}}/>
             </div>
             <div className="pricing_01">
               <p>
-                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> unlimited
-                agents or collaborators
+                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> unlimited Users
               </p>
               <p>
                 <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} />
@@ -89,7 +89,7 @@ const Pricing = () => {
               <p>
                 <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> live support
               </p>
-              <p class="nb">
+              <p class="nb" style={{fontSize: '0.633vw',marginLeft: '7%' }}>
                (*) starting
                 from the 4th agent
               </p>
@@ -107,19 +107,18 @@ const Pricing = () => {
                 <br />
                 annually
               </p> }
-              <input className="sign-btn" type="button" value="Sign up" />
+              <input className="sign-btn" type="button" value="Sign up" style={{fontWeight:'500',letterSpacing: '0'}} />
             </div>
             <div className="pricing_01">
               <p>
-                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> Coupons and
-                Promos{" "}
+                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /><span style={{fontFamily:'SFProDisplay-bold'}}> Coupons and
+                Promos{" "}</span>
               </p>
-              <p className="plus_">
+              <p className="plus_" style={{fontFamily:'SFProDisplay-bold'}}>
                 +
               </p>
               <p>
-			  <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")}/> unlimited agents
-                or collaborators
+			  <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")}/> unlimited Users 
               </p>
               <p>
 			  <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")}/> unlimited
@@ -133,7 +132,11 @@ const Pricing = () => {
 			  <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")}/> Live API tokens
               </p>
               <p>
-			  <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")}/> Live API tokens
+                <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> live support
+              </p>
+              <p class="nb" style={{fontSize: '0.633vw',marginLeft: '7%' }}>
+               (*) starting
+                from the 4th agent
               </p>
             </div>
           </div>
@@ -141,7 +144,7 @@ const Pricing = () => {
             <div className="pricing__container">
               <label>Advanced</label>
              { pricing ? <p className="sup">
-                <sup>XAF</sup> 12500/user
+                <sup>XAF</sup> 12.500/user
                 <br />
                 monthly
               </p> : <p className="sup">
@@ -149,23 +152,22 @@ const Pricing = () => {
                 <br />
                 annually
               </p> }
-              <input className="sign-btn" type="button" value="Sign up" />
+              <input className="sign-btn" type="button" value="Sign up" style={{fontWeight:'500',letterSpacing: '0'}} />
             </div>
             <div className="pricing_01">
               <p>
-			  <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")}/> Coupons and
-                Promos{" "}
+			  <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")}/> <span style={{fontFamily:'SFProDisplay-bold'}}>Coupons and
+                Promos{" "}</span>
               </p>
               <p>
-			  <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")}/> Financial
-                Products
+			  <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")}/> <span style={{fontFamily:'SFProDisplay-bold'}}> Financial
+                Products </span>
               </p>
-              <p class="plus_">
+              <p class="plus_" style={{fontFamily:'SFProDisplay-bold'}}>
                  +
               </p>
               <p>
-			  <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")}/> unlimited agents
-                or collaborators
+			  <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")}/> unlimited Users 
               </p>
               <p>
 			  <img className="checkIcon" alt="check_yes icon"  src={require("../images/check_yes.svg")}/> unlimited
@@ -179,7 +181,11 @@ const Pricing = () => {
 			  <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")}/> Live API tokens
               </p>
               <p>
-			  <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")}/> Live API tokens
+                <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> live support
+              </p>
+              <p class="nb" style={{fontSize: '0.633vw',marginLeft: '7%' }}>
+               (*) starting
+                from the 4th agent
               </p>
             </div>
           </div>

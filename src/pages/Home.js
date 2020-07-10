@@ -7,6 +7,7 @@ import Chart from "../components/Chart";
 import "./Home.css";
 
 const Home = (props) => {
+  const {t,changeMyLanguage} = props
   const InitialData = [
     {
       shop: "0",
@@ -219,13 +220,7 @@ const Home = (props) => {
     return windowSize;
   }
 
-  useEffect(() => {
-	
-	
-  }, []); // Empty array ensures that effect is only run on mount and unmount
-
-
-  const handlechangeShop = (e) => {
+    const handlechangeShop = (e) => {
     setValue(e.target.value);
 
     const capt = capitalsValues.filter((elm) => elm.value === e.target.value);
@@ -250,17 +245,18 @@ const Home = (props) => {
     );
     setEstimate(false);
   };
-console.log(size.width)
+// console.log(size.width)
   return (
     <div className="Home">
-      <Header />
+      <Header t={t} />
       <div class="container-page">
         <Introduction />
+        {/* <h3>{t('Thanks.1')}</h3>  <h3>{t('Why.1')}</h3>  */}
         <div class="estimate_revenues">
-        <div className="aboutIntro" style={{marginBottom:'3vw'}}>
-        <h1 className="aboutIntro-secondTitle" style={{color:'#E56B36' ,marginBottom:'2vw'}}>Earn commissions from reselling</h1>
+        <div className="aboutIntro" style={{marginBottom:'2vw'}}>
+        <h1 className="aboutIntro-secondTitle" style={{color:'#E56B36' ,marginBottom:'2vw',fontSize:'3.33vw'}}>Earn commissions from reselling</h1>
         </div>
-            <div className="estimate_revenues_container" style={{height: "46vw"}}>
+            <div className="estimate_revenues_container" style={{height: "43.5vw"}}>
               <h1>Estimate your revenues</h1>
               <form
                 action=""
@@ -301,7 +297,7 @@ console.log(size.width)
                       </option>
                       {capitals.length > 0 && capitals[0] !== undefined
                         ? capitals[0].dropvalues.map((elm, i) => {
-                            return <option value={elm}>{elm}</option>;
+                            return <option value={elm}>XAF {elm}</option>;
                           })
                         : capitalsValues.map((elm, i) => {
                             return <option value={elm}>{elm}</option>;
@@ -347,12 +343,12 @@ console.log(size.width)
                 )}
               </div>
             </div>
-            <div className="aboutIntro" style={{marginTop:'6vw'}}>
-                <h1 className="aboutIntro-secondTitle" style={{color:'#E56B36', marginBottom:'3vw'}}>Accept merchant payments</h1>
+            <div className="aboutIntro" style={{marginTop:'4vw'}}>
+                <h1 className="aboutIntro-secondTitle" style={{color:'#E56B36', marginBottom:'2.5vw',paddingTop: '0'}}>Accept merchant payments</h1>
                 </div>
            { size.width > 767 ? (
-            <div className="estimate_revenues_container payment_collection" style={{marginTop:'0',marginBottom:'0',height:'46vw !important'}}  >
-				<h1>Estimate your costs</h1>
+            <div className="estimate_revenues_container payment_collection"  >
+				<h1 style={{marginBottom: '4.1vw'}}>Estimate your costs</h1>
 			<table>
 				<thead>
 					<tr>
@@ -366,7 +362,7 @@ console.log(size.width)
 				</thead>  
 				<tbody>
 					<tr>  
-						<td><label class="loyal" >Local payments<br/>in mobile money</label></td>
+						<td style={{paddingRight: '0%'}}><label class="loyal" >Local payments<br/>in mobile money</label></td>
 						<td><label class="padding_td">2.50%</label></td>
 						<td><label class="padding_td">2,25%</label></td>
 						<td><label class="padding_td">2,00%</label></td>
@@ -375,7 +371,7 @@ console.log(size.width)
 					
 					</tr>
 					<tr class="first_top">
-						<td><label class="loyal" style={{height: '24px'}}>Cost per transaction</label></td>
+						<td style={{paddingRight: '0%'}}><label class="loyal" style={{ height: '57px'}}>Cost per transaction</label></td>
 						<td colspan="4"><label>20 XAF</label></td>
 					</tr>
 				</tbody>
@@ -402,7 +398,7 @@ console.log(size.width)
                 </div>
         <FeatureList />
       </div>
-      <Footer />
+      <Footer t={t} changeMyLanguage={changeMyLanguage}/>
     </div>
   );
 };

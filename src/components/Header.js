@@ -2,7 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
-const Header = () => (
+const Header = (props) => {
+  const {t} = props
+  return(
   <header>
     <div className="logo">
       <Link to="/">
@@ -10,24 +12,27 @@ const Header = () => (
         <img src={require("../images/static/logo_Diool.png")}/>
       </Link>
     </div>
-
     <nav className="navbar navbar_plane">
       <ul className="navbar-nav">
         <li className="active">
-          <Link to="/">Home</Link>
+        <Link to="/">Home</Link>
+          {/* <Link to="/">{t('Header_Menue.home')}</Link> */}
         </li>
         <li>
-          <Link to="/about">About</Link>
+        <Link to="/about">About</Link>
+          {/* <Link to="/about">{t('Header_Menue.about')}</Link> */}
         </li>
         <li>
-          <Link to="/pricing">Pricing</Link>
+        <Link to="/pricing">Pricing</Link>
+          {/* <Link to="/pricing">{t('Header_Menue.pricing')}</Link> */}
         </li>
         <li>
           <a href="https://api.diool.com/">API</a>
         </li>
         <li>
-          <Link to="/distributor">For Distributor</Link>
-        </li>
+        <Link to="/distributor">Distibutor</Link>
+          {/* <Link to="/distributor">{t('Header_Menue.distributor')}</Link>*/}
+        </li> 
         <li>
           <a href="#">Sign in</a>
         </li>
@@ -73,6 +78,6 @@ const Header = () => (
       </ul>
     </div>
   </header>
-);
+);}
 
 export default Header;

@@ -18,6 +18,8 @@ const Introduction = () => (
         Collect payments from customers
         <br />
         Pay back suppliers in seconds
+        <br />
+        Earn revenue
       </p>
 
       <input className="sign-btn" type="button" value="Try it for free" style={{marginTop:'0.5vw'}}/>
@@ -31,7 +33,7 @@ const Introduction = () => (
             alt="app_store icon"
           /></a>
         </div>
-        <div className="bouton-aligne">
+        <div className="bouton-aligne" style={{marginLeft: '1vw'}}>
           <input
             type="image"
             src={require("../images/static/google_play.png")}

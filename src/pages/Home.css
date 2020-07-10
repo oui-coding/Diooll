@@ -1,7 +1,7 @@
 .estimate_revenues {
   width: 100%;
   /* background-color: #f2f2f2; */
-  padding: 4vw 0 5vw 0;
+  padding: 2.4vw 0 5vw 0;
   float: left;
 }
 
@@ -9,11 +9,12 @@
   color:  #0C183B;
   text-align: center;
   margin: 2vw auto 0vw auto;
-  font-size: 3.5vw;
+  font-size: 3.36vw;
   font-family: "Montserrat-SemiBold";
   letter-spacing: 1.25px;
   padding-top: 0vw;
   margin-bottom: 4.8vw;
+  line-height: 61px;
 }
 
 .estimate_revenues_container{
@@ -27,7 +28,7 @@
 }
 .estimate_revenues h2 {
   font-family: "Montserrat-SemiBold";
-  font-size: 1.8vw;
+  font-size: 1.745vw;
   text-align: left;
   padding-top: 0vw;
   margin-bottom: -1vw;
@@ -48,10 +49,10 @@
 }
 .btn-estimate{
   margin-top: 3.5vw !important;
-    width: 16vw !important;
+    width:14.2vw !important;
     padding: 0;
     height: 4vw;
-    font-size: 1.35vw !important;
+    font-size: 1.33vw !important;
 }
 /*=========== select style =========*/
 
@@ -142,7 +143,10 @@ color: #000000;
 	background-color: #E7E8EC;
 	margin: 5vw 7%;
 	float: left;
-	width: 86%;
+  width: 86%;
+  height:39.68vw !important;
+  margin-top:0;
+  margin-bottom:0
 }
 /* .payment_collection h1 {
     color: #414042;
@@ -218,6 +222,7 @@ color: #000000;
   padding-top: 10px;
   padding-bottom: 10px;
   height: 42px;
+ 
 }
 
 .payment_collection table th label span {
@@ -233,10 +238,13 @@ color: #000000;
 .payment_collection td label.loyal {
   padding-top: 10px;
   padding-bottom: 15px !important;
-  height: 31px;
   font-family: 'Montserrat-light';
   color: #0E1939;
   font-weight: bolder;
+  text-align: left;
+  box-sizing: border-box;
+  padding-left: 2vw;
+  height: 57px;
 }
 
 .payment_collection tr.first_top td label {
@@ -254,9 +262,9 @@ color: #000000;
 }
 
 .text-mobile-pay{
-  margin-top: 4vw;
-  font-size: 2vw;
-  font-family: 'MontserratAlternates-bold';
+  margin-top:2.5vw;
+  font-size: 1.68vw;
+  font-family: 'MontserratAlternates-ExBold';
 font-style: normal;
 font-weight: bold;
 line-height: 17px;

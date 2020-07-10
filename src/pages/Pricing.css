@@ -5,7 +5,8 @@
 		text-align: center;
 	}
 	.container-page.pricing h1{
-		font-size: 3vw;
+		margin-bottom: 1%;
+		font-size: 3.467vw;
 		font-family: 'MontserratAlternates-bold';
 		letter-spacing: 3px;
 		text-align: center;
@@ -20,7 +21,7 @@
 	.checkbox_period {text-align: center;}
 
 	.checkbox_period h2 {
-		font-size: 1.25vw;
+		font-size: 1.39vw;
 		padding: 0;
 		margin: -2vw auto 4vw auto;
 		display:inline-block;
@@ -32,7 +33,7 @@
 	}
 	
 	.container-page.pricing h3 {
-		font-size: 1vw;
+		font-size: 1.181vw;
 		margin-bottom: 1vw;
 		font-family: 'SFProDisplay-light';
 		letter-spacing: 2px;
@@ -93,7 +94,7 @@
 		font-family: 'SFProDisplay-light';
 	}
 	
-	.pricing__container {padding: 10%;}
+	.pricing__container {padding: 10%;height: 12.2vw;}
 	
 	
 	.pricing_.first_type {margin-right:3%;}
@@ -110,6 +111,7 @@
 		font-size: 1.25vw;
 		font-family: 'SFProDisplay-bold';
 		color: #000;
+		margin-bottom: 17%;
 	}
 
 	.pricing__container:hover{
@@ -160,6 +162,7 @@
 	}
 	.checkIcon{
 		width: 1vw;
+		margin-right: 2%;
 	}
 	
 	

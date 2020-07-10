@@ -10,7 +10,7 @@ const Distributor = () => {
       <Header />
 	  <div class="container-page distributor">
 			<div class="block_all_your_shop">
-				<div class="block_all_your_shop_text text-intro-contain">
+				<div class="block_all_your_shop_text text-intro-contain" style={{marginBottom: '10.5%'}}>
 					<h1>Manage your resellers<br />and their payments</h1>
 					<p>	
 						Shops and Agents Management, Cash Advances and Collect

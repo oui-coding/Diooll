@@ -15,8 +15,9 @@
 	.checkbox_period h2 {
 		font-size: 1.25vw;
 		padding: 0;
-		margin: -2vw auto 4vw auto;
+		margin: -2vw auto 4.3vw auto;
 		display:inline-block;
+		letter-spacing: -1.243597px
 	}
 	
 	.check_pay {
@@ -32,7 +33,19 @@
 		margin-bottom: 5vw;
 	}
 	
-	
+	.sign-btn-item{height: 3.29vw;
+    border: 0;
+    font-size: 1.355vw;
+    text-align: center;
+    color: #fff;
+    background-color: #d9784c;
+    width: 26.5%;
+    margin: 1.5vw 0% 4vw 0%;
+    letter-spacing: 1.5px;
+    font-family: 'SFProDisplay-light';
+    border-radius: 5px;
+	border: 1px solid #d9784c;
+}
 	
 	
 /*=========================== START   button switch ==============================*/	
@@ -97,12 +110,13 @@
 	.pricing_ .pricing__container {background-color:#C4C4C4;}
 	.pricing_ .pricing_01 {background-color:#FFFFFF; padding-left: 2%;}
 	.pricing_01 .fa {    color: #3B67A9;}
-	.pricing_ .pricing__container label {color:#000;}
+	.pricing_ .pricing__container label {color:#000; margin-bottom: 15% !important;}
 	.pricing_ .pricing__container p.sup {
 		text-align: center;
 		font-size: 1.25vw;
 		font-family: 'SFProDisplay-bold';
 		color: #000;
+		margin-bottom: 15% !important;
 	}
 	
 	.pricing__container input.sign-btn {
@@ -127,8 +141,7 @@
 	}
 	
 	
-	.pricing_01 p.nb {
-	
+	  .nb {
 		font-weight: 100;
 		
 	}
@@ -142,6 +155,7 @@
 		text-align: center;
 		letter-spacing: 1px;
 		display: block;
+		
 	}
 	
 	

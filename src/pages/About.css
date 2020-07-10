@@ -7,12 +7,12 @@
   font-family: 'MontserratAlternates-bold';
   font-weight: bold;
   text-align: center;
-  width: 84%;
+  width: 86%;
 }
 
 .aboutIntro {
   background: #ffffff;
-  /* width: 80%; */
+  margin-top: -0.2vw;
 }
 
 .aboutIntro-Item {
@@ -25,19 +25,25 @@
 }
 .aboutIntro-firstTitle {
   color: #1a1f3a;
-  font-size: 3.4vw;
+  font-size: 3.34vw;
+  margin-bottom: 0;
 }
 .aboutIntro-secondTitle {
   color: #e56b36;
-  font-size: 3vw;
+  font-size: 2.93vw;
+}
+.first-SecondTitle{
+  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .aboutIntro-text {
   color: #000000;
   font-family: "Montserrat";
   width: 100%;
-  font-size: 1vw;
+  font-size: 0.972vw;
   margin-left: 20vw;
+  margin-bottom: 0;
 }
 
 p.clr_ {

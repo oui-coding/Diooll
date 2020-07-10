@@ -7,7 +7,7 @@ function PricingItem(){
 	<div class="pricing__container">
 		<label>Starter</label>
 		<p class="sup"><sup>XAF</sup>0/user<br />&nbsp;</p>
-		<input class="sign-btn" type="button" value="Sign up" />
+		<button class="sign-btn-item" type="button" value="Sign up" style={{fontWeight:'100 !important'}} >Sign up</button>
 	</div>
 	<div class="pricing_01">
 		<p><i class="fa fa-check" aria-hidden="true"></i> up to 3  agents or collaborators</p>
