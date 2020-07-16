@@ -297,7 +297,7 @@ const Home = (props) => {
                       </option>
                       {capitals.length > 0 && capitals[0] !== undefined
                         ? capitals[0].dropvalues.map((elm, i) => {
-                            return <option value={elm}>XAF {elm}</option>;
+                            return <option value={elm}><span>XAF </span>{elm}</option>;
                           })
                         : capitalsValues.map((elm, i) => {
                             return <option value={elm}>{elm}</option>;
@@ -347,7 +347,7 @@ const Home = (props) => {
                 <h1 className="aboutIntro-secondTitle" style={{color:'#E56B36', marginBottom:'2.5vw',paddingTop: '0'}}>Accept merchant payments</h1>
                 </div>
            { size.width > 767 ? (
-            <div className="estimate_revenues_container payment_collection"  >
+            <div className="estimate_revenues_container payment_collection"  style={{height:'100% !important'}}>
 				<h1 style={{marginBottom: '4.1vw'}}>Estimate your costs</h1>
 			<table>
 				<thead>

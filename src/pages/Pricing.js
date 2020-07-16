@@ -96,7 +96,7 @@ const Pricing = () => {
             </div>
           </div>
           <div className="pricing_">
-            <div className="pricing__container">
+            <div className="pricing__container" style={{border: '3px solid #E77340'}}>
               <label>Standard</label>
               {pricing ? <p className="sup">
                 <sup>XAF</sup> 7.500 / user *
