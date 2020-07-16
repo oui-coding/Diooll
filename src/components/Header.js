@@ -30,7 +30,7 @@ const Header = (props) => {
           <a href="https://api.diool.com/">API</a>
         </li>
         <li>
-        <Link to="/distributor">Distibutor</Link>
+        <Link to="/distributor">For Distributors</Link>
           {/* <Link to="/distributor">{t('Header_Menue.distributor')}</Link>*/}
         </li> 
         <li>

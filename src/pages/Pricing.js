@@ -20,7 +20,7 @@ const Pricing = () => {
         <h1>Start collecting and making payments</h1>
         <h3>Accessible to any registered business</h3>
         <div className="checkbox_period">
-          <h2 style={{fontFamily:'MontserratAlternates-bold'}}>pay monthly</h2>
+          <h2 style={{fontFamily:'MontserratAlternates-ExBold'}}>pay monthly</h2>
           <div className="check_pay">
             <input type="checkbox" hidden="hidden" id="username" onChange={handlechange} />
             <label className="switch" for="username"></label>
@@ -58,11 +58,11 @@ const Pricing = () => {
             <div class="pricing__container">
               <label>Pro</label>
              {pricing ? <p className="sup">
-                <sup>XAF</sup> 5.000/user
+                <sup>XAF</sup> 5.000 / user *
                 <br />
                 monthly
               </p> : <p className="sup">
-                <sup>XAF</sup> 50.000/user
+                <sup>XAF</sup> 50.000 / user *
                 <br />
                 annually
               </p>}
@@ -70,11 +70,11 @@ const Pricing = () => {
             </div>
             <div className="pricing_01">
               <p>
-                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> unlimited Users
+                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> Unlimited Users
               </p>
               <p>
                 <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} />
-                unlimited transactions
+               Unlimited transactions
               </p>
               <p>
                 <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> Cash Point
@@ -99,11 +99,11 @@ const Pricing = () => {
             <div className="pricing__container">
               <label>Standard</label>
               {pricing ? <p className="sup">
-                <sup>XAF</sup> 7.500/user
+                <sup>XAF</sup> 7.500 / user *
                 <br />
                 monthly
               </p> :  <p className="sup">
-                <sup>XAF</sup>75.000/user
+                <sup style={{marginRight:'5px'}}>XAF</sup>75.000 / user *
                 <br />
                 annually
               </p> }
@@ -118,10 +118,10 @@ const Pricing = () => {
                 +
               </p>
               <p>
-			  <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")}/> unlimited Users 
+			  <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")}/> Unlimited Users 
               </p>
               <p>
-			  <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")}/> unlimited
+			  <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")}/> Unlimited
                 transactions
               </p>
               <p>
@@ -144,11 +144,11 @@ const Pricing = () => {
             <div className="pricing__container">
               <label>Advanced</label>
              { pricing ? <p className="sup">
-                <sup>XAF</sup> 12.500/user
+                <sup>XAF</sup> 12.500 / user *
                 <br />
                 monthly
               </p> : <p className="sup">
-                <sup>XAF</sup> 125.000/user
+                <sup>XAF</sup> 125.000 / user *
                 <br />
                 annually
               </p> }
@@ -167,10 +167,10 @@ const Pricing = () => {
                  +
               </p>
               <p>
-			  <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")}/> unlimited Users 
+			  <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")}/> Unlimited Users 
               </p>
               <p>
-			  <img className="checkIcon" alt="check_yes icon"  src={require("../images/check_yes.svg")}/> unlimited
+			  <img className="checkIcon" alt="check_yes icon"  src={require("../images/check_yes.svg")}/> Unlimited
                 transactions
               </p>
               <p>

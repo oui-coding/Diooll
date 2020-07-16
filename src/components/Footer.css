@@ -7,6 +7,10 @@
 		padding-bottom: 3vw;
 	}
 	
+	.socialMedia-img{
+		width: 21px;
+		height: 21px;
+	}
 	.padding_footer {padding: 3% 10vw 0% 5vw;}
 	
 	.footer_blck { float:left;}

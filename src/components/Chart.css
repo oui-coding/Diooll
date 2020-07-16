@@ -9,39 +9,39 @@
 }
 
 .small-text-white {
-  font-family: 'MontserratAlternates-bold';
+  font-family: 'MontserratAlternates-ExBold';
   font-style: normal;
   font-weight: bold;
-  font-size: 0.78vw;
+  font-size: 0.846vw;
   line-height: 17px;
   color:#0C183B
 }
 
 .XAF-text {
-  font-family: 'MontserratAlternates-bold';
+  font-family: 'MontserratAlternates-ExBold';
   font-style: normal;
   font-weight: bold;
-  font-size: 1.25vw;
+  font-size: 1.39vw;
   line-height: 26px;
   color: #E77340;
   height: 26px;
   position: absolute;
   top: 0.4vw;
-  left: 6vw;
+  left: 7vw;
   margin-left: 0.6vw;
 }
 .number-earn {
-  font-family: 'MontserratAlternates-bold';
+  font-family: 'MontserratAlternates-ExBold';
   height: 47px;
   font-style: normal;
   font-weight: bold;
-  font-size: 2.58vw;
+  font-size: 2.76vw;
   line-height: 26px;
   color: #E77340;
   height: 26px;
   position: absolute;
   top: 1.1vw;
-  left: 10vw;
+  left: 11.5vw;
 }
 .chart-container {
   display: flex;
@@ -55,7 +55,7 @@
 
 }
 .secondtext-estim{
-  margin-top: 1.8vw;
+  margin-top: 2vw;
   display: flex;
   justify-content: space-between;
 }

@@ -4,12 +4,22 @@ import DoughnutChart from './DoughnutChart'
 import Legend from './Legend'
 import './Chart.css'
 
+
+function insertDecimal(num) {
+  let numString=num.toString().length
+  let converted =  Number((num / 1000).toFixed(3)).toString()
+  return (numString===6 && converted.length===3) || (numString===5 && converted.length===2)  || (numString===4 && converted.length===1) ? converted+'.000' :  converted
+}
+
+
 function Chart({data}) {
 
 const [state, setState] = useState({dataChart:[{date:  "Prepaid eRecharges : ", value:21175,opac:"#CBE2F7"},{date:"Bills Payment Collection : ", value:8950, opac:"#8AB0DD"}, {date: "Consumer Goods Reselling : ", value: 18760, opac:"#3C67A9"},{date: "Cash Deposits & Withdrawals : ", value:32915,  opac:"#191745"}],
-revenue:81800,
+revenue:'81.800',
 transaction:400,
+actifDay:18
 })
+
 
 // {
 //   shop: "0",
@@ -34,18 +44,19 @@ transaction:400,
   setState({dataChart:[{date: "Prepaid eRecharges : ", value: data.recharge, opac:"#CBE2F7"},{date:"Bills Payment Collection : ", value:data.paiment, opac:"#8AB0DD"}, {date: "Consumer Goods Reselling : ", value: data.services, opac:"#3C67A9"},{date:  "Cash Deposits & Withdrawals : ", value:data.retrait, opac:"#191745"}],
   revenue:data.revenue,
   transaction:data.transaction,
+  actifDay:data.actifDay
 })
    }
 },[data])  
 
- //console.log(data)
+ console.log(data)
 
   return (
     <div className="BlockChat-contain">
       <div className="estimation-result">
   <p className="estimation-textCont"><span className="small-text-white">You may earn : </span> <span className="XAF-text"> XAF </span> <span className="number-earn">{state.revenue}</span></p>
        <p className="estimation-textCont secondtext-estim firstestim"><span className="small-text-white">by doing : </span><span className="small-text-white"> {state.transaction} transactionsper month</span></p>
-       <p className="estimation-textCont secondtext-estim" style={{marginTop: '0.5vw'}}><span className="small-text-white">and working :</span><span className="small-text-white"> {state.actifDay} days per month</span></p>
+       <p className="estimation-textCont secondtext-estim" style={{marginTop: '0vw'}}><span className="small-text-white">and working :</span><span className="small-text-white"> {state.actifDay} days per month</span></p>
       </div>
       <div className="chart-container">
         

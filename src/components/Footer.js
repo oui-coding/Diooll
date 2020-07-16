@@ -88,12 +88,12 @@ const Footer = (props) => {
           <ul className="lastfooter-socialContai">
             <li className="socialMedia-item">
               <a href="https://twitter.com/DioolApp" target="_blank">
-                <img src={require("../images/twitter.svg")} />
+                <img className="socialMedia-img" src={require("../images/twitter.svg")} />
               </a>
             </li>
             <li className="socialMedia-item">
               <a href="https://www.facebook.com/dioolapp/" target="_blank">
-                <img src={require("../images/facebook.svg")} />
+                <img className="socialMedia-img" src={require("../images/facebook.svg")} />
               </a>
             </li>
             <li className="socialMedia-item">
@@ -101,7 +101,7 @@ const Footer = (props) => {
                 href="https://www.linkedin.com/showcase/diool-for-merchants/"
                 target="_blank"
               >
-                <img src={require("../images/linkedin.svg")} />
+                <img className="socialMedia-img" src={require("../images/linkedin.svg")} />
               </a>
             </li>
           </ul>

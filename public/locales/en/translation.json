@@ -1,12 +1,12 @@
 {
-    "Header_Menue": {
-        "home": "Home",
-        "about":"About",
-        "pricing":"Pricing",
-        "API":"API",
-        "distributor":"For Distributor"
-    },
-    "Why": {
-        "1": "For watching this video"
-    }
+  "Header_Menue": {
+    "home": "Home",
+    "about": "About",
+    "pricing": "Pricing",
+    "API": "API",
+    "distributor": "For Distributors"
+  },
+  "Why": {
+    "1": "For watching this video"
+  }
 }
