@@ -64,7 +64,7 @@
 
 .labelselectstyle {
   position: relative;
-  width: 100%;
+  width: 82%;
   margin-bottom: 0px;
   height: 100%;
 }
@@ -120,6 +120,9 @@ color: #000000;
   transform: rotate(270deg);
   font-weight: bold;
 }
+.labelselectstyle-second:after{
+  top: 12px;
+}
 
 .estimate_revenues input[type="submit"] {
   border: 0;
@@ -134,6 +137,19 @@ color: #000000;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+}
+.xaf-select{
+  position: absolute;
+    z-index: 121212;
+    /* MARGIN-RIGHT: 6vw; */
+    background: white;
+    height: 2.5%;
+    MARGIN: 0;
+    font-size: 0.984vw;
+    font-family:'MontserratAlternates-bold' ;
+    color: #000000;
+    padding-top: 0.4%;
+    PADDING-LEFT: 0.7%;
 }
 
 /******/
@@ -335,6 +351,8 @@ tr{
     width: 49vw;
     margin-left: 14vw;
     font-size: 2.7vw;
+    margin-left: 1vw;
+    padding-left: 33px;
     
   }
   .select_activity_sector option {

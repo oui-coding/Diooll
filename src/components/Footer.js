@@ -106,7 +106,7 @@ const Footer = (props) => {
             </li>
           </ul>
           <div style={{ display: "flex", alignItems: "center" }}>
-            <span className="switchlang-span">Switch language to : </span>
+            <span className="switchlang-span">Switch language to:</span>
             {/* <label class="labelselectstyle"> */}
             <select
               id="what_shop"

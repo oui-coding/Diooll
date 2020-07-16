@@ -11,7 +11,7 @@ const Home = (props) => {
   const InitialData = [
     {
       shop: "0",
-      capital: 50000,
+      capital: '50.000',
       actifDay: 15,
       transaction: 207,
       revenue: '16.350',
@@ -22,7 +22,7 @@ const Home = (props) => {
     },
     {
       shop: "0",
-      capital: 150000,
+      capital: '150.000',
       actifDay: 18,
       transaction: 269,
       revenue: '36.800',
@@ -33,7 +33,7 @@ const Home = (props) => {
     },
     {
       shop: "0",
-      capital: 400000,
+      capital: '400.000',
       actifDay: 20,
       transaction: 400,
       revenue: '81.800',
@@ -44,7 +44,7 @@ const Home = (props) => {
     },
     {
       shop: "0",
-      capital: 1000000,
+      capital: '1.000.000',
       actifDay: 24,
       transaction: 524,
       revenue: '148.700',
@@ -55,7 +55,7 @@ const Home = (props) => {
     },
     {
       shop: "0",
-      capital: 2000000,
+      capital: '2.000.000',
       actifDay: 24,
       transaction: 550,
       revenue: '186.600',
@@ -66,7 +66,7 @@ const Home = (props) => {
     },
     {
       shop: "1",
-      capital: 150000,
+      capital: '150.000',
       actifDay: 18,
       transaction: 220,
       revenue: '70.300',
@@ -77,7 +77,7 @@ const Home = (props) => {
     },
     {
       shop: "1",
-      capital: 400000,
+      capital: '400.000',
       actifDay: 20,
       transaction: 420,
       revenue: '225.000',
@@ -88,7 +88,7 @@ const Home = (props) => {
     },
     {
       shop: "1",
-      capital: 1000000,
+      capital: '1.000.000',
       actifDay: 24,
       transaction: 585,
       revenue: '360.000',
@@ -99,7 +99,7 @@ const Home = (props) => {
     },
     {
       shop: "2",
-      capital: 150000,
+      capital: '150.000',
       actifDay: 18,
       transaction: 225,
       revenue: '74.150',
@@ -110,7 +110,7 @@ const Home = (props) => {
     },
     {
       shop: "2",
-      capital: 400000,
+      capital: '400.000',
       actifDay: 20,
       transaction: 385,
       revenue: '205.000',
@@ -121,7 +121,7 @@ const Home = (props) => {
     },
     {
       shop: "2",
-      capital: 1000000,
+      capital: '1.000.000',
       actifDay: 24,
       transaction: 623,
       revenue: '388.200',
@@ -132,7 +132,7 @@ const Home = (props) => {
     },
     {
       shop: "3",
-      capital: 500000,
+      capital: '500.000',
       actifDay: 20,
       transaction: 373,
       revenue: '57.800',
@@ -143,7 +143,7 @@ const Home = (props) => {
     },
     {
       shop: "3",
-      capital: 1250000,
+      capital: '125.0000',
       actifDay: 24,
       transaction: 683,
       revenue: '146.375',
@@ -154,7 +154,7 @@ const Home = (props) => {
     },
     {
       shop: "3",
-      capital: 2500000,
+      capital: '2.500.000',
       actifDay: 24,
       transaction: 709,
       revenue: '189.182',
@@ -165,7 +165,7 @@ const Home = (props) => {
     },
     {
       shop: "3",
-      capital: 3000000,
+      capital: '3.000.000',
       actifDay: 24,
       transaction: 713,
       revenue: '224.318',
@@ -179,15 +179,15 @@ const Home = (props) => {
   const [estimate, setEstimate] = useState(true);
   const [value, setValue] = useState("Kiosque de Rue");
   const [capitals, setCapitals] = useState([
-    { value: "0", dropvalues: [50000, 150000, 400000, 1000000, 2000000] },
+    { value: "0", dropvalues: ['50.000', '150.000', '400.000', '1.000.000', '2.000.000'] },
   ]);
   const [capitalsvalue, setCapitalsvalue] = useState(400000);
   const [data, setData] = useState([]);
   const capitalsValues = [
-    { value: "0", dropvalues: [50000, 150000, 400000, 1000000, 2000000] },
-    { value: "1", dropvalues: [150000, 400000, 1000000] },
-    { value: "2", dropvalues: [150000, 400000, 1000000] },
-    { value: "3", dropvalues: [500000, 1250000, 2500000, 3000000] },
+    { value: "0", dropvalues: ['50.000', '150.000', '400.000', '1.000.000', '2.000.000'] },
+    { value: "1", dropvalues: ['150.000', '400.000', '1.000.000'] },
+    { value: "2", dropvalues: ['150.000', '400.0000', '1.000.000'] },
+    { value: "3", dropvalues: ['500.000', '1.250.000', '2.500.000', '3.000.000'] },
   ];
 
   const size = useWindowSize();
@@ -285,14 +285,16 @@ const Home = (props) => {
                   </label>
                 </div>
                 <h2>How much capital will you use ?</h2>
-                <div class="select_activity_sector">
+                <div class="select_activity_sector" style={{display:'flex'}}>
+                  <p className='xaf-select'>XAF</p>
                 {/* <span>XAF </span> */}
-                  <label class="labelselectstyle">
+                  <label class="labelselectstyle labelselectstyle-second">
                     
                     <select
                       id="mach_capital"
                       defaultValue="400000"
                       onChange={handlechangeCapital}
+                      style={{paddingLeft:'15%'}}
                     >
                       <option disabled={true} defaultValue>
                         Please select an option
