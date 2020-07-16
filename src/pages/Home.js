@@ -286,7 +286,9 @@ const Home = (props) => {
                 </div>
                 <h2>How much capital will you use ?</h2>
                 <div class="select_activity_sector">
+                {/* <span>XAF </span> */}
                   <label class="labelselectstyle">
+                    
                     <select
                       id="mach_capital"
                       defaultValue="400000"
@@ -297,7 +299,7 @@ const Home = (props) => {
                       </option>
                       {capitals.length > 0 && capitals[0] !== undefined
                         ? capitals[0].dropvalues.map((elm, i) => {
-                            return <option value={elm}><span>XAF </span>{elm}</option>;
+                            return <option value={elm}>{elm}</option>;
                           })
                         : capitalsValues.map((elm, i) => {
                             return <option value={elm}>{elm}</option>;
