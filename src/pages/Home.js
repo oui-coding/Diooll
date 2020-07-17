@@ -257,7 +257,7 @@ const Home = (props) => {
         <h1 className="aboutIntro-secondTitle" style={{color:'#E56B36' ,marginBottom:'2vw',fontSize:'3.33vw'}}>Earn commissions from reselling</h1>
         </div>
             <div className="estimate_revenues_container" style={{height: "43.5vw"}}>
-              <h1>Estimate your revenues</h1>
+              {/* <h1>Estimate your revenues</h1> */}
               <form
                 action=""
                 style={
