@@ -18,7 +18,7 @@ const Pricing = () => {
       <Header />
       <div className="container-page pricing">
         <h1>Start collecting and making payments</h1>
-        <h3>Accessible to any registered business</h3>
+        <h3 style={{color: '#1A1F3A'}}>Accessible to any registered business</h3>
         <div className="checkbox_period">
           <h2 style={{fontFamily:'MontserratAlternates-ExBold'}}>pay monthly</h2>
           <div className="check_pay">

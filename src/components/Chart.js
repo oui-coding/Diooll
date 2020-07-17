@@ -14,7 +14,7 @@ function insertDecimal(num) {
 
 function Chart({data}) {
 
-const [state, setState] = useState({dataChart:[{date:  "Prepaid eRecharges : ", value:21175,opac:"#CBE2F7"},{date:"Bills Payment Collection : ", value:8950, opac:"#8AB0DD"}, {date: "Consumer Goods Reselling : ", value: 18760, opac:"#3C67A9"},{date: "Cash Deposits & Withdrawals : ", value:32915,  opac:"#191745"}],
+const [state, setState] = useState({dataChart:[{date:  "Prepaid eRecharges : ", value:'21.175',opac:"#CBE2F7"},{date:"Bills Payment Collection : ", value:'8.950', opac:"#8AB0DD"}, {date: "Consumer Goods Reselling : ", value: '18.760', opac:"#3C67A9"},{date: "Cash Deposits & Withdrawals : ", value:'32.915',  opac:"#191745"}],
 revenue:'81.800',
 transaction:400,
 actifDay:18

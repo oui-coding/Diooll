@@ -55,7 +55,7 @@ const Introduction = () => (
         loop
         muted
       >
-        <source
+        {/* <source
           src={require("../video/compo_final-fr2a.mov")}
           //src="video/compo_final-fr2a.mov"
           type="video/mov"
@@ -66,9 +66,9 @@ const Introduction = () => (
           //  src="video/compo_final-fr2a.webm"
           type="video/webm"
           autostart="true"
-        />
+        /> */}
         <source
-          src={require("../video/compo_final-fr2a.mp4")}
+          src={require("../video/compo final-ang1.mp4")}
           //  src="video/compo_final-fr2a.mp4"
           type="video/mp4"
           autostart="true"

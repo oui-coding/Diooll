@@ -15,7 +15,7 @@ const Home = (props) => {
       actifDay: 15,
       transaction: 207,
       revenue: '16.350',
-      recharge: 16350,
+      recharge: '16.350',
       retrait: 0,
       paiment: 0,
       services: 0,
@@ -26,9 +26,9 @@ const Home = (props) => {
       actifDay: 18,
       transaction: 269,
       revenue: '36.800',
-      recharge: 20300,
-      retrait: 10050,
-      paiment: 6450,
+      recharge: '20.300',
+      retrait: '10.050',
+      paiment: '6.450',
       services: 0,
     },
     {
@@ -37,10 +37,10 @@ const Home = (props) => {
       actifDay: 20,
       transaction: 400,
       revenue: '81.800',
-      recharge: 21175,
-      retrait: 32915,
-      paiment: 8950,
-      services: 18760,
+      recharge: '21.175',
+      retrait: '32.915',
+      paiment: '8.950',
+      services: '18.760',
     },
     {
       shop: "0",
@@ -48,10 +48,10 @@ const Home = (props) => {
       actifDay: 24,
       transaction: 524,
       revenue: '148.700',
-      recharge: 23925,
-      retrait: 83700,
-      paiment: 13575,
-      services: 27500,
+      recharge: '23.925',
+      retrait: '83.700',
+      paiment: '13.575',
+      services: '27.500',
     },
     {
       shop: "0",
@@ -59,10 +59,10 @@ const Home = (props) => {
       actifDay: 24,
       transaction: 550,
       revenue: '186.600',
-      recharge: 23430,
-      retrait: 118095,
-      paiment: 15575,
-      services: 29500,
+      recharge: '23.430',
+      retrait: '118.095',
+      paiment: '15.575',
+      services: '29.500',
     },
     {
       shop: "1",
@@ -70,9 +70,9 @@ const Home = (props) => {
       actifDay: 18,
       transaction: 220,
       revenue: '70.300',
-      recharge: 54900,
-      retrait: 2500,
-      paiment: 12900,
+      recharge: '54.900',
+      retrait: '2.500',
+      paiment: '12.900',
       services: 0,
     },
     {
@@ -81,9 +81,9 @@ const Home = (props) => {
       actifDay: 20,
       transaction: 420,
       revenue: '225.000',
-      recharge: 186850,
-      retrait: 20250,
-      paiment: 17900,
+      recharge: '186.850',
+      retrait: '20.250',
+      paiment: '17.900',
       services: 0,
     },
     {
@@ -92,9 +92,9 @@ const Home = (props) => {
       actifDay: 24,
       transaction: 585,
       revenue: '360.000',
-      recharge: 256750,
-      retrait: 76000,
-      paiment: 27250,
+      recharge: '256.750',
+      retrait: '76.000',
+      paiment: '27.250',
       services: 0,
     },
     {
@@ -103,9 +103,9 @@ const Home = (props) => {
       actifDay: 18,
       transaction: 225,
       revenue: '74.150',
-      recharge: 61550,
-      retrait: 2600,
-      paiment: 10000,
+      recharge: '61.550',
+      retrait: '2.600',
+      paiment: '10.000',
       services: 0,
     },
     {
@@ -114,9 +114,9 @@ const Home = (props) => {
       actifDay: 20,
       transaction: 385,
       revenue: '205.000',
-      recharge: 172125,
-      retrait: 17875,
-      paiment: 15000,
+      recharge: '172.125',
+      retrait: '17.875',
+      paiment: '15.000',
       services: 0,
     },
     {
@@ -125,9 +125,9 @@ const Home = (props) => {
       actifDay: 24,
       transaction: 623,
       revenue: '388.200',
-      recharge: 283000,
-      retrait: 80200,
-      paiment: 25000,
+      recharge: '283.000',
+      retrait: '80.200',
+      paiment: '25.000',
       services: 0,
     },
     {
@@ -136,9 +136,9 @@ const Home = (props) => {
       actifDay: 20,
       transaction: 373,
       revenue: '57.800',
-      recharge: 14485,
-      retrait: 28315,
-      paiment: 15000,
+      recharge: '14.485',
+      retrait: '28.315',
+      paiment: '15.000',
       services: 0,
     },
     {
@@ -147,9 +147,9 @@ const Home = (props) => {
       actifDay: 24,
       transaction: 683,
       revenue: '146.375',
-      recharge: 9060,
-      retrait: 120315,
-      paiment: 17000,
+      recharge: '9.060',
+      retrait: '120.315',
+      paiment: '17.000',
       services: 0,
     },
     {
@@ -158,9 +158,9 @@ const Home = (props) => {
       actifDay: 24,
       transaction: 709,
       revenue: '189.182',
-      recharge: 8930,
-      retrait: 160252,
-      paiment: 20000,
+      recharge: '8.930',
+      retrait: '160.252',
+      paiment: '20.000',
       services: 0,
     },
     {
@@ -169,15 +169,15 @@ const Home = (props) => {
       actifDay: 24,
       transaction: 713,
       revenue: '224.318',
-      recharge: 4584,
-      retrait: 194734,
-      paiment: 25000,
+      recharge: '4.584',
+      retrait: '194.734',
+      paiment: '25.000',
       services: 0,
     },
   ];
 
   const [estimate, setEstimate] = useState(true);
-  const [value, setValue] = useState("Kiosque de Rue");
+  const [value, setValue] = useState("Street Kiosk");
   const [capitals, setCapitals] = useState([
     { value: "0", dropvalues: ['50.000', '150.000', '400.000', '1.000.000', '2.000.000'] },
   ]);
@@ -205,7 +205,7 @@ const Home = (props) => {
     const [windowSize, setWindowSize] = useState(getSize);
 
     useEffect(() => {
-      setValue("Kiosque de Rue");
+      setValue("Street Kiosk");
       if (!isClient) {
         return false;
       }
@@ -253,7 +253,7 @@ const Home = (props) => {
         <Introduction />
         {/* <h3>{t('Thanks.1')}</h3>  <h3>{t('Why.1')}</h3>  */}
         <div class="estimate_revenues">
-        <div className="aboutIntro" style={{marginBottom:'2vw'}}>
+        <div className="aboutIntro" style={{marginBottom:'2vw',marginTop:'1.5vw'}}>
         <h1 className="aboutIntro-secondTitle" style={{color:'#E56B36' ,marginBottom:'2vw',fontSize:'3.33vw'}}>Earn commissions from reselling</h1>
         </div>
             <div className="estimate_revenues_container" style={{height: "43.5vw"}}>
@@ -271,16 +271,16 @@ const Home = (props) => {
                   <label class="labelselectstyle">
                     <select
                       id="what_shop"
-                      defaultValue="Kiosque de Rue"
+                      defaultValue="Street Kiosk"
                       onChange={handlechangeShop}
                     >
                       <option disabled={true} defaultValue>
                         Please select an option
                       </option>
-                      <option value="0">Kiosque de Rue</option>
+                      <option value="0">Street Kiosk</option>
                       <option value="1">Hotel, Bar, Restaurant</option>
-                      <option value="2">Epicerie, Commerce Général</option>
-                      <option value="3">Bureau de Transferts d'Argent</option>
+                      <option value="2">Proximity, Grocery Store</option>
+                      <option value="3">Money Transfer Outlet</option>
                     </select>
                   </label>
                 </div>
@@ -292,6 +292,7 @@ const Home = (props) => {
                     
                     <select
                       id="mach_capital"
+                      className="second-select"
                       defaultValue="400000"
                       onChange={handlechangeCapital}
                       style={{paddingLeft:'15%'}}

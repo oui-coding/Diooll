@@ -304,7 +304,41 @@ tr{
     width: 47px;
   }
 
+  .labelselectstyle:before{
+    height: 54px;
+    width: 35px;
+    left: 22vw;
+  }
+
+  .labelselectstyle-second:after {
+    top: 17px;
+    left: 22.9vw;
+  }
+  .second-select{
+  padding-left: 87% !important;
 }
+.select_activity_sector select{
+  padding-left: 13%;
+}
+.estimation-result{
+  height: 8.6vw;
+}
+.estimate_revenues_container.payment_collection {
+  height: 481px !important;
+}
+.estimate_revenues h1{
+  margin-bottom: 1.8vw;
+}
+.estimation-textCont{
+  margin-bottom: -0.4vw;
+}
+}
+/* @media screen and (max-width: 1000px) {
+
+  .estimation-result{
+    height: 9.6vw;
+  }
+  } */
 @media screen and (max-width: 767px) {
   .result_form {
     display: none;
