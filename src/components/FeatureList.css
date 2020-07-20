@@ -93,8 +93,8 @@ line-height: 1.5vw;
 
 .block_Features h1 {
 	text-align: center;
-	margin: 20vw auto 7vw auto !important;
-	font-size: 7vw !important;
+	margin:0 auto 7vw auto !important;
+	font-size: 7.188vw !important;
 	padding-top: 7vw !important;
 	float: none !important;
 	width: auto !important;
@@ -123,21 +123,31 @@ line-height: 1.5vw;
 .block_Features  h2 {
 	text-align: center !important;
 	font-size: 5vw !important;
-	padding-top: 7vw !important;
 }
 
 .block_Features p {
 	text-align: center !important;
-	margin: 8vw auto 5vw auto !important;
-	font-size: 4vw !important;
+	/* margin: 8vw auto 5vw auto !important; */
+	font-size: 3.750vw !important;
 	letter-spacing: 1.25px !important;
-	line-height: 6vw;
+	line-height:4.375vw;
+	margin-top: 5vw;
+	
+}
+.col-idool--lastText{
+	margin-bottom:15.313vw !important;
 }
 
 .block_Features img {
-	width: 18% !important;
+	width:5.906vw !important;
+	height:5.906vw !important;
 	text-align: center !important;
-	margin-left: 41% !important;
+	margin-left: 50% !important;
 	margin-top: 10vw !important;
+	margin-bottom: 7vw;
+}
+.block_Features h2 {
+font-size: 4.375vw !important;
+line-height: 5.313vw;
 }
 }

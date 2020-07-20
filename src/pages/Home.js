@@ -254,9 +254,10 @@ const Home = (props) => {
         {/* <h3>{t('Thanks.1')}</h3>  <h3>{t('Why.1')}</h3>  */}
         <div class="estimate_revenues">
         <div className="aboutIntro" style={{marginBottom:'2vw',marginTop:'1.5vw'}}>
-        <h1 className="aboutIntro-secondTitle" style={{color:'#E56B36' ,marginBottom:'2vw',fontSize:'3.33vw'}}>Earn commissions from reselling</h1>
+        <h1 className="aboutIntro-secondTitle">Earn commissions from reselling</h1>
         </div>
-            <div className="estimate_revenues_container" style={{height: "43.5vw"}}>
+            {/* <div className="estimate_revenues_container first-container" style={{height: "43.5vw"}}> */}
+            <div className="estimate_revenues_container first-container" >
               <h1>Estimate your revenues</h1>
               <form
                 action=""
@@ -265,7 +266,7 @@ const Home = (props) => {
                     ? {}
                     : { display: estimate ? "block" : "none" }
                 }
-              >
+              > <div>
                 <h2>What shop do you have ?</h2>
                 <div class="select_activity_sector">
                   <label class="labelselectstyle">
@@ -284,6 +285,8 @@ const Home = (props) => {
                     </select>
                   </label>
                 </div>
+                </div>
+                <div>
                 <h2>How much capital will you use ?</h2>
                 <div class="select_activity_sector" style={{display:'flex'}}>
                   <p className='xaf-select'>XAF</p>
@@ -309,6 +312,7 @@ const Home = (props) => {
                           })}
                     </select>
                   </label>
+                </div>
                 </div>
                 <input
                  className='btn-estimate'
@@ -385,17 +389,17 @@ const Home = (props) => {
 				<p className="text-mobile-pay">T+2 Settlement to your Bank</p>
 			</div>
           ) :  <div className="estimate_revenues_container payment_collection" >
+            	<h1 style={{fontSize: '11.250vw !important'}}>Your costs</h1>
 		        <div className="mobile-pument-contain">
 				<div className="mobile-pay-head">Accept <br/>local payments from</div>
 				<div className="mobile-pay-item">
 					<p className="mobile-pay-item-title">mobile <br/> money</p> <p className="mobile-pay-item-text"> 2,50%</p>
 				</div>
 				<div className="mobile-pay-item">
-					<p className="mobile-pay-item-title">flat fee per <br/> transaction</p> <p className="mobile-pay-item-text" style={{justifyContent:"center",height:"30px"}} >+20 XAF</p></div>	
+					<p className="mobile-pay-item-title">flat fee per <br/> transaction</p> <p className="mobile-pay-item-text"  >+20 XAF</p></div>	
 				</div> 
 				<p className="text-mobile-pay"> Instant Settlement in Diool</p>
-				<p className="text-mobile-pay"> T+2 to your bank </p>
-        <p className="text-mobile-pay"> Lower fees with vol </p>
+				<p className="text-mobile-pay text-mobile-pay-second"  > T+2 to your bank </p>
 			  </div>}
         </div>
         <div className="aboutIntro" style={{marginTop:'2vw'}}>

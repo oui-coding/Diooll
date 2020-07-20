@@ -164,9 +164,42 @@
 		width: 1vw;
 		margin-right: 2%;
 	}
+	.sign-btn-pricing{
+		height: 3.29vw;
+		border: 0;
+		font-size: 1.355vw;
+		font-weight: 500;
+		text-align: center;
+		color: #fff;
+		background-color: #d9784c;
+		margin: 1.5vw 0% 4vw 0%;
+		letter-spacing: 1.5px;
+		font-family: 'SFProDisplay-light';
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		border: 1px solid #d9784c; 
+		width: 90%;
+		margin: 0 5%;
+	}
 	
+	.sign-btn-pricing:hover {
+		cursor:pointer;
+		color: #d9784c;
+		background-color: #fff; 
+		
+	}
+	.free-text{
+		text-align: center !important;
+		font-size: 1.25vw !important;
+		font-family: 'SFProDisplay-bold';
+		color: #000 !important;
+
+	margin-bottom: 8% !important;
+	margin-top: 17%;
+	}
 	
-	@media screen and (max-width: 767px) { 
+ @media screen and (max-width: 767px) { 
 		body.layout-full-width-page-index header { height: 90px;}
 		.pricing_:last-of-type {margin-right:0 !important;}
 		.pricing_ {margin-bottom: 2% !important;}
@@ -175,15 +208,32 @@
 		.checkbox_period h2 {font-size: 3.25vw !important;}
 		.container-page.pricing h3 {font-size: 2.5vw !important;}
 		.pricing__container input.sign-btn{
-			margin: 5vw 17.5% 4vw 17.5% !important;
-			width: 65% !important;
+			/* margin: 5vw 17.5% 4vw 17.5% !important; */
+	 		width: 65% !important;
+			height: 10.313vw  !important;
 		}
 
 		.checkIcon{
 			width: 1.9vw;
 		}
+		.sign-btn-pricing{
+			width: 22.5vw;
+    height: 6.313vw;
+	font-size: 3vw;
+	margin-left: 6vw
+		}
+
+		.free-text{
+			text-align: center !important;
+			font-size: 1.25vw !important;
+			font-family: 'SFProDisplay-bold';
+			color: #000 !important;
+	
+		margin-bottom: 10% !important;
+		margin-top: 17%;
+		}
 		
-	}
+	} 
 	
 	@media (min-width: 500px) and (max-width: 767px) { 
 	
@@ -195,17 +245,23 @@
 		.pricing__container label {
 			font-size: 4.5vw !important;	
 		}
+		.pricing__container{
+			height: 23.2vw;
+		}
 		
 		.pricing_ .pricing__container p.sup {
 			font-size: 2.25vw !important;
+			margin-bottom: 4vw !important;
 		}
 		
 		.pricing__container input.sign-btn {
 			font-size: 2vw !important;
-			margin: 5vw 20% 4vw 20% !important;
+			/* margin: 5vw 20% 4vw 20% !important; */
 			width: 60% !important;
 		}
-		
+		.sign-btn{
+			margin:0 !important;
+		}
 		.pricing_01 p {
 			font-size: 1.9vw !important;
 		}
@@ -213,6 +269,15 @@
 	
 	.checkIcon{
 		width: 1.9vw;
+	}
+	.free-text{
+		text-align: center !important;
+		font-size: 2.25vw !important;
+		font-family: 'SFProDisplay-bold';
+		color: #000 !important;
+
+	margin-bottom: 5% !important;
+	margin-top: 15%;
 	}
 }
 	
@@ -231,11 +296,24 @@
 			font-size: 5.5vw !important;	
 		}
 		
-		.pricing_ .pricing__container p.sup {font-size: 3.25vw !important;}
+		.pricing_ .pricing__container p.sup {font-size: 3.25vw !important;margin-bottom: 12%;}
 		.pricing_01 p {font-size: 3.5vw !important;}
 		
 		.checkIcon{
 			width: 3vw;
+		}
+
+		.sign-btn-pricing{
+			width: 42.500vw ;
+			height: 10.313vw;
+			font-size: 4.375vw;
+		}
+		.pricing__container {
+			height: 34.2vw;
+		}
+		.free-text{
+			font-size: 3.25vw !important;
+			margin-bottom: 5% !important;
 		}
 		
 	}

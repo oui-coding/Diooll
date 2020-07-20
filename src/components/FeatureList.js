@@ -82,7 +82,7 @@ const FeatureList = ({component}) => {
 		<p>
 			{elm.text}
 		</p>
-		<p style={{marginTop:'0'}}>
+		<p className="col-idool--lastText" style={{marginTop:'0'}}>
 			{elm.text1}
 		</p>
 	</div>	

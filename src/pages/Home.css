@@ -54,6 +54,12 @@
     height: 4vw;
     font-size: 1.33vw !important;
 }
+
+.aboutIntro-secondTitle{
+  color:#E56B36 !important;
+  margin-bottom:2vw !important;
+  font-size:3.33vw !important;
+}
 /*=========== select style =========*/
 
 .select_activity_sector {
@@ -109,19 +115,21 @@ color: #000000;
 }
 
 .labelselectstyle:after {
+  background: white;
   color: #414042;
   content: "<";
   font: 25px "Consolas", monospace;
   padding: 0;
   pointer-events: none;
   position: absolute;
-  right: 12px;
+  right:10px;
   top: -4px;
   transform: rotate(270deg);
   font-weight: bold;
 }
 .labelselectstyle-second:after{
   top: 12px;
+  background: white;
 }
 
 .estimate_revenues input[type="submit"] {
@@ -296,23 +304,36 @@ tr{
 /* ==================================== END PAGE payment_collection ============================*/
 
 @media screen and (max-width: 1140PX) {
-  .estimate_revenues_container{
+  /* .estimate_revenues_container{
     height:574px ;
 
-  }
+  } */
   .select_activity_sector{
     width: 47px;
+    /* height: 11.590vw; */
+  }
+  .labelselectstyle:after {
+
+    right: 12px;
   }
 
   .labelselectstyle:before{
-    height: 54px;
-    width: 35px;
-    left: 22vw;
+    height: 100%;
+    width: 3.070vw;
+
+  }
+
+  .labelselectstyle-second:before{
+    height: 100%;
+
   }
 
   .labelselectstyle-second:after {
-    top: 17px;
-    left: 22.9vw;
+    top: 7px;
+    left: 22vw;
+    height: 3vw;
+    WIDTH: 3vw;
+    
   }
   .second-select{
   padding-left: 87% !important;
@@ -321,11 +342,11 @@ tr{
   padding-left: 13%;
 }
 .estimation-result{
-  height: 8.6vw;
+  height: 10vw;
 }
-.estimate_revenues_container.payment_collection {
-  height: 481px !important;
-}
+/* .estimate_revenues_container.payment_collection {
+  height: 481px;
+} */
 .estimate_revenues h1{
   margin-bottom: 1.8vw;
 }
@@ -333,22 +354,49 @@ tr{
   margin-bottom: -0.4vw;
 }
 }
-/* @media screen and (max-width: 1000px) {
 
-  .estimation-result{
-    height: 9.6vw;
-  }
-  } */
+.first-container{
+ height: 43.5vw !important;
+}
+
+@media screen and (max-width: 1024PX) {
+ .payment_collection{
+height: 56.380vw !important;
+ }
+}
+
+@media screen and (max-width: 990px) {
+  .labelselectstyle-second:after {
+    left: 21.7vw;
+    top: 4px;
+}
+}
+
+@media screen and (max-width:862px) {
+  .labelselectstyle-second:after {
+    top: 15%;
+   
+}
+}
 @media screen and (max-width: 767px) {
+  .container-page{
+  display: flex;
+  flex-direction: column;
+  }
+
+  .first-container{
+   height: 114.063vw !important;
+  }
+
   .result_form {
     display: none;
   }
   .estimate_revenues {
-    padding: 31vw 0 2vw !important;
+    padding: 6vw 0 2vw !important;
   }
 
   .estimate_revenues_container{
-  height: 119vw;
+  height: 119vw !important;
   border-radius: 50px;
   }
   .estimate_revenues form,
@@ -362,30 +410,51 @@ tr{
     letter-spacing: 1.25px !important;
     padding-top: 4vw !important;
     margin-bottom: 4vw;
+    line-height: 8.563vw;
   }
 
   .estimate_revenues h2 {
     font-size: 4vw !important;
     margin-bottom: 0vw !important;
     text-align: center !important;
-    padding-top: 7vw !important;
+    /* padding-top: 7vw !important; */
   }
 
+  .aboutIntro-secondTitle{
+    font-size: 9.375vw !important;
+  }
+
+  .estimation-result{
+    height: 22vw;
+  }
   /* ======= select style ===========*/
 
   .select_activity_sector {
     width: 90% !important;
     margin: 2vw 5% !important;
+    position: relative;
+    height: 11.590vw;
   }
 
+  .labelselectstyle:before{
+    height: 11.590vw;
+    width: 4.3vw ;
+  }
+  .xaf-select{
+    top: 16%;
+    LEFT: 15%;
+    font-size: 3.429vw;
+  }
+  
   .select_activity_sector select {
     text-align: center !important;
     text-align-last: center !important;
     padding-left: 0 !important;
-    width: 49vw;
-    margin-left: 14vw;
-    font-size: 2.7vw;
-    margin-left: 1vw;
+    width: 62vw;
+    margin-left: 7vw;
+    font-size: 4vw;
+    /* margin-top: 3vw; */
+    margin-bottom: 3vw;
     padding-left: 33px;
     
   }
@@ -396,7 +465,7 @@ tr{
 
   .estimate_revenues input[type="submit"] {
     font-size: 4vw !important;
-    margin: 5vw auto 15vw auto !important;
+    margin: 10vw auto 15vw auto !important;
     padding: 2.5vw 10% !important;
   }
 
@@ -408,56 +477,97 @@ tr{
     justify-content: center;
     font-family: 'Montserrat';
     font-weight:lighter;
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding-top: 5.313vw;
+    padding-bottom: 5.313vw ;
     color: white; 
   font-weight: bold; 
-  height: 10vw;
-  font-size: 4vw;
+  height: 5vw;
+  font-size: 4.375vw;
   margin: auto;
+  margin-bottom: 2.813vw;
   }
   .mobile-pument-contain{
     PADDING: 13% 5% 0;
-    margin-bottom:10vw
+    margin-bottom:10vw;
+    padding-top: 0;
   }
   .mobile-pay-item{
     display: flex;
     justify-content: space-between;
-    height: 17vw;
-    margin-bottom: 4vw;
+ 
+    margin-bottom: 3.750vw;
   }
 .mobile-pay-item-title{
-    width: 32vw;
-    padding: 10px;
+  box-sizing: border-box;
+    width:33.750vw;
     display: flex;
     align-items: center;
     background-color: #FAFBFC;
-    height: 10vw;
-    font-size: 4vw;
+    height: 15.625vw;
+    font-size: 4.375vw;
     font-weight: 500;
+    margin:0;
+    padding-left: 2.813vw;
+    MARGIN-RIGHT: 3.125vw;
 }
   .mobile-pay-item-text {
-    width:30vw;
-    padding: 10px;
+    width:36.563vw;
     padding-left: 17px;
     background-color: #fff;
-    height: 10vw;
+    height: 15.625vw;
     display: flex;
    align-items: center;
    justify-content:center;
-   font-size: 4vw;
+   font-size:4.688vw;
    font-weight: bold;
+   margin:0;
   }  
   .text-mobile-pay{
     font-size: 4vw;
 
   }
+  .text-mobile-pay-second{
+     margin-top:7.813vw ;
+  }
+  .btn-estimate{
+    width: 44vw !important;
+    padding: 2px !important;
+    margin: 0px;
+    height: 12vw;
+  }
+  .labelselectstyle-second:after{
+    top: 18%;
+    left: 97%;
+    WIDTH: 10%;
+  }
+  .labelselectstyle-second::before{
+    height: 100%;
+    top: 0;
+    left: 100%;
+  }
+  .third-text-mobile{
+display: none;
+  }
   
 }
+
 
 @media screen and (max-width: 455px) {
   .estimate_revenues_container{
     height: 130vw;
     border-radius: 50px;
     }
+    .labelselectstyle-second:after {
+      top: 19%;
+      left: 94%;
+      WIDTH: 10%;
+}
+}
+@media screen and (max-width: 350px) {
+
+    .labelselectstyle-second:after {
+      top: 19%;
+      left: 91%;
+      WIDTH: 10%;
+}
 }

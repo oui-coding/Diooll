@@ -31,12 +31,12 @@ const Pricing = () => {
           <div className="pricing_ first_type">
             <div className="pricing__container">
               <label>Starter</label>
-              <p className="sup" style={{marginBottom: '10%',marginTop: '17%'}}>
-                <span style={{color:'#1A1F3A'}}>FREE</span>
+              <p className="free-text">
+                <span className="free-text" Style={{color:'#1A1F3A'}}>FREE</span>
                 <br />
                 &nbsp;
               </p>
-              <input className="sign-btn" type="button" value="Sign up" style={{fontWeight:'500',letterSpacing: '0'}} />
+              <button className="sign-btn-pricing" style={{fontWeight:'500',letterSpacing: '0'}} >Sign up</button>
             </div>
             <div className="pricing_01">
               <p>
@@ -66,7 +66,7 @@ const Pricing = () => {
                 <br />
                 annually
               </p>}
-              <input className="sign-btn" type="button" value="Sign up"  style={{fontWeight:'500',letterSpacing: '0'}}/>
+              <button className="sign-btn-pricing" style={{fontWeight:'500',letterSpacing: '0'}} >Sign up</button>
             </div>
             <div className="pricing_01">
               <p>
@@ -107,7 +107,7 @@ const Pricing = () => {
                 <br />
                 annually
               </p> }
-              <input className="sign-btn" type="button" value="Sign up" style={{fontWeight:'500',letterSpacing: '0'}} />
+              <button className="sign-btn-pricing" style={{fontWeight:'500',letterSpacing: '0'}} >Sign up</button>
             </div>
             <div className="pricing_01">
               <p>
@@ -152,7 +152,7 @@ const Pricing = () => {
                 <br />
                 annually
               </p> }
-              <input className="sign-btn" type="button" value="Sign up" style={{fontWeight:'500',letterSpacing: '0'}} />
+              <button className="sign-btn-pricing" style={{fontWeight:'500',letterSpacing: '0'}} >Sign up</button>
             </div>
             <div className="pricing_01">
               <p>
