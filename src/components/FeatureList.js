@@ -1,12 +1,18 @@
 import React from 'react';
 import './FeatureList.css';
+import { useTranslation } from "react-i18next";
+
+
+const FeatureList = ({component}) => {
+
+	const {t} = useTranslation()
 
 const features = [{
 	logo:'images/bcPartnerperCent.svg',
-	title:'Instant Commissions on',
-	title1:'prepaid products distribution',
-	text:'Receive commissions instantly',
-	text1:'and grow your capital at each transaction',
+	title:`${t('Features.group_1.title_1')}`,
+	title1:`${t('Features.group_1.title_2')}`,
+	text: `${t('Features.group_1.text_1')}`,
+	text1: `${t('Features.group_1.text_2')}`,
 },
 {
 	logo:'images/hand.svg',
@@ -67,11 +73,11 @@ const featuresPartner = [{
 	text1:'using targeted props and coupons',
 }]
 
-const FeatureList = ({component}) => {
+
 	let featchTab = component==="partner" ? featuresPartner :  component==="distributor" ? featuresDist : features
 	return (
 	<div class="block_Features">
-		<h1 style={{marginTop: component!=="home" ? '6.532vw' : '2.432VW' }}>Features</h1>
+		<h1 style={{marginTop: component!=="home" ? '6.532vw' : '2.432VW' }}>{t('Home.features')}</h1>
 		<div className="item-featureCont">
 	{featchTab.map((elm,i)=>{
 		let logo = elm.logo.split('/')

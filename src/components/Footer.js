@@ -2,28 +2,22 @@ import React, { useState, useEffect,useContext } from "react";
 import { Link } from "react-router-dom";
 import { SharedDataContext } from '../useContext';
 import "./Footer.css";
-
+import i18next from "i18next";
+import { useTranslation } from "react-i18next";
 const Footer = (props) => {
-  const {t ,changeMyLanguage} = props
-  const [valueLang, setValueLang] = useState('en');
 
-  //  const { sharedDataContext, useSharedDataContext } = useContext(SharedDataContext);
+  const { t  } = useTranslation();
+  const [langage,setLang] = useState('')
 
-  // const [sharedDataContext, useSharedDataContext] = useState({
-  //   lang: 'fr',
-  // });
+  // const { sharedDataContext,useSharedDataContext} = useState({lang:'en'});
 
-  function handlechangeLang(e){
-    setValueLang(e.target.value)
-    changeMyLanguage(e.target.value)
-	// // setValueLang(e.target.value)
-  // // useSharedDataContext({
-  // //   ...sharedDataContext,
-  // //   lang: e.target.value,
-  // // })
-   };
+  // const { sharedDataContext } = useContext(SharedDataContext);
 
-  console.log('valueLangFooter',valueLang)
+  function handleClick(lang) {
+    setLang(lang)
+      i18next.changeLanguage(lang)
+    
+  }
 
   return (
     <footer>
@@ -107,20 +101,25 @@ const Footer = (props) => {
           </ul>
           <div style={{ display: "flex", alignItems: "center" }}>
             <span className="switchlang-span">Switch language to:</span>
+
             {/* <label class="labelselectstyle"> */}
             <select
               id="what_shop"
               className="switch-lang-Select"
-              value={valueLang}
-              onChange={(e)=>handlechangeLang(e)}
+              value={langage}
+              onChange={(e)=>handleClick(e.target.value)}
             >
+              
+              
               <option className="switch-lang-option" value="en">
                 Anglais
               </option>
+              
               <option className="switch-lang-option" value="fr">
                 Français
               </option>
             </select>
+            
           </div>
         </div>
         {/* <img className="messenger-icon"  src={require("../images/static/messager.png")} alt="messenger-icon"/> */}

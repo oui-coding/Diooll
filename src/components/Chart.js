@@ -4,6 +4,7 @@ import DoughnutChart from './DoughnutChart'
 import Legend from './Legend'
 import './Chart.css'
 
+import { useTranslation } from "react-i18next";
 
 function insertDecimal(num) {
   let numString=num.toString().length
@@ -13,8 +14,17 @@ function insertDecimal(num) {
 
 
 function Chart({data}) {
+  
+  const {t} = useTranslation()
 
-const [state, setState] = useState({dataChart:[{date:  "Prepaid eRecharges : ", value:'21.175',opac:"#CBE2F7"},{date:"Bills Payment Collection : ", value:'8.950', opac:"#8AB0DD"}, {date: "Consumer Goods Reselling : ", value: '18.760', opac:"#3C67A9"},{date: "Cash Deposits & Withdrawals : ", value:'32.915',  opac:"#191745"}],
+const [state, setState] = useState({dataChart:
+  [{date:  `${t('Home.secondCardFeature.first_par')} :  `,
+   value:'21.175',opac:"#CBE2F7"},
+   {date:`${t('Home.secondCardFeature.second_par')} :  `,
+    value:'8.950', opac:"#8AB0DD"},
+     {date: `${t('Home.secondCardFeature.third_par')} :  `,
+      value: '18.760', opac:"#3C67A9"},
+      {date: `${t('Home.secondCardFeature.fourth_par')} : `, value:'32.915',  opac:"#191745"}],
 revenue:'81.800',
 transaction:400,
 actifDay:18
@@ -41,7 +51,12 @@ actifDay:18
 // const [data, setData] = useState([{shop : '0', capital:50000, actifDay:15, transaction: 207, revenue:16350, recharge:16350, retrait:0, paiment:0,services:0 }])
  useEffect(()=>{
    if(data!==undefined){
-  setState({dataChart:[{date: "Prepaid eRecharges : ", value: data.recharge, opac:"#CBE2F7"},{date:"Bills Payment Collection : ", value:data.paiment, opac:"#8AB0DD"}, {date: "Consumer Goods Reselling : ", value: data.services, opac:"#3C67A9"},{date:  "Cash Deposits & Withdrawals : ", value:data.retrait, opac:"#191745"}],
+  setState({dataChart:[
+    {date: `${t('Home.secondCardFeature.first_par')} :  `, value: data.recharge, opac:"#CBE2F7"}
+  ,{date:`${t('Home.secondCardFeature.second_par')} :  `, value:data.paiment, opac:"#8AB0DD"}
+  , {date: `${t('Home.secondCardFeature.third_par')} :  `, value: data.services, opac:"#3C67A9"}
+  ,{date:  `${t('Home.secondCardFeature.fourth_par')} :  `, value:data.retrait, opac:"#191745"}
+],
   revenue:data.revenue,
   transaction:data.transaction,
   actifDay:data.actifDay
@@ -54,9 +69,9 @@ actifDay:18
   return (
     <div className="BlockChat-contain">
       <div className="estimation-result">
-  <p className="estimation-textCont"><span className="small-text-white">You may earn : </span> <span className="XAF-text"> XAF </span> <span className="number-earn">{state.revenue}</span></p>
-       <p className="estimation-textCont secondtext-estim firstestim"><span className="small-text-white">by doing : </span><span className="small-text-white"> {state.transaction} transactions per month</span></p>
-       <p className="estimation-textCont secondtext-estim" style={{marginTop: '0vw'}}><span className="small-text-white">and working :</span><span className="small-text-white"> {state.actifDay} days per month</span></p>
+  <p className="estimation-textCont"><span className="small-text-white">{t('Home.homeCard.first_par')} : </span> <span className="XAF-text"> XAF </span> <span className="number-earn">{state.revenue}</span></p>
+       <p className="estimation-textCont secondtext-estim firstestim"><span className="small-text-white">{t('Home.homeCard.second_par')} : </span><span className="small-text-white"> {state.transaction} {t('Home.homeCard.third_par')}</span></p>
+       <p className="estimation-textCont secondtext-estim" style={{marginTop: '0vw'}}><span className="small-text-white">{t('Home.homeCard.fifth_par')} :</span><span className="small-text-white"> {state.actifDay} {t('Home.homeCard.fourth_par')}</span></p>
       </div>
       <div className="chart-container">
         

@@ -6,7 +6,60 @@
     "API": "API",
     "distributor": "For Distributors"
   },
-  "Why": {
-    "1": "For watching this video"
+  "introduction": {
+      "1": "All your shop transactions",
+      "2" : "with one app",
+      "3" : "Recharhes & Bills, Cash Deposits & Withdrawals",
+      "4" : "Consumer Goods Dsitribution",
+      "5" : "Collect payments from customers",
+      "6" : "Pay back suppliers in seconds",
+      "7" : "Earn revenue",
+      "button" : "Try it for free"
+  },
+  "Home" : {
+    "estimateTitle" : "Earn commissions from reselling",
+    "estimateTitle_2" : "Estimate your revenues",
+    "option_0" : "Please select an option",
+    "question_1" : "What shop do you have ?",
+    "option_1" : "Street Kiosk",
+    "option_2" : "Hotel, Bar, Restaurant",
+    "option_3" : "Proximity, Grocery Store",
+    "option_4" : "Money Transfer Outlet",
+    "question_2" : "How much capital will you use ?",
+    "homeCard" : {
+      "first_par" : "you may earn",
+      "second_par" : "by doing",
+      "third_par" : "transactions per month",
+      "fourth_par" : "days per month",
+      "fifth_par" : "and working"
+    },
+    "secondCardFeature" : {
+      "first_par" : "Prepaid eRecharges",
+      "second_par" : "Bills Payment Collection",
+      "third_par" : "Consumer Goods Reselling",
+      "fourth_par" : "Cash Deposits & Withdrawals"
+    },
+    "estimateButton" : "Estimate",
+    "accept_par" : "Accept merchant payments",
+    "estmate_coats" : "Estimate your costs",
+    "monthly" : "Monthly",
+    "transaction" : "Transactions",
+    "month" : "month",
+    "local_payement" : "Local payments",
+    "mobile_money" : "in mobile money",
+    "cost_per_transaction" : "Cost per transaction",
+    "contact" : "Contact Us",
+    "instant" : "Instant Settlement in your Diool Account",
+    "Settlement" : "T+2 Settlement to your Bank",
+    "combine_par" : "Combine all to make more money",
+    "features" : "Features"
+  },
+  "Features" : {
+    "group_1":{
+      "title_1" : "Instant Commissions on",
+      "title_2" : "prepaid products distribution",
+      "text_1" : "Receive commissions instantly",
+      "text_2" : "and grow your capital at each transaction"
+    }
   }
 }

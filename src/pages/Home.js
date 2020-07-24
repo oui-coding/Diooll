@@ -5,9 +5,12 @@ import FeatureList from "../components/FeatureList";
 import Footer from "../components/Footer";
 import Chart from "../components/Chart";
 import "./Home.css";
+import { useTranslation } from "react-i18next";
 
 const Home = (props) => {
-  const {t,changeMyLanguage} = props
+
+  const {t} = useTranslation()
+
   const InitialData = [
     {
       shop: "0",
@@ -179,12 +182,12 @@ const Home = (props) => {
   const [estimate, setEstimate] = useState(true);
   const [value, setValue] = useState("Street Kiosk");
   const [capitals, setCapitals] = useState([
-    { value: "0", dropvalues: ['50.000', '150.000', '400.000', '1.000.000', '2.000.000'] },
+    { value: "0", dropvalues: ['150.000', '400.000', '1.000.000', '2.000.000'] },
   ]);
   const [capitalsvalue, setCapitalsvalue] = useState(400000);
   const [data, setData] = useState([]);
   const capitalsValues = [
-    { value: "0", dropvalues: ['50.000', '150.000', '400.000', '1.000.000', '2.000.000'] },
+    { value: "0", dropvalues: ['150.000', '400.000', '1.000.000', '2.000.000'] },
     { value: "1", dropvalues: ['150.000', '400.000', '1.000.000'] },
     { value: "2", dropvalues: ['150.000', '400.0000', '1.000.000'] },
     { value: "3", dropvalues: ['500.000', '1.250.000', '2.500.000', '3.000.000'] },
@@ -235,8 +238,7 @@ const Home = (props) => {
 
   const estimateToChart = (e) => {
     setData([]);
-    // console.log("capitalsValues", capitalsvalue);
-    // console.log("value", value);
+    
     e.preventDefault();
     setData(
       InitialData.filter(
@@ -245,20 +247,21 @@ const Home = (props) => {
     );
     setEstimate(false);
   };
-// console.log(size.width)
+ 
   return (
     <div className="Home">
-      <Header t={t} />
+      <Header />
       <div class="container-page">
         <Introduction />
+        
         {/* <h3>{t('Thanks.1')}</h3>  <h3>{t('Why.1')}</h3>  */}
         <div class="estimate_revenues">
         <div className="aboutIntro" style={{marginBottom:'2vw',marginTop:'1.5vw'}}>
-        <h1 className="aboutIntro-secondTitle">Earn commissions from reselling</h1>
+        <h1 className="aboutIntro-secondTitle">{t('Home.estimateTitle')}</h1>
         </div>
             {/* <div className="estimate_revenues_container first-container" style={{height: "43.5vw"}}> */}
             <div className="estimate_revenues_container first-container" >
-              <h1>Estimate your revenues</h1>
+              <h1>{t('Home.estimateTitle_2')}</h1>
               <form
                 action=""
                 style={
@@ -267,7 +270,7 @@ const Home = (props) => {
                     : { display: estimate ? "block" : "none" }
                 }
               > <div>
-                <h2>What shop do you have ?</h2>
+                <h2>{t('Home.question_1')}</h2>
                 <div class="select_activity_sector">
                   <label class="labelselectstyle">
                     <select
@@ -276,18 +279,18 @@ const Home = (props) => {
                       onChange={handlechangeShop}
                     >
                       <option disabled={true} defaultValue>
-                        Please select an option
+                       {t('Home.option_0')}
                       </option>
-                      <option value="0">Street Kiosk</option>
-                      <option value="1">Hotel, Bar, Restaurant</option>
-                      <option value="2">Proximity, Grocery Store</option>
-                      <option value="3">Money Transfer Outlet</option>
+                      <option value="0">{t('Home.option_1')}</option>
+                      <option value="1">{t('Home.option_2')}</option>
+                      <option value="2">{t('Home.option_3')}</option>
+                      <option value="3">{t('Home.option_4')}</option>
                     </select>
                   </label>
                 </div>
                 </div>
                 <div>
-                <h2>How much capital will you use ?</h2>
+                <h2>{t('Home.question_2')}</h2>
                 <div class="select_activity_sector" style={{display:'flex'}}>
                   <p className='xaf-select'>XAF</p>
                 {/* <span>XAF </span> */}
@@ -317,7 +320,7 @@ const Home = (props) => {
                 <input
                  className='btn-estimate'
                   type="submit"
-                  value="Estimate"
+                  value={t('Home.estimateButton')}
 				  onClick={estimateToChart}
                 />
               </form>
@@ -353,40 +356,41 @@ const Home = (props) => {
               </div>
             </div>
             <div className="aboutIntro" style={{marginTop:'4vw'}}>
-                <h1 className="aboutIntro-secondTitle" style={{color:'#E56B36', marginBottom:'2.5vw',paddingTop: '0'}}>Accept merchant payments</h1>
+                  <h1 className="aboutIntro-secondTitle" style={{color:'#E56B36', marginBottom:'2.5vw',paddingTop: '0'}}>{t('Home.accept_par')}</h1>
                 </div>
            { size.width > 767 ? (
             <div className="estimate_revenues_container payment_collection"  style={{height:'100% !important'}}>
-				<h1 style={{marginBottom: '4.1vw'}}>Estimate your costs</h1>
+				<h1 style={{marginBottom: '4.1vw'}}>{t('Home.estmate_coats')}</h1>
 			<table>
 				<thead>
 					<tr>
-						<th><label>Monthly<br/>Transactions</label></th>
-						<th><label><span>500’000</span><br/><span className="table-headtab-text2">xaf / month</span></label></th>
-						<th><label><span>2’500’000</span><br/><span className="table-headtab-text2">xaf / month</span></label></th>
-						<th><label><span>5’000’000</span><br/><span className="table-headtab-text2">xaf / month</span></label></th>
-						<th><label><span>10’000’000</span><br/><span className="table-headtab-text2">xaf / month</span></label></th>
-						<th><label><span>>50’000’000</span><br/><span className="table-headtab-text2">xaf / month</span></label></th>
+           <th><label>{t('Home.monthly')}<br/>{t('Home.transaction')}</label></th>
+           <th><label><span>500’000</span><br/><span className="table-headtab-text2">xaf / {t('Home.month')}</span></label></th>
+						<th><label><span>2’500’000</span><br/><span className="table-headtab-text2">xaf / {t('Home.month')}</span></label></th>
+						<th><label><span>5’000’000</span><br/><span className="table-headtab-text2">xaf / {t('Home.month')}</span></label></th>
+						<th><label><span>10’000’000</span><br/><span className="table-headtab-text2">xaf / {t('Home.month')}</span></label></th>
+						<th><label><span>>50’000’000</span><br/><span className="table-headtab-text2">xaf / {t('Home.month')}</span></label></th>
 					</tr>
 				</thead>  
 				<tbody>
 					<tr>  
-						<td style={{paddingRight: '0%'}}><label class="loyal" >Local payments<br/>in mobile money</label></td>
+						<td style={{paddingRight: '0%'}}><label class="loyal" >{t('Home.local_payement')}<br/>{t('Home.mobile_money')}</label>
+            </td>
 						<td><label class="padding_td">2.50%</label></td>
 						<td><label class="padding_td">2,25%</label></td>
 						<td><label class="padding_td">2,00%</label></td>
 						<td><label class="padding_td">1.70%</label></td>
-						<td class="last_td" rowspan="2" ><label  class="padding_td"><a href="#" className="contact-us-text">Contact Us</a></label></td>
+           <td class="last_td" rowspan="2" ><label  class="padding_td"><a href="#" className="contact-us-text">{t('Home.contact')}</a></label></td>
 					
 					</tr>
 					<tr class="first_top">
-						<td style={{paddingRight: '0%'}}><label class="loyal" style={{ height: '57px'}}>Cost per transaction</label></td>
+						<td style={{paddingRight: '0%'}}><label class="loyal" style={{ height: '57px'}}>{t('Home.cost_per_transaction')}</label></td>
 						<td colspan="4"><label>20 XAF</label></td>
 					</tr>
 				</tbody>
 			</table>
-			<p className="text-mobile-pay"> Instant Settlement in your Diool Account</p>
-				<p className="text-mobile-pay">T+2 Settlement to your Bank</p>
+           <p className="text-mobile-pay">{t('Home.instant')}</p>
+				<p className="text-mobile-pay">{t('Home.Settlement')}</p>
 			</div>
           ) :  <div className="estimate_revenues_container payment_collection" >
             	<h1 style={{fontSize: '11.250vw !important'}}>Your costs</h1>
@@ -403,11 +407,11 @@ const Home = (props) => {
 			  </div>}
         </div>
         <div className="aboutIntro" style={{marginTop:'2vw'}}>
-                <h1 className="aboutIntro-secondTitle" style={{color:'#E56B36',margin:'auto',fontSize:'3.5vw'}}>Combine all to make more money</h1>
+           <h1 className="aboutIntro-secondTitle" style={{color:'#E56B36',margin:'auto',fontSize:'3.5vw'}}>{t('Home.combine_par')}</h1>
                 </div>
         <FeatureList component="home"/>
       </div>
-      <Footer t={t} changeMyLanguage={changeMyLanguage} />
+      <Footer   />
     </div>
   );
 };

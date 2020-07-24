@@ -1,28 +1,32 @@
 import React from "react";
 import "./Introduction.css";
+import { useTranslation } from "react-i18next";
 
-const Introduction = () => (
-  <div className="block_all_your_shop">
+const Introduction = () => {
+  const { t  } = useTranslation();
+
+  return (
+    <div className="block_all_your_shop">
     <div className="block_all_your_shop_text">
       <h1>
-        All your shop transactions
+       {t("introduction.1")}
         <br />
-        with one app
+        {t("introduction.2")}
       </h1>
       <p>
-        Recharhes & Bills, Cash Deposits & Withdrawals
+      {t("introduction.3")}
         <br />
-        Consumer Goods Dsitribution
+        {t("introduction.4")}
       </p>
       <p>
-        Collect payments from customers
+      {t("introduction.5")}
         <br />
-        Pay back suppliers in seconds
+        {t("introduction.6")}
         <br />
-        Earn revenue
+        {t("introduction.7")}
       </p>
 
-      <input className="sign-btn" type="button" value="Try it for free" style={{marginTop:'0.5vw'}}/>
+      <input className="sign-btn" type="button" value={t("introduction.button")} style={{marginTop:'0.5vw'}}/>
       <div className="btn_app_google">
         <div className="bouton-aligne">
          <a href="https://play.google.com/store/apps/details?id=com.diool"> <input
@@ -76,6 +80,8 @@ const Introduction = () => (
       </video>
     </div>
   </div>
-);
+  )
+  
+      }
 
 export default Introduction;

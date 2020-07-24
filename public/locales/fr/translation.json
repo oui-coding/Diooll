@@ -6,7 +6,61 @@
     "API":"API",
     "distributor":"Distributeurs"
   },
-  "Why": {
-      "1": "Pour voir cette vidéo"
+  "introduction": {
+      "1": "Toutes vos transactions avec une seule app",
+      "2" : "",
+      "3" : "Recharges & Factures, Dépôts & Retraits d'argent",
+      "4" : "Revente de Produits de Consommation",
+      "5" : "Collectez les paiements de clients",
+      "6" : "Payez vos fournisseurs",
+      "7" : "Gangnez de l'argent",
+      "button" : "Essayez Gratuit"
+  }, 
+  "Home" : {
+    "estimateTitle" : "Gagnez des commissions en revendant",
+    "estimateTitle_2" : "Estimez vos gains",
+    "question_1" : "Quelle boutique avez-vous ?",
+    "option_0" : "veuillez sélectionner une option",
+    "option_1" : "Kiosque de Rue",
+    "option_2" : "Hotel, Bar, Restaurant",
+    "option_3" : "Epicerie, Commerce Général",
+    "option_4" : "Bureau de Transferts d'Argent",
+    "question_2" : "Quel capital mettrez-vous ?",
+    "homeCard" : {
+      "first_par" : "vous gagneriez",
+      "second_par" : "avec",
+      "third_par" : "transactions par mois",
+      "fourth_par" : "jours par mois",
+      "fifth_par" : "sur une période de "
+    },
+    "secondCardFeature" : {
+      "first_par" : "Recharge prepayées",
+      "second_par" : "paiement de facture",
+      "third_par" : "produits de consommation",
+      "fourth_par" : "Dépôts & Retraits d'argent"
+    },
+    "estimateButton" : "Estimez",
+    "accept_par" : "Acceptez les paiements marchands",
+    "estmate_coats" : "Estimez vos coûts",
+    "monthly" : "Transaction",
+    "transaction" : "Mensuelles",
+    "month" : "mois",
+    "local_payement" : "payements nationaux ",
+    "mobile_money" : "en mobile money",
+    "cost_per_transaction" : "Coût par transaction",
+    "contact" : "Contactez-Nous",
+    "instant" : "Mise en compte instantanée dans votre compte Diool",
+    "Settlement" : "Mise en compte en T+2 à votre banque",
+    "combine_par" : "Combinez le tout pour gagner plus d’argent",
+    "features" : "Fonctionnalités"
+  },
+  "Features" : {
+    "group_1":{
+      "title_1" : "Commissions Instantanées",
+      "title_2" : "sur distribution de produits",
+      "text_1" : "Recevez vos gains instantanément",
+      "text_2" : "et fructifiez votre capital par transaction"
+      
+    }
   }
 }
