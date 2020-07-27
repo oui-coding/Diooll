@@ -139,8 +139,8 @@ line-height: 1.5vw;
 }
 
 .block_Features img {
-	width:5.906vw !important;
-	height:5.906vw !important;
+	/* width:5.906vw !important;
+	height:5.906vw !important; */
 	text-align: center !important;
 	margin-left: 50% !important;
 	margin-top: 10vw !important;

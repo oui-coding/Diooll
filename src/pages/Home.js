@@ -377,8 +377,8 @@ const Home = (props) => {
 						<td style={{paddingRight: '0%'}}><label class="loyal" >{t('Home.local_payement')}<br/>{t('Home.mobile_money')}</label>
             </td>
 						<td><label class="padding_td">2.50%</label></td>
-						<td><label class="padding_td">2,25%</label></td>
-						<td><label class="padding_td">2,00%</label></td>
+						<td><label class="padding_td">2.25%</label></td>
+						<td><label class="padding_td">2.00%</label></td>
 						<td><label class="padding_td">1.70%</label></td>
            <td class="last_td" rowspan="2" ><label  class="padding_td"><a href="#" className="contact-us-text">{t('Home.contact')}</a></label></td>
 					

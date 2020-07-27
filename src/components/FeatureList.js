@@ -82,17 +82,19 @@ const featuresPartner = [{
 }]
 
 
-	let featchTab = component==="partner" ? featuresPartner :  component==="distributor" ? featuresDist : features
+	let featchTab = component === "partner" ? featuresPartner :  component ==="distributor" ? featuresDist : features
 	return (
 	<div class="block_Features">
 		<h1 style={{marginTop: component!=="home" ? '6.532vw' : '2.432VW' }}>{t('Home.features')}</h1>
 		<div className="item-featureCont">
-	{featchTab.map((elm,i)=>{
+	{
+	featchTab.map((elm,i)=>{
 		let logo = elm.logo.split('/')
-		return <div className="col-idool-3" >
-		{logo.length>0 && logo[0]==="images" ? <img src={require('../'+elm.logo)} alt="payement methods" 	/> : <span>{elm.logo}</span> }
-	<h2 style={{paddingTop:i<2 ? '4%':'0'}}>{elm.title}</h2>
-	<h2 style={{paddingTop:'0px'}}>{elm.title1}</h2>
+		return<div className="col-idool-3">
+			
+		{logo.length > 0 && logo[0] === "images" ? <img src={require('../'+elm.logo)} alt="payement methods"/> : <span>{elm.logo}</span> }
+		<h2 style={{paddingTop:i < 2 ? "4.5%" : "0"}}>{elm.title}</h2>
+		<h2 style={{paddingTop:'0px'}}>{elm.title1}</h2>
 		<p>
 			{elm.text}
 		</p>
