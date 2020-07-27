@@ -3,25 +3,28 @@ import Header from "../components/Header";
 import FeatureList from "../components/FeatureList";
 import Footer from "../components/Footer";
 import "./Distributor.css";
+import { useTranslation } from "react-i18next";
 
 const BecomPartner = () => {
+  const { t } = useTranslation(); 
+
   return (
     <div className="Home">
       <Header />
 	  <div class="container-page distributor">
 			<div class="block_all_your_shop">
 				<div class="block_all_your_shop_text text-intro-contain" style={{marginBottom: '19%'}}>
-					<h1>Track you channels<br />and market share</h1>
+					<h1>{t('becomPartner.group_1.text_1')}<br />{t('becomPartner.group_1.text_2')}</h1>
 					<p>	
-						Reseller Network Management, Promos and Coupons
-						<br />Financial Product
+          {t('becomPartner.group_1.text_3')}
+						<br /> {t('becomPartner.group_1.text_4')} 
 					</p>
 					<p>
-					Add and manage products for your channels<br/>
-					Pay commissions and sales discounts<br />
-					Analyze distribution activity
+          {t('becomPartner.group_2.text_1')} <br/>
+					{t('becomPartner.group_2.text_2')}<br />
+					{t('becomPartner.group_2.text_3')}
 					</p>
-					<input class="sign-btn" type="button" value="Learn more" />
+					<input class="sign-btn" type="button" value={`${t("Features.learnMoreButton")}`} />
 					
 				</div>
 				

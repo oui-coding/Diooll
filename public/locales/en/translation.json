@@ -4,7 +4,8 @@
     "about": "About",
     "pricing": "Pricing",
     "API": "API",
-    "distributor": "For Distributors"
+    "distributor": "For Distributors",
+    "signIn" : "Sign In"
   },
   "introduction": {
       "1": "All your shop transactions",
@@ -46,20 +47,139 @@
     "transaction" : "Transactions",
     "month" : "month",
     "local_payement" : "Local payments",
+    "mobile" : "mobile ",
+    "Money" : "money",
+    "accept_mobile_text" : "Accept",
     "mobile_money" : "in mobile money",
     "cost_per_transaction" : "Cost per transaction",
     "contact" : "Contact Us",
     "instant" : "Instant Settlement in your Diool Account",
     "Settlement" : "T+2 Settlement to your Bank",
     "combine_par" : "Combine all to make more money",
-    "features" : "Features"
+    "features" : "Features",
+    "flat_fee_per" : ""
   },
+
   "Features" : {
+    "group_0" : {
+        "title_1" : "Degressive Pricing",
+        "title_2" : "based on transaction volume",
+        "text_1" : "Reduce your transaction fees",
+        "text_2" : "when increasing your payments volume"
+    },
     "group_1":{
       "title_1" : "Instant Commissions on",
       "title_2" : "prepaid products distribution",
       "text_1" : "Receive commissions instantly",
       "text_2" : "and grow your capital at each transaction"
+    },
+    "group_2":{
+      "title_1" : "Top Ups and Withdrawals",
+      "title_2" : "with many payement methods",
+      "text_1" : "Add or withdraw funds easly",
+      "text_2" : "using your preferred method of payment"
+    },
+    "group_3":{
+      "title_1" : "Quick Payments",
+      "title_2" : "to suppliers and partners",
+      "text_1" : "Transfer money to your suppliers",
+      "text_2" : "and partners directly from your balance"
+
+    },
+    
+    "tryItButton" : "Try it",
+    "learnMoreButton" : "Learn More"
+  },
+  "Footer" : {
+    "home" : "Home",
+    "blog" : "Blog",
+    "about" : "About",
+    "search" : "Search",
+    "pricing" : "Pricing",
+    "forDistributor" : "For Distributor",
+    "becomePartner" : "Become a partner",
+    "privacy" : "Privacy",
+    "community" : "Community",
+    "newsletter" : "Get our newsletter",
+    "emailPlaceholder" : "Enter your email",
+    "switchLanguage" : "Switch language to",
+    "copyRight" : "All rights reserved. Diool 2020",
+    "subscribe" : "Subscribe"
+  },
+  "About" : {
+
+    "group_1":{
+
+      "firstTitle" : "Our Vision",
+      "secondTitle" : "simpler retail financial services",
+      "secondTitle1" : "using tech, data and financial products",
+      "text1" : "Much of our access to financial services is done through technologies adapting slowly to our daily lives",
+      "text2" : "This is especially true in Africa where most products are designed far from their users, missing the cultural link",
+      "text3" : "Our goal is to bring to life ways of accessing services that reflect more our habits and our culture"
+    },
+    "group_2": {
+
+      "firstTitle" : "Our mission",
+      "secondTitle" : "help merchants accept payments",
+      "secondTitle1" : "from customers and pay suppliers easily",
+      "text1" : "Merchants have always represented the cornerstone of our lives.",
+      "text2" : "In the age of mobile money, they’re still left to use 3 or 4 terminals to serve customers and run their business",
+      "text3" : "Our current journey aims to offer easier ways of collecting payment, paying suppliers and earning revenue, day after day"
     }
+  },
+  "pricing" : {
+    "firstText" : "Start collecting and making payments",
+    "secondTitle" : "Accessible to any registered business",
+    "thirdTitle" : "monthly",
+    "fourthTitle" : "annually",
+    "thirdTitle_1" : "pay monthly",
+    "fourthTitle_1" : "pay annually",
+    "user" : "user",
+
+    "group" : {
+      "text_1" : "Starter",
+      "text_2" : "FREE",
+      "text_3" : "Standard",
+      "text_4" : "Advanced",
+      "text_5" : "Sign up",
+      "text_6" : "Limited to 3 users",
+      "text_7" : "Limited to",
+      "text_8" : "month",
+      "sandbox" :"Sandbox API Tokens",
+      "support" : "community support",
+      "unlimitedUsers" : " Unlimited Users",
+      "transactionLimite" : "Unlimited transactions",
+      "cashPoint" : "Cash Point Services",
+      "liveApi" : "Live API tokens",
+      "liveSupport" : "live support",
+      "couponPromos" : "Coupons and Promos",
+      "starting" : "starting from the 4th agent",
+      "financialProduct" : "Financial Products"
+    }
+  },
+  "distibutors" : {
+      "text_1" : "Manage your resellers",
+      "text_2" : "and their payments",
+      "gestionBoutique" : "Shops and Agents Management, Cash Advances and Collect",
+      "text_4" : "Promos and Coupons",
+      "manage" : "Manage requests from resellers",
+      "pay" : "Pay and get paid securely",
+      "reduiser" : "Reduce operating costs"
+  },
+  "becomPartner" : {
+    "group_1" : {
+      "text_1" : "Track you channels",
+      "text_2" : "and market share",
+      "text_3" : "Reseller Network Management, Promos and Coupons",
+      "text_4" : "Financial Product"
+    },
+    "group_2" : {
+      "text_1" : "Add and manage products for your channels",
+      "text_2" : "Pay commissions and sales discounts",
+      "text_3" : "Analyze distribution activity"
+    }
+      
+
   }
+    
 }

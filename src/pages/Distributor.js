@@ -3,25 +3,27 @@ import Header from "../components/Header";
 import FeatureList from "../components/FeatureList";
 import Footer from "../components/Footer";
 import "./Distributor.css";
+import { useTranslation } from "react-i18next";
 
 const Distributor = () => {
+  const { t } = useTranslation(); 
   return (
     <div className="Home">
       <Header />
 	  <div class="container-page distributor">
 			<div class="block_all_your_shop">
 				<div class="block_all_your_shop_text text-intro-contain" style={{marginBottom: '10.5%'}}>
-					<h1>Manage your resellers<br />and their payments</h1>
+					<h1>{t('distibutors.text_1')}<br />{t('distibutors.text_2')}</h1>
 					<p>	
-						Shops and Agents Management, Cash Advances and Collect
-						<br />Promos and Coupons
+						{t('distibutors.gestionBoutique')}
+						<br />{t('distibutors.text_4')}
 					</p>
 					<p>
-						Manage requests from resellers<br/>
-						Pay and get paid securely<br />
-						Reduce operating costs
+						{t('distibutors.manage')}<br/>
+						{t('distibutors.pay')}<br />
+						{t('distibutors.reduiser')} 
 					</p>
-					<input class="sign-btn" type="button" value="Learn more" />
+					<input class="sign-btn" type="button" value={`${t("Features.learnMoreButton")}`} />
 					
 				</div>
 				

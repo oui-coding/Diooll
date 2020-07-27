@@ -4,7 +4,8 @@
     "about":"A propos",
     "pricing":"Tarif",
     "API":"API",
-    "distributor":"Distributeurs"
+    "distributor":"Distributeurs",
+    "signIn" : "Connexion"
   },
   "introduction": {
       "1": "Toutes vos transactions avec une seule app",
@@ -41,12 +42,15 @@
     },
     "estimateButton" : "Estimez",
     "accept_par" : "Acceptez les paiements marchands",
+    "accept_mobile_text" : "Accept",
     "estmate_coats" : "Estimez vos coûts",
     "monthly" : "Transaction",
     "transaction" : "Mensuelles",
     "month" : "mois",
     "local_payement" : "payements nationaux ",
     "mobile_money" : "en mobile money",
+    "mobile" : "mobile ",
+    "Money" : "money",
     "cost_per_transaction" : "Coût par transaction",
     "contact" : "Contactez-Nous",
     "instant" : "Mise en compte instantanée dans votre compte Diool",
@@ -60,7 +64,111 @@
       "title_2" : "sur distribution de produits",
       "text_1" : "Recevez vos gains instantanément",
       "text_2" : "et fructifiez votre capital par transaction"
+    },
+    "group_2":{
+      "title_1" : "Ajout et Retrait de fonds",
+      "title_2" : "avec plusieurs possibilités",
+      "text_1" : "Ajoutez et retirez vos fonds facilement",
+      "text_2" : "avec le moyen de paiement de votre choix"
+    },
+    "group_3":{
+      "title_1" : "Paiements Rapides",
+      "title_2" : "à vos fournisseurs",
+      "text_1" : "Payez directement vos fournisseurs",
+      "text_2" : "et partenaires depuis votre compte"
+    },
+ 
+    "tryItButton" : "Essayez",
+    "learnMoreButton" : "En savoir plus"
+  },
+  "Footer" : {
+    "home" : "Accueil",
+    "blog" : "Blog",
+    "about" : "A Propos",
+    "search" : "Recherche",
+    "pricing" : "Facturation",
+    "forDistributor" : "Pour Distribiteurs",
+    "becomePartner" : "Devenir Partenaire",
+    "privacy" : "Vie Privée",
+    "community" : "Communauté",
+    "newsletter" : "Recevez nos informations",
+    "emailPlaceholder" : "Entrez votre email",
+    "switchLanguage" : "Changez la langue à ",
+    "copyRight" : "Tous droits réservés. Diool 2020",
+    "subscribe" : "Abonnez-vous"
+  },
+  "About" : {
+
+    "group_1":{
       
+      "firstTitle" : "Notre vision",
+      "secondTitle" : "des services financiers plus simplement",
+      "secondTitle1" : "grâce à la tech, la data et les produits financiers",
+      "text1" : "Bien souvent, notre accès aux services financiers dépend de technologies peu adaptées à nos vies quotidiennes",
+      "text2" : "C’est particulierement vrai en Afrique, où beaucoup de produits sont conçus loin des utilisateurs, et privés du liant culturel",
+      "text3" : "Notre objectif est de faire éclore les moyen d’accéder à des services plus représentatifs de nos habitudes et culture"
+    },
+
+    "group_2": {
+      "firstTitle" : "Notre mission",
+      "secondTitle" : "aider les petits commerces à facilement",
+      "secondTitle1" : "collecter des clients et payer leurs fournisseurs",
+      "text1" : "Les petits commerces ont toujours représenté la pierre angulaire de nos vies",
+      "text2" : " A l’age du mobile money, il leur faut toujours 3 ou 4 terminaux différents pour servir clients et gérer l’activity",
+      "text3" : "Notre étape actuelle vise à offrir des moyens plus simples de collecter, de payer et devenir profitable, jour après jour"
+    }
+  },
+  "pricing" : {
+    "firstText" : "Commencez à collecter et faire vos paiements",
+    "secondTitle" : "Accessible à toute entreprise immatriculée",
+    "thirdTitle" : "mensuellement",
+    "fourthTitle" : "annuellement",
+    "thirdTitle_1" : "payer mensuellement",
+    "fourthTitle_1" : "payer annuellement",
+    "user" : "utilisateur",
+
+    "group" : {
+      "text_1" : "Starter",
+      "text_2" : "Pro",
+      "text_3" : "Standard",
+      "text_4" : "Advanced",
+      "text_5" : "Souscrire",
+      "text_6" : "Limitée à 3 utilisateurs",
+      "text_7" : "Limitée à",
+      "text_8" : "par mois",
+      "sandbox" :"Tokens Sandbox API ",
+      "support" : "Support via les forums",
+      "unlimitedUsers" : "Utilisateurs illimités",
+      "transactionLimite" : "Transactions illimitées",
+      "cashPoint" : "Services cash point",
+      "liveApi" : "Tokens aPI live",
+      "liveSupport" : "support en ligne",
+      "couponPromos" : "Coupons et Promos ",
+      "starting" : "starting from the 4th agent",
+      "financialProduct" : " Produits Financiers"
+    }
+  },
+  "distibutors" : {
+    "text_1" : "Gérez vos revendeurs",
+    "text_2" : "et leurs paiements",
+    "gestionBoutique" : "Gestion de réseau de revendeurs, ",
+    "text_4" : "Promos and Coupons",
+    "manage" : "Gérez les requêtes de revendeurs",
+    "pay" : "Payez et collectez en securité",
+    "reduiser" : "Reduisez vos coûts operationels"
+  },
+  "becomPartner" : {
+
+    "group_1" : {
+      "text_1" : "Suivez votre réseau",
+      "text_2" : "et vos parts de marché",
+      "text_3" : "Gestion de réseau de revendeurs, Promos et Coupons",
+      "text_4" : "Produits Financiers"
+    },
+    "group_2" : {
+      "text_1" : "Ajoutez et gérez des produits pour vos canaux de vente",
+      "text_2" : "Payez commissions et remises commerciales",
+      "text_3" : "Analysez l'activité de distribution"
     }
   }
 }

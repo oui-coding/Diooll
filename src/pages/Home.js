@@ -395,9 +395,9 @@ const Home = (props) => {
           ) :  <div className="estimate_revenues_container payment_collection" >
             	<h1 style={{fontSize: '11.250vw !important'}}>Your costs</h1>
 		        <div className="mobile-pument-contain">
-				<div className="mobile-pay-head">Accept <br/>local payments from</div>
+				<div className="mobile-pay-head">{t('Home.accept_mobile_text')} <br/>{t('Home.local_payement')} from</div>
 				<div className="mobile-pay-item">
-					<p className="mobile-pay-item-title">mobile <br/> money</p> <p className="mobile-pay-item-text"> 2,50%</p>
+					<p className="mobile-pay-item-title">{t('Home.mobile')} <br/> {t('Home.Money')}</p> <p className="mobile-pay-item-text"> 2,50%</p>
 				</div>
 				<div className="mobile-pay-item">
 					<p className="mobile-pay-item-title">flat fee per <br/> transaction</p> <p className="mobile-pay-item-text"  >+20 XAF</p></div>	

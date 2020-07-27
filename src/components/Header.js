@@ -36,7 +36,8 @@ const Header = (props) => {
           <Link to="/distributor">{t('Header_Menue.distributor')}</Link>
         </li> 
         <li>
-          <a href="#">Sign in</a>
+          {/* <a href="#">Sign in</a> */}
+          <Link to="#">{t('Header_Menue.signIn')}</Link>
         </li>
       </ul>
     </nav>
@@ -48,33 +49,33 @@ const Header = (props) => {
       </label>
       <ul className="menu__box">
         <li>
-          <a className="menu__item" href="#">
-            home
+          <a className="menu__item" href="/">
+          {t('Header_Menue.home')}
           </a>
         </li>
         <li>
-          <a className="menu__item" href="#">
-            about
+          <a className="menu__item" href="/about">
+          {t('Header_Menue.about')}
           </a>
         </li>
         <li>
-          <a className="menu__item" href="#">
-            pricing
+          <a className="menu__item" href="/pricing">
+          {t('Header_Menue.pricing')}
           </a>
         </li>
         <li>
-          <a className="menu__item" href="#">
+          <a className="menu__item" href="https://api.diool.com/">
             API
           </a>
         </li>
         <li>
-          <a className="menu__item" href="#">
-            for distributor
+          <a className="menu__item" href="/distributor">
+          {t('Header_Menue.distributor')}
           </a>
         </li>
         <li>
           <a className="menu__item" href="#">
-            sign in
+          {t('Header_Menue.signIn')}
           </a>
         </li>
       </ul>

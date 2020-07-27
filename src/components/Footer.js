@@ -24,57 +24,67 @@ const Footer = (props) => {
       <div class="padding_footer">
         <div class="footer_blck">
           <h2>Diool</h2>
-          <label>All rights reserved. Diool 2020</label>
+  <label>{t('Footer.copyRight')}</label>
         </div>
         <div class="footer_blck">
           <ul>
             <li>
               {" "}
-              <Link to="/">Home</Link>
+              <Link to="/">{t('Header_Menue.home')}</Link>
             </li>
             <li>
-              <a href="#">Blog</a>
+              {/* <a href="#">Blog</a> */}
+              <Link to="#">{t('Footer.blog')}</Link>
+              
             </li>
             <li>
-              <Link to="/about">About</Link>
+              {/* <Link to="/about">About</Link> */}
+              <Link to="/about">{t('Footer.about')}</Link>
             </li>
             <li>
-              <a href="#">Search</a>
+              {/* <a href="#">Search</a> */}
+              <Link to="#">{t('Footer.search')}</Link>
             </li>
             <li>
-              <Link to="/pricing">Pricing</Link>
+              {/* <Link to="/pricing">Pricing</Link> */}
+              <Link to="/pricing">{t('Footer.pricing')}</Link>
             </li>
             <li>
               <a href="#">T & Cs</a>
             </li>
             <li>
               {" "}
-              <Link to="/distributor">For Distributor</Link>
+              {/* <Link to="/distributor">For Distributor</Link> */}
+              <Link to="/distributor">{t('Footer.forDistributor')}</Link>
             </li>
             <li>
-              <a href="#">Privacy</a>
+              {/* <a href="#">Privacy</a> */}
+              <Link to="#">{t('Footer.privacy')}</Link>
             </li>
             <li>
-              <Link to="/become-a-partner">Become a partner</Link>
+              {/* <Link to="/become-a-partner">Become a partner</Link> */}
+              <Link to="/become-a-partner">{t('Footer.becomePartner')}</Link>
             </li>
             <li>
-              <a href="#">Community</a>
+              {/* <a href="#">Community</a> */}
+              <Link to="#">{t('Footer.community')}</Link>
             </li>
           </ul>
         </div>
         <div class="footer_blck lastfooter">
-          <span>Get our newsletter</span>
+        
+          <span>{t('Footer.newsletter')}</span>
           <form action="" method="post">
             <input
               type="email"
               name="email"
-              value="Enter your email"
+              value= {`${t("Footer.emailPlaceholder")}`}
               id="email-footer"
             />
             <input
               className="subscribe-btn"
               type="submit"
-              value="Subscribe"
+              value={`${t('Footer.subscribe')}`}
               style={{ paddingBottom: "9%" }}
             />
           </form>
@@ -100,7 +110,7 @@ const Footer = (props) => {
             </li>
           </ul>
           <div style={{ display: "flex", alignItems: "center" }}>
-            <span className="switchlang-span">Switch language to:</span>
+  <span className="switchlang-span">{t("Footer.switchLanguage")} : </span>
 
             {/* <label class="labelselectstyle"> */}
             <select
@@ -114,7 +124,7 @@ const Footer = (props) => {
               <option className="switch-lang-option" value="en">
                 Anglais
               </option>
-              
+
               <option className="switch-lang-option" value="fr">
                 Français
               </option>
