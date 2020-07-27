@@ -122,11 +122,11 @@ const Footer = (props) => {
               
               
               <option className="switch-lang-option" value="en">
-                Anglais
+                {t('Footer.english')}
               </option>
 
               <option className="switch-lang-option" value="fr">
-                Français
+              {t('Footer.frensh')}
               </option>
             </select>
             

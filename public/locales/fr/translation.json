@@ -82,6 +82,8 @@
     "learnMoreButton" : "En savoir plus"
   },
   "Footer" : {
+    "english" : "Anglais",
+    "frensh" : "Français",
     "home" : "Accueil",
     "blog" : "Blog",
     "about" : "A Propos",

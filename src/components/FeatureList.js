@@ -93,7 +93,7 @@ const featuresPartner = [{
 		return<div className="col-idool-3">
 			
 		{logo.length > 0 && logo[0] === "images" ? <img src={require('../'+elm.logo)} alt="payement methods"/> : <span>{elm.logo}</span> }
-		<h2 style={{paddingTop:i < 2 ? "4.5%" : "0"}}>{elm.title}</h2>
+		<h2 style={{paddingTop:i < 2 ? "4%" : "0"}}>{elm.title}</h2>
 		<h2 style={{paddingTop:'0px'}}>{elm.title1}</h2>
 		<p>
 			{elm.text}

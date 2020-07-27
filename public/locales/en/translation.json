@@ -91,6 +91,8 @@
     "learnMoreButton" : "Learn More"
   },
   "Footer" : {
+    "english" : "English",
+    "frensh" : "Frensh",
     "home" : "Home",
     "blog" : "Blog",
     "about" : "About",
