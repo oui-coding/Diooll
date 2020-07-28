@@ -81,6 +81,7 @@ const Footer = (props) => {
               value= {`${t("Footer.emailPlaceholder")}`}
               id="email-footer"
             />
+            
             <input
               className="subscribe-btn"
               type="submit"

@@ -23,7 +23,7 @@ ul.navbar-nav>li {
 ul.navbar-nav>li:last-child {
 	position: relative;
     right: -8%;
-	width: 10%;
+	width: 11%;
 	border: 1px solid #d9784c;
     padding: 5px 9px;
 	-webkit-border-radius: 2.5px;
