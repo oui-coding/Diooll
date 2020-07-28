@@ -89,6 +89,8 @@ const featuresPartner = [{
 		<div className="item-featureCont">
 	{
 	featchTab.map((elm,i)=>{
+		let str = elm.text1
+		//console.log('test',)
 		let logo = elm.logo.split('/')
 		return<div className="col-idool-3">
 			
@@ -98,9 +100,22 @@ const featuresPartner = [{
 		<p>
 			{elm.text}
 		</p>
-		<p className="col-idool--lastText" style={{marginTop:'0'}}>
+		{
+		str.includes("balance") ?  
+		<p className="col-idool--lastText" style={{marginTop:'10px'}}>
+
 			{elm.text1}
-		</p>
+			</p> 
+			: 
+			str.includes("payment") ? <p className="col-idool--lastText" style={{marginTop:'5px'}}>
+			{elm.text1}
+			</p>
+			:
+			<p className="col-idool--lastText" style={{marginTop:'1px'}}>
+			{elm.text1}
+			</p>
+		}
+		
 	</div>	
 	})}
 	</div>
