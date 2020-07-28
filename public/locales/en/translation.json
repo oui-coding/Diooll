@@ -10,15 +10,15 @@
   "introduction": {
       "1": "All your shop transactions",
       "2" : "with one app",
-      "3" : "Recharhes & Bills, Cash Deposits & Withdrawals",
-      "4" : "Consumer Goods Dsitribution",
-      "5" : "Collect payments from customers",
-      "6" : "Pay back suppliers in seconds",
+      "3" : "Recharges & Bills, Cash Deposits & Withdrawals",
+      "4" : "Consumer Goods Distribution",
+      "5" : "Collect payments from customers ",
+      "6" : "Pay back suppliers",
       "7" : "Earn revenue",
       "button" : "Try it for free"
   },
   "Home" : {
-    "estimateTitle" : "Earn commissions from reselling",
+    "estimateTitle" : "Earn commissions from reselling ",
     "estimateTitle_2" : "Estimate your revenues",
     "option_0" : "Please select an option",
     "question_1" : "What shop do you have ?",
@@ -42,7 +42,7 @@
     },
     "estimateButton" : "Estimate",
     "accept_par" : "Accept merchant payments",
-    "estmate_coats" : "Estimate your costs",
+    "estmate_coats" : "Estimate your costs ",
     "monthly" : "Monthly",
     "transaction" : "Transactions",
     "month" : "month",
@@ -53,8 +53,8 @@
     "mobile_money" : "in mobile money",
     "cost_per_transaction" : "Cost per transaction",
     "contact" : "Contact Us",
-    "instant" : "Instant Settlement in your Diool Account",
-    "Settlement" : "T+2 Settlement to your Bank",
+    "instant" : "Instant settlement in your Diool Account",
+    "Settlement" : "T+2 settlement to your bank account",
     "combine_par" : "Combine all to make more money",
     "features" : "Features",
     "flat_fee_per" : ""
@@ -75,8 +75,8 @@
     },
     "group_2":{
       "title_1" : "Top Ups and Withdrawals",
-      "title_2" : "with many payement methods",
-      "text_1" : "Add or withdraw funds easly",
+      "title_2" : "with many payment methods",
+      "text_1" : "Add or withdraw funds easily",
       "text_2" : "using your preferred method of payment"
     },
     "group_3":{
