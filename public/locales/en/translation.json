@@ -91,14 +91,14 @@
     "learnMoreButton" : "Learn More"
   },
   "Footer" : {
-    "english" : "English",
-    "frensh" : "Frensh",
+    "english" : "ENGLISH",
+    "frensh" : "FRENCH",
     "home" : "Home",
     "blog" : "Blog",
     "about" : "About",
     "search" : "Search",
     "pricing" : "Pricing",
-    "forDistributor" : "For Distributor",
+    "forDistributor" : "For Distributors",
     "becomePartner" : "Become a partner",
     "privacy" : "Privacy",
     "community" : "Community",
