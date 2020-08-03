@@ -4,7 +4,7 @@
     "about": "About",
     "pricing": "Pricing",
     "API": "API",
-    "distributor": "For Distributors",
+    "distributor": "Distributors",
     "signIn" : "Sign In"
   },
   "introduction": {
@@ -18,7 +18,7 @@
       "button" : "Try it for free"
   },
   "Home" : {
-    "estimateTitle" : "Earn commissions from reselling ",
+    "estimateTitle" : "Earn commissions",
     "estimateTitle_2" : "Estimate your revenues",
     "option_0" : "Please select an option",
     "question_1" : "What shop do you have ?",
@@ -55,7 +55,7 @@
     "contact" : "Contact Us",
     "instant" : "Instant settlement in your Diool Account",
     "Settlement" : "T+2 settlement to your bank account",
-    "combine_par" : "Combine all to make more money",
+    "combine_par" : "Combine all to make more",
     "features" : "Features",
     "flat_fee_per" : ""
   },
@@ -98,7 +98,7 @@
     "about" : "About",
     "search" : "Search",
     "pricing" : "Pricing",
-    "forDistributor" : "For Distributors",
+    "forDistributor" : "Distributors",
     "becomePartner" : "Become a partner",
     "privacy" : "Privacy",
     "community" : "Community",
@@ -121,7 +121,7 @@
     },
     "group_2": {
 
-      "firstTitle" : "Our mission",
+      "firstTitle" : "Our Mission",
       "secondTitle" : "help merchants accept payments",
       "secondTitle1" : "from customers and pay suppliers easily",
       "text1" : "Merchants have always represented the cornerstone of our lives.",

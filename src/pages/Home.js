@@ -346,7 +346,7 @@ const Home = (props) => {
                       setCapitals([
                         {
                           value: "0",
-                          dropvalues: [50000, 150000, 400000, 1000000, 2000000],
+                          dropvalues: ['150.000', '400.000', '1.000.000', '2.000.000'],
                         },
                       ]);
                       setEstimate(true);

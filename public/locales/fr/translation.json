@@ -2,7 +2,7 @@
   "Header_Menue": {
     "home": "Accueil",
     "about":"A propos",
-    "pricing":"Tarif",
+    "pricing":"Facturation",
     "API":"API",
     "distributor":"Distributeurs",
     "signIn" : "Connexion"
@@ -18,7 +18,7 @@
       "button" : "Essayez Gratuit"
   }, 
   "Home" : {
-    "estimateTitle" : "Gagnez des commissions en revendant",
+    "estimateTitle" : "Gagnez des commissions",
     "estimateTitle_2" : "Estimez vos gains",
     "question_1" : "Quelle boutique avez-vous ?",
     "option_0" : "veuillez sélectionner une option",
@@ -55,7 +55,7 @@
     "contact" : "Contactez-Nous",
     "instant" : "Mise en compte instantanée dans votre compte Diool",
     "Settlement" : "Mise en compte en T+2 à votre banque",
-    "combine_par" : "Combinez le tout pour gagner plus d’argent",
+    "combine_par" : "Combinez le tout pour gagner plus",
     "features" : "Fonctionnalités"
   },
   "Features" : {
@@ -89,7 +89,7 @@
     "about" : "A Propos",
     "search" : "Recherche",
     "pricing" : "Facturation",
-    "forDistributor" : "Pour Distribiteurs",
+    "forDistributor" : "Distributeurs",
     "becomePartner" : "Devenir Partenaire",
     "privacy" : "Vie Privée",
     "community" : "Communauté",

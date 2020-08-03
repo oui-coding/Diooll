@@ -37,7 +37,7 @@ const About = () => {
 						<div className="aboutIntro-Item" key={i}>
                           <h1 className="aboutIntro-firstTitle">{elm.firstTitle}</h1>
 					<h1 className="aboutIntro-secondTitle first-SecondTitle" >{elm.secondTitle}</h1>
-					<h1 className="aboutIntro-secondTitle" style={{marginTop:'0'}}>{elm.secondTitle1}</h1>
+					<h1 className="aboutIntro-secondTitle" style={{marginTop:'0',width:"max-content" }}>{elm.secondTitle1}</h1>
 					<p className="aboutIntro-text">{elm.text1}</p>
 					<p className="aboutIntro-text">{elm.text2}</p>
 					<p className="aboutIntro-text">{elm.text3}</p>
