@@ -7,6 +7,30 @@ import { useTranslation } from "react-i18next";
 
 const Distributor = () => {
   const { t } = useTranslation(); 
+
+
+  function Clip( url ) {
+
+    return (
+      <video 
+        className="video_container"
+        width="100%"
+        id="video_background"
+        preload="auto"
+        autoplay="true"
+        loop
+        muted  key={url}>
+        <source 
+          src={url} 
+          type="video/mp4"
+          autostart="true"
+        />
+      </video>
+    );
+  }
+
+const language = localStorage.getItem('lang')
+  
   return (
     <div className="Home">
       <Header />
@@ -28,23 +52,13 @@ const Distributor = () => {
 				</div>
 				
 				<div class="block_all_your_shop_video dist-vd-contain">
-				<video
-        className="video_container"
-        width="100%"
-        id="video_background"
-        preload="auto"
-        autoplay="true"
-        loop
-        muted
-      >
-        <source
-          src={require("../video/destributor-ENG.mp4")}
-          //  src="video/compo_final-fr2a.webm"
-          type="video/webm"
-          autostart="true"
-        /> 
-   
-      </video>
+        {
+            language === "fr" ? Clip(require("../video/Distributors/04-Manage-motion-FR-110620.mp4")): Clip(require("../video/Distributors/04-Manage-motion-ENG-110620.mp4"))
+            
+          }
+               
+
+                 
 				</div>
 			</div>
         <FeatureList component="distributor" />

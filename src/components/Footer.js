@@ -9,13 +9,14 @@ const Footer = (props) => {
   const { t  } = useTranslation();
   const [langage,setLang] = useState('')
 
-  // const { sharedDataContext,useSharedDataContext} = useState({lang:'en'});
-
-  // const { sharedDataContext } = useContext(SharedDataContext);
+  useEffect(() => {
+    localStorage.setItem('lang',"en")
+  }, []);
 
   function handleClick(lang) {
     setLang(lang)
       i18next.changeLanguage(lang)
+      localStorage.setItem('lang',lang)
     
   }
 

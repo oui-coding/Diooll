@@ -5,6 +5,27 @@ import { useTranslation } from "react-i18next";
 const Introduction = () => {
   const { t  } = useTranslation();
 
+  function Clip( url ) {
+
+    return (
+      <video 
+        className="video_container"
+        width="100%"
+        id="video_background"
+        preload="auto"
+        autoplay="true"
+        loop
+        muted  key={url}>
+        <source 
+          src={url} 
+          type="video/mp4"
+          autostart="true"
+        />
+      </video>
+    );
+  }
+
+const language = localStorage.getItem('lang')
   return (
     <div className="block_all_your_shop">
     <div className="block_all_your_shop_text">
@@ -50,34 +71,11 @@ const Introduction = () => {
     </div>
 
     <div className="block_all_your_shop_video">
-      <video
-        className="video_container"
-        width="100%"
-        id="video_background"
-        preload="auto"
-        autoplay="true"
-        loop
-        muted
-      >
-        {/* <source
-          src={require("../video/compo_final-fr2a.mov")}
-          //src="video/compo_final-fr2a.mov"
-          type="video/mov"
-          autostart="true"
-        />
-        <source
-          src={require("../video/compo_final-fr2a.webm")}
-          //  src="video/compo_final-fr2a.webm"
-          type="video/webm"
-          autostart="true"
-        /> */}
-        <source
-          src={require("../video/compo final-ang1.mp4")}
-          //  src="video/compo_final-fr2a.mp4"
-          type="video/mp4"
-          autostart="true"
-        />
-      </video>
+          {
+            language === "fr" ? Clip(require("../video/Home/compo final-fr1a.mp4")): Clip(require("../video/Home/compo final-ang1.mp4"))
+            
+          }
+
     </div>
   </div>
   )
