@@ -59,6 +59,18 @@
     "features" : "Fonctionnalités"
   },
   "Features" : {
+    "group_0" : {
+      "title_1" : "Coût Dégressif",
+      "title_2" : "en fonction du volume",
+      "text_1" : "Réduisez vos frais de transaction",
+      "text_2" : "à mesure que vos paiements augmentent"
+  },
+  "group_0_partner" : {
+    "title_1" : "Coût Dégressif",
+    "title_2" : "en fonction du volume",
+    "text_1" : "Réduisez vos frais de transaction",
+    "text_2" : "à mesure que vos paiements augmentent"
+},
     "group_1":{
       "title_1" : "Commissions Instantanées",
       "title_2" : "sur distribution de produits",
@@ -71,7 +83,19 @@
       "text_1" : "Ajoutez et retirez vos fonds facilement",
       "text_2" : "avec le moyen de paiement de votre choix"
     },
+    "group_2_partner":{
+      "title_1" : "Ajout et Retrait de fonds",
+      "title_2" : "avec plusieurs possibilités",
+      "text_1" : "Ajoutez et retirez vos fonds facilement",
+      "text_2" : "avec le moyen de paiement de votre choix"
+    },
     "group_3":{
+      "title_1" : "Paiements Rapides",
+      "title_2" : "à vos fournisseurs",
+      "text_1" : "Payez directement vos fournisseurs",
+      "text_2" : "et partenaires depuis votre compte"
+    },
+    "group_3_partner":{
       "title_1" : "Paiements Rapides",
       "title_2" : "à vos fournisseurs",
       "text_1" : "Payez directement vos fournisseurs",

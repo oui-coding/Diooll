@@ -62,30 +62,47 @@
 
   "Features" : {
     "group_0" : {
-        "title_1" : "Degressive Pricing",
-        "title_2" : "based on transaction volume",
-        "text_1" : "Reduce your transaction fees",
-        "text_2" : "when increasing your payments volume"
-    },
-    "group_1":{
-      "title_1" : "Instant Commissions on",
-      "title_2" : "prepaid products distribution",
-      "text_1" : "Receive commissions instantly",
-      "text_2" : "and grow your capital at each transaction"
-    },
-    "group_2":{
-      "title_1" : "Top Ups and Withdrawals",
-      "title_2" : "with many payment methods",
-      "text_1" : "Add or withdraw funds easily",
-      "text_2" : "using your preferred method of payment"
-    },
-    "group_3":{
-      "title_1" : "Quick Payments",
-      "title_2" : "to suppliers and partners",
-      "text_1" : "Transfer money to your suppliers",
-      "text_2" : "and partners directly from your balance"
-
-    },
+      "title_1" : "Degressive Pricing",
+      "title_2" : "based on transaction volume",
+      "text_1" : "Reduce your transaction fees",
+      "text_2" : "when increasing your payments volume"
+  },
+  "group_0_partner" : {
+    "title_1" : "Degressive Pricing",
+    "title_2" : "based on transaction volume",
+    "text_1" : "Receive commissions instantly",
+    "text_2" : "and grow your capital at each transaction"
+},
+  "group_1":{
+    "title_1" : "Instant Commissions on",
+    "title_2" : "prepaid products distribution",
+    "text_1" : "Receive commissions instantly",
+    "text_2" : "and grow your capital at each transaction"
+  },
+  "group_2":{
+    "title_1" : "Top Ups and Withdrawals",
+    "title_2" : "with many payment methods",
+    "text_1" : "Add or withdraw funds easily",
+    "text_2" : "using your preferred method of payment"
+  },
+  "group_2_partner":{
+    "title_1" : "Realtime Data",
+    "title_2" : "on your products distribution",
+    "text_1" : "review resellers activity",
+    "text_2" : "based on location or other criteria"
+  },
+  "group_3":{
+    "title_1" : "Quick Payments",
+    "title_2" : "to suppliers and partners",
+    "text_1" : "Transfer money to your suppliers",
+    "text_2" : "and partners directly from your balance"
+  },
+  "group_3_partner":{
+    "title_1" : "Localized Promos",
+    "title_2" : "to your customer base",
+    "text_1" : "Boost product performance",
+    "text_2" : "using targeted promos and coupons"
+  },
     
     "tryItButton" : "Try it",
     "learnMoreButton" : "Learn More"
