@@ -84,7 +84,7 @@ const featuresPartner = [{
 
 	let featchTab = component === "partner" ? featuresPartner :  component ==="distributor" ? featuresDist : features
 	return (
-	<div class="block_Features">
+	<div className="block_Features">
 		<h1 style={{marginTop: component!=="home" ? '6.532vw' : '2.432VW' }}>{t('Home.features')}</h1>
 		<div className="item-featureCont">
 	{
@@ -92,7 +92,7 @@ const featuresPartner = [{
 		let str = elm.text1
 		//console.log('test',)
 		let logo = elm.logo.split('/')
-		return<div className="col-idool-3">
+		return<div className="col-idool-3" key={i}>
 			
 		{logo.length > 0 && logo[0] === "images" ? <img src={require('../'+elm.logo)} alt="payement methods"/> : <span>{elm.logo}</span> }
 		<h2 style={{paddingTop:i < 2 ? "4%" : "0"}}>{elm.title}</h2>
@@ -119,8 +119,8 @@ const featuresPartner = [{
 	</div>	
 	})}
 	</div>
-	<div class="col-idool-12">
-					<a href="https://register.diool.com/#/login/merchant"><input class="sign-btn" type="button" value={component==="distributor" || component==="partner" ?`${t("Features.learnMoreButton")}`:`${t("Features.tryItButton")}`} /></a>
+	<div className="col-idool-12">
+					<a href="https://register.diool.com/#/login/merchant"><input className="sign-btn" type="button" value={component==="distributor" || component==="partner" ?`${t("Features.learnMoreButton")}`:`${t("Features.tryItButton")}`} /></a>
 				</div>
 	</div>
 );

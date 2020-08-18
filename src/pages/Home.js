@@ -254,11 +254,11 @@ const Home = (props) => {
   return (
     <div className="Home">
       <Header />
-      <div class="container-page">
+      <div className="container-page">
         <Introduction />
         
         {/* <h3>{t('Thanks.1')}</h3>  <h3>{t('Why.1')}</h3>  */}
-        <div class="estimate_revenues">
+        <div className="estimate_revenues">
         <div className="aboutIntro" style={{marginBottom:'2vw',marginTop:'1.5vw'}}>
         <h1 className="aboutIntro-secondTitle">{t('Home.estimateTitle')}</h1>
         </div>
@@ -274,8 +274,8 @@ const Home = (props) => {
                 }
               > <div>
                 <h2>{t('Home.question_1')}</h2>
-                <div class="select_activity_sector">
-                  <label class="labelselectstyle">
+                <div className="select_activity_sector">
+                  <label className="labelselectstyle">
                     <select
                       id="what_shop"
                       defaultValue="0"
@@ -294,10 +294,10 @@ const Home = (props) => {
                 </div>
                 <div>
                 <h2>{t('Home.question_2')}</h2>
-                <div class="select_activity_sector" style={{display:'flex'}}>
+                <div className="select_activity_sector" style={{display:'flex'}}>
                   <p className='xaf-select'>XAF</p>
                 {/* <span>XAF </span> */}
-                  <label class="labelselectstyle labelselectstyle-second">
+                  <label className="labelselectstyle labelselectstyle-second">
                     
                     <select
                       id="mach_capital"
@@ -311,7 +311,7 @@ const Home = (props) => {
                       </option>
                       {capitals.length > 0 && capitals[0] !== undefined
                         ? capitals[0].dropvalues.map((elm, i) => {
-                            return <option value={elm}>{elm}</option>;
+                            return <option value={elm} key={i}>{elm}</option>;
                           })
                         : capitalsValues.map((elm, i) => {
                             return <option value={elm}>{elm}</option>;
@@ -328,7 +328,7 @@ const Home = (props) => {
                 />
               </form>
               <div
-                class="result_form second-Contain"
+                className="result_form second-Contain"
                 style={
                   size.width > 767
                     ? {}
@@ -396,7 +396,7 @@ const Home = (props) => {
 				<p className="text-mobile-pay">{t('Home.Settlement')}</p>
 			</div>
           ) :  <div className="estimate_revenues_container payment_collection" >
-            	<h1 style={{fontSize: '11.250vw !important'}}>Your costs</h1>
+            	<h1 style={{fontSize: '11.250vw !important'}}>{t('Home.costs')}</h1>
 		        <div className="mobile-pument-contain">
 				<div className="mobile-pay-head">{t('Home.accept_mobile_text')} <br/>{t('Home.local_payement')} from</div>
 				<div className="mobile-pay-item">

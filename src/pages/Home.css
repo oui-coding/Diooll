@@ -558,8 +558,8 @@ display: none;
     border-radius: 50px;
     }
     .labelselectstyle-second:after {
-      top: 19%;
-      left: 94%;
+      top: 22%;
+      left: 91%;
       WIDTH: 10%;
 }
 }
@@ -567,7 +567,7 @@ display: none;
 
     .labelselectstyle-second:after {
       top: 19%;
-      left: 91%;
+      left: 89%;
       WIDTH: 10%;
 }
 }
