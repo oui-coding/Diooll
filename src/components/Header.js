@@ -42,9 +42,9 @@ const Header = (props) => {
       </ul>
     </nav>
 
-    <div id="diool-mobile-graphic-menu" class="hamburger-menu">
+    <div id="diool-mobile-graphic-menu" className="hamburger-menu">
       <input id="menu__toggle" type="checkbox" />
-      <label className="menu__btn" for="menu__toggle">
+      <label className="menu__btn" htmlFor="menu__toggle">
         <span></span>
       </label>
       <ul className="menu__box">

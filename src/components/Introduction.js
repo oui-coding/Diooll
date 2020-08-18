@@ -13,7 +13,7 @@ const Introduction = () => {
         width="100%"
         id="video_background"
         preload="auto"
-        autoplay="true"
+        autoPlay={true}
         loop
         muted  key={url}>
         <source 

@@ -18,6 +18,7 @@
       "button" : "Try it for free"
   },
   "Home" : {
+
     "estimateTitle" : "Earn commissions",
     "estimateTitle_2" : "Estimate your revenues",
     "option_0" : "Please select an option",
@@ -26,20 +27,23 @@
     "option_2" : "Hotel, Bar, Restaurant",
     "option_3" : "Proximity, Grocery Store",
     "option_4" : "Money Transfer Outlet",
+    "costs" : "your Costs",
     "question_2" : "How much capital will you use ?",
-    "homeCard" : {
-      "first_par" : "you may earn",
-      "second_par" : "by doing",
-      "third_par" : "transactions per month",
-      "fourth_par" : "days per month",
-      "fifth_par" : "and working"
-    },
-    "secondCardFeature" : {
-      "first_par" : "Prepaid eRecharges",
-      "second_par" : "Bills Payment Collection",
-      "third_par" : "Consumer Goods Reselling",
-      "fourth_par" : "Cash Deposits & Withdrawals"
-    },
+
+
+      "homeCard" : {
+        "first_par" : "you may earn",
+        "second_par" : "by doing",
+        "third_par" : "transactions per month",
+        "fourth_par" : "days per month",
+        "fifth_par" : "and working"
+      },
+      "secondCardFeature" : {
+        "first_par" : "Prepaid eRecharges",
+        "second_par" : "Bills Payment Collection",
+        "third_par" : "Consumer Goods Reselling",
+        "fourth_par" : "Cash Deposits & Withdrawals"
+      },
     "estimateButton" : "Estimate",
     "accept_par" : "Accept merchant payments",
     "estmate_coats" : "Estimate your costs ",

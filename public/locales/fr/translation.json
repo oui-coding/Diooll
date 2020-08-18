@@ -26,6 +26,7 @@
     "option_2" : "Hotel, Bar, Restaurant",
     "option_3" : "Epicerie, Commerce Général",
     "option_4" : "Bureau de Transferts d'Argent",
+    "costs" : "Estimez vos coûts",
     "question_2" : "Quel capital mettrez-vous ?",
     "homeCard" : {
       "first_par" : "vous gagneriez",
@@ -59,6 +60,14 @@
     "features" : "Fonctionnalités"
   },
   "Features" : {
+
+    "group_0" : {
+      "title_1" : "Coût Dégressif",
+      "title_2" : "en fonction du volume",
+      "text_1" : "Reduisez vos frais de transaction",
+      "text_2" : "à mesure que vos paiements augmentent"
+    },
+
     "group_1":{
       "title_1" : "Commissions Instantanées",
       "title_2" : "sur distribution de produits",
@@ -133,7 +142,7 @@
       "text_1" : "Starter",
       "text_2" : "Pro",
       "text_3" : "Standard",
-      "text_4" : "Advanced",
+      "text_4" : "Avancé",
       "text_5" : "Souscrire",
       "text_6" : "Limitée à 3 utilisateurs",
       "text_7" : "Limitée à",
