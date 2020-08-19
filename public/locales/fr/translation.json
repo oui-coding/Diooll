@@ -162,8 +162,8 @@
   "distibutors" : {
     "text_1" : "Gérez vos revendeurs",
     "text_2" : "et leurs paiements",
-    "gestionBoutique" : "Gestion de réseau de revendeurs, ",
-    "text_4" : "Promos and Coupons",
+    "gestionBoutique" : "Gestion des Boutiques et des Agents, Avances et Collecte de fonds",
+    "text_4" : "Promos et Coupons",
     "manage" : "Gérez les requêtes de revendeurs",
     "pay" : "Payez et collectez en securité",
     "reduiser" : "Reduisez vos coûts operationels"
