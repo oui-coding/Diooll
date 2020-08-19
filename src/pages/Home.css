@@ -58,7 +58,7 @@
 
 .aboutIntro-secondTitle{
   color:#E56B36 !important;
-  margin-bottom:2vw !important;
+  /* margin-bottom:2vw !important; */
   font-size:3.33vw !important;
 }
 /*=========== select style =========*/
@@ -449,14 +449,15 @@ height: 56.380vw !important;
     text-align: center !important;
     text-align-last: center !important;
     padding-left: 0 !important;
-    width: 62vw;
+    /* width: 62vw; */
+    width : 66vw;
     margin-left: 7vw;
     font-size: 4vw;
     /* margin-top: 3vw; */
     margin-bottom: 3vw;
     padding-left: 33px;
     -webkit-appearance: none;
-    text-indent: 22vw;
+    /* text-indent: 22vw; */
     
   }
   .select_activity_sector option {

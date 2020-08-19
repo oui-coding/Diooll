@@ -51,7 +51,7 @@ const Footer = (props) => {
               <Link to="/pricing">{t('Footer.pricing')}</Link>
             </li>
             <li>
-              <a href="#">T & Cs</a>
+              <a href="#">CGUs</a>
             </li>
             <li>
               {" "}
