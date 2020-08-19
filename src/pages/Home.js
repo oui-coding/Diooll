@@ -146,7 +146,7 @@ const Home = (props) => {
     },
     {
       shop: "3",
-      capital: '125.0000',
+      capital: '1.250.0000',
       actifDay: 24,
       transaction: 683,
       revenue: '146.375',
@@ -180,11 +180,11 @@ const Home = (props) => {
   ];
 
   const [estimate, setEstimate] = useState(true);
-  const [value, setValue] = useState("Street Kiosk");
+  const [value, setValue] = useState("0");
   const [capitals, setCapitals] = useState([
     { value: "0", dropvalues: ['150.000', '400.000', '1.000.000', '2.000.000'] },
   ]);
-  const [capitalsvalue, setCapitalsvalue] = useState(400000);
+  const [capitalsvalue, setCapitalsvalue] = useState("150.000");
   const [data, setData] = useState([]);
   const capitalsValues = [
     { value: "0", dropvalues: ['150.000', '400.000', '1.000.000', '2.000.000'] },
@@ -208,7 +208,7 @@ const Home = (props) => {
     const [windowSize, setWindowSize] = useState(getSize);
 
     useEffect(() => {
-      setValue("Street Kiosk");
+      setValue("0");
       if (!isClient) {
         return false;
       }
@@ -278,7 +278,7 @@ const Home = (props) => {
                   <label className="labelselectstyle">
                     <select
                       id="what_shop"
-                      defaultValue="Street Kiosk"
+                      defaultValue="0"
                       onChange={handlechangeShop}
                     >
                       <option disabled={true} defaultValue>
@@ -302,7 +302,7 @@ const Home = (props) => {
                     <select
                       id="mach_capital"
                       className="second-select"
-                      defaultValue="400000"
+                      defaultValue="150000"
                       onChange={handlechangeCapital}
                       style={{paddingLeft:'15%'}}
                     >
