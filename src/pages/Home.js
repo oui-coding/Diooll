@@ -178,6 +178,8 @@ const Home = (props) => {
       services: 0,
     },
   ];
+  
+ 
 
   const [estimate, setEstimate] = useState(true);
   const [value, setValue] = useState("0");
@@ -208,6 +210,24 @@ const Home = (props) => {
     const [windowSize, setWindowSize] = useState(getSize);
 
     useEffect(() => {
+
+      const safari = window.navigator.userAgent.indexOf('Safari') != -1
+     
+
+      if(safari){
+        
+        if(document.getElementById("selectOption") !== undefined){
+          if(window.innerWidth <= 767){
+            document.getElementById("selectOption").style.textIndent  = "22vw";
+            document.getElementById("selectOption").style.fontSize = "3.7vw"
+          }
+
+          
+
+        }
+      }
+      
+        
       setValue("0");
       if (!isClient) {
         return false;
@@ -218,6 +238,8 @@ const Home = (props) => {
       }
       window.addEventListener("resize", handleResize);
       return () => window.removeEventListener("resize", handleResize);
+
+
     }, []); // Empty array ensures that effect is only run on mount and unmount
 
     return windowSize;
@@ -274,7 +296,7 @@ const Home = (props) => {
                 }
               > <div>
                 <h2>{t('Home.question_1')}</h2>
-                <div className="select_activity_sector">
+                <div className="select_activity_sector" id="selectOption">
                   <label className="labelselectstyle">
                     <select
                       id="what_shop"
