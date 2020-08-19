@@ -165,6 +165,7 @@
 		margin-right: 2%;
 	}
 	.sign-btn-pricing{
+		-webkit-appearance: none;
 		height: 3.29vw;
 		border: 0;
 		font-size: 1.355vw;

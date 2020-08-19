@@ -53,6 +53,7 @@
     padding: 0;
     height: 4vw;
     font-size: 1.33vw !important;
+    -webkit-appearance: none;
 }
 
 .aboutIntro-secondTitle{
