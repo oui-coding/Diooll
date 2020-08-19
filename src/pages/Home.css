@@ -104,6 +104,7 @@
   text-align-last: left;
   padding-left: 1%;
   font-size: 1.4vw;
+  -webkit-appearance: none;
   
 }
 .select_activity_sector option{
