@@ -104,6 +104,7 @@
   text-align-last: left;
   padding-left: 1%;
   font-size: 1.4vw;
+  
 }
 .select_activity_sector option{
   font-family: 'Montserrat';
@@ -252,9 +253,6 @@ color: #000000;
  
 }
 
-.payment_collection table th label span {
-	/* font-weight:bolder; */
-}
 
 .payment_collection td.last_td label.padding_td {
 	padding-top: 15px;
@@ -457,6 +455,8 @@ height: 56.380vw !important;
     /* margin-top: 3vw; */
     margin-bottom: 3vw;
     padding-left: 33px;
+    -webkit-appearance: none;
+    text-indent: 22vw;
     
   }
   .select_activity_sector option {
