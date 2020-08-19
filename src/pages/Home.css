@@ -104,8 +104,7 @@
   text-align-last: left;
   padding-left: 1%;
   font-size: 1.4vw;
-  -webkit-appearance: none;
-  text-indent: 22vw;
+  
 }
 .select_activity_sector option{
   font-family: 'Montserrat';
@@ -456,6 +455,8 @@ height: 56.380vw !important;
     /* margin-top: 3vw; */
     margin-bottom: 3vw;
     padding-left: 33px;
+    -webkit-appearance: none;
+    text-indent: 22vw;
     
   }
   .select_activity_sector option {
