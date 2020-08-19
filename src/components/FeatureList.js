@@ -33,8 +33,8 @@ const featuresDist = [{
 	logo:'images/bcPartnerperCent.svg',
 	title:`${t('Features.group_0.title_1')}`,
 	title1:`${t('Features.group_0.title_2')}`,
-	text:`${t('Features.group_3.text_1')}`,
-	text1:`${t('Features.group_3.text_2')}`,
+	text:`${t('Features.group_0.text_1')}`,
+	text1:`${t('Features.group_0.text_2')}`,
 },
 {
 	logo:'images/hand.svg',
