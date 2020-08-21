@@ -211,21 +211,21 @@ const Home = (props) => {
 
     useEffect(() => {
 
-      const safari = window.navigator.userAgent.indexOf('Safari') != -1
+      const safari = window.navigator.userAgent.indexOf('Chrome') != -1
      
 
       if(safari){
-        
-        if(document.getElementById("selectOption") !== undefined){
-          if(window.innerWidth >=767){
-            console.log("true")
-            document.getElementById("select_activity_sector").style.textIndent  = "22vw";
-            document.getElementById("select_activity_sector").style.fontSize = "3.7vw"
-          }
+        console.log("true")
+        // if(document.getElementById("select_activity_sector") !== undefined){
+        //   if(window.innerWidth >=767){
+           
+        //     document.getElementById("select_activity_sector").style.textIndent  = "22vw";
+        //     document.getElementById("select_activity_sector").style.fontSize = "3.7vw"
+        //   }
 
           
 
-        }
+        // }
       }
       
         
