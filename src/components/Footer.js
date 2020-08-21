@@ -13,9 +13,15 @@ const Footer = (props) => {
   function handleClick(lang) {
     window.scrollTo(0, 0)
     setLang(lang)
-     localStorage.setItem('lang', lang)
+    localStorage.setItem('lang', lang)
     i18next.changeLanguage(lang)
   }
+
+
+  useEffect(() => {
+    // Met à jour le titre du document via l’API du navigateur
+    setLang(localStorage.getItem('lang'))
+  });
 
   return (
     <footer>
