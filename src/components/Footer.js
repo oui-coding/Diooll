@@ -10,12 +10,12 @@ const Footer = (props) => {
   const [langage, setLang] = useState('')
 
 
-
   function handleClick(lang) {
     window.scrollTo(0, 0)
     setLang(lang)
+     localStorage.setItem('lang', lang)
     i18next.changeLanguage(lang)
-    localStorage.setItem('lang', lang)
+    
     
 
   }
@@ -126,6 +126,7 @@ const Footer = (props) => {
               </option>
 
               <option className="switch-lang-option" value="fr">
+                
                 {t('Footer.frensh')}
               </option>
             </select>

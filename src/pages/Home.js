@@ -211,21 +211,28 @@ const Home = (props) => {
 
     useEffect(() => {
 
-      var safari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+      var ua = navigator.userAgent.toLowerCase(); 
+      if (ua.indexOf('safari') != -1) { 
+let selectOption = document.getElementById("selectOption");
+let shop = document.getElementById("what_shop")
 
-     console.log("safari",safari)
+          if(selectOption !== undefined){
 
-      if(safari){
-
-        if(document.getElementById("selectOption") !== undefined){
-          if(window.innerWidth <=767){
-            console.log("true")
-            document.getElementById("selectOption").style.textIndent  = "22vw";
-            document.getElementById("selectOption").style.fontSize = "3.7vw"
-          }
-      }
+            if(window.innerWidth <=767){
+         
+              selectOption.style.textIndent  = "22vw";
+              selectOption.style.fontSize = "3.7vw";
+              shop.style.textIndent ="22vw";
+              shop.style.fontSize = "3.7vw";
+            
+              
+            }
+        }
+          
         
       }
+
+      
       
         
       setValue("0");
@@ -246,6 +253,19 @@ const Home = (props) => {
   }
 
     const handlechangeShop = (e) => {
+
+      let shop = document.getElementById("what_shop")
+
+      if(shop.options[shop.selectedIndex].value === "0"){
+
+        shop.style.textIndent ="22vw";
+        shop.style.fontSize = "3.7vw";
+    }
+    else{
+      shop.style.textIndent ="3vw";
+        shop.style.fontSize = "3.7vw";
+    }
+
     setValue(e.target.value);
 
     const capt = capitalsValues.filter((elm) => elm.value === e.target.value);
@@ -316,13 +336,13 @@ const Home = (props) => {
                 </div>
                 <div>
                 <h2>{t('Home.question_2')}</h2>
-                <div className="select_activity_sector" id="selectOption" style={{display:'flex'}}>
+                <div className="select_activity_sector"  style={{display:'flex'}}>
                   <p className='xaf-select'>XAF</p>
                 {/* <span>XAF </span> */}
                   <label className="labelselectstyle labelselectstyle-second">
                     
-                    <select
-                      id="mach_capital"
+                    <select id="selectOption"
+                      //id="mach_capital"
                       className="second-select"
                       defaultValue="150000"
                       onChange={handlechangeCapital}
