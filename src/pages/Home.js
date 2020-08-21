@@ -215,17 +215,17 @@ const Home = (props) => {
      
 
       if(safari){
-        console.log("true")
-        // if(document.getElementById("select_activity_sector") !== undefined){
-        //   if(window.innerWidth >=767){
-           
-        //     document.getElementById("select_activity_sector").style.textIndent  = "22vw";
-        //     document.getElementById("select_activity_sector").style.fontSize = "3.7vw"
-        //   }
+        
+        if(document.getElementById("selectOption") !== undefined){
+          if(window.innerWidth >=767){
+            console.log("true")
+            document.getElementById("selectOption").style.textIndent  = "22vw";
+            document.getElementById("selectOption").style.fontSize = "3.7vw"
+          }
 
           
 
-        // }
+        }
       }
       
         
