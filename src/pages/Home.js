@@ -211,13 +211,13 @@ const Home = (props) => {
 
     useEffect(() => {
 
-      const safari = window.navigator.userAgent.indexOf('Chrome') != -1
+      const safari = window.navigator.userAgent.indexOf('Safari') != -1
      
 
       if(safari){
         
         if(document.getElementById("selectOption") !== undefined){
-          if(window.innerWidth >=767){
+          if(window.innerWidth <=767){
             console.log("true")
             document.getElementById("selectOption").style.textIndent  = "22vw";
             document.getElementById("selectOption").style.fontSize = "3.7vw"
