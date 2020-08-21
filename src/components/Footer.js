@@ -15,9 +15,6 @@ const Footer = (props) => {
     setLang(lang)
      localStorage.setItem('lang', lang)
     i18next.changeLanguage(lang)
-    
-    
-
   }
 
   return (
@@ -126,7 +123,7 @@ const Footer = (props) => {
               </option>
 
               <option className="switch-lang-option" value="fr">
-                
+               
                 {t('Footer.frensh')}
               </option>
             </select>
