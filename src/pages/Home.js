@@ -211,7 +211,7 @@ const Home = (props) => {
 
     useEffect(() => {
 
-      const safari = window.navigator.userAgent.indexOf('Chrome') != -1
+      const safari = window.navigator.userAgent.indexOf('Safari') != -1
      
 
       if(safari){
