@@ -211,11 +211,11 @@ const Home = (props) => {
 
     useEffect(() => {
 
-      const safari = window.navigator.userAgent.indexOf('Safari') != -1
-     
+      const safari = navigator.userAgent.indexOf('Safari') != -1
+     console.log("safari",safari)
 
-      if(safari){
-        
+      if(!safari){
+
         if(document.getElementById("selectOption") !== undefined){
           if(window.innerWidth <=767){
             console.log("true")
@@ -223,9 +223,18 @@ const Home = (props) => {
             document.getElementById("selectOption").style.fontSize = "3.7vw"
           }
 
-          
-
         }
+      }
+      else{
+         if(document.getElementById("selectOption") !== undefined){
+          if(window.innerWidth <=767){
+            console.log("false")
+         
+            document.getElementById("selectOption").style.textIndent  = "unset";
+            document.getElementById("selectOption").style.fontSize = "unset"
+          }
+        }
+        
       }
       
         
@@ -297,7 +306,7 @@ const Home = (props) => {
                 }
               > <div>
                 <h2>{t('Home.question_1')}</h2>
-                <div className="select_activity_sector" id="selectOption">
+                <div className="select_activity_sector" >
                   <label className="labelselectstyle">
                     <select
                       id="what_shop"
@@ -317,7 +326,7 @@ const Home = (props) => {
                 </div>
                 <div>
                 <h2>{t('Home.question_2')}</h2>
-                <div className="select_activity_sector" style={{display:'flex'}}>
+                <div className="select_activity_sector" id="selectOption" style={{display:'flex'}}>
                   <p className='xaf-select'>XAF</p>
                 {/* <span>XAF </span> */}
                   <label className="labelselectstyle labelselectstyle-second">
