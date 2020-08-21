@@ -211,10 +211,11 @@ const Home = (props) => {
 
     useEffect(() => {
 
-      const safari = navigator.userAgent.indexOf('Safari') != -1
+      var safari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
      console.log("safari",safari)
 
-      if(!safari){
+      if(safari){
 
         if(document.getElementById("selectOption") !== undefined){
           if(window.innerWidth <=767){
@@ -222,18 +223,7 @@ const Home = (props) => {
             document.getElementById("selectOption").style.textIndent  = "22vw";
             document.getElementById("selectOption").style.fontSize = "3.7vw"
           }
-
-        }
       }
-      else{
-         if(document.getElementById("selectOption") !== undefined){
-          if(window.innerWidth <=767){
-            console.log("false")
-         
-            document.getElementById("selectOption").style.textIndent  = "unset";
-            document.getElementById("selectOption").style.fontSize = "unset"
-          }
-        }
         
       }
       
