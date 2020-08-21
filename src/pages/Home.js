@@ -214,7 +214,7 @@ const Home = (props) => {
       const safari = window.navigator.userAgent.indexOf('Safari') != -1
      
 
-      if(!safari){
+      if(safari){
         console.log("true")
         if(document.getElementById("selectOption") !== undefined){
           if(window.innerWidth <= 767){
