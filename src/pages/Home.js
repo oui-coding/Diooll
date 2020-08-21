@@ -217,7 +217,7 @@ const Home = (props) => {
       if(safari){
         
         if(document.getElementById("selectOption") !== undefined){
-          if(window.innerWidth >=767){
+          if(window.innerWidth <=767){
             console.log("true")
             document.getElementById("selectOption").style.textIndent  = "22vw";
             document.getElementById("selectOption").style.fontSize = "3.7vw"
