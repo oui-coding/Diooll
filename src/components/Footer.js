@@ -20,6 +20,7 @@ const Footer = (props) => {
 
   useEffect(() => {
     // Met à jour le titre du document via l’API du navigateur
+    window.scrollTo(0, 0)
     setLang(localStorage.getItem('lang'))
   });
 
