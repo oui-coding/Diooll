@@ -102,7 +102,7 @@ const featuresPartner = [{
 		</p>
 		{
 		str.includes("balance") ?  
-		<p className="col-idool--lastText" style={{marginTop:'10px'}}>
+		<p className="col-idool--lastText" style={{marginTop:'9px'}}>
 
 			{elm.text1}
 			</p> 

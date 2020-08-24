@@ -7,8 +7,13 @@ import Footer from '../components/Footer'
 import "./PreHome.css";
 
 const PreHome = () => {
+
 	
-  return (<div className="Home">
+	 
+
+	
+  return (
+  <div className="Home">
     <Header />
 	<div class="container-page template_page_index_">
 			<div class="block_all_your_shop payment" style={{marginTop: '-3vw'}}>

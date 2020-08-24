@@ -7,6 +7,9 @@ const Header = (props) => {
  
   const { t  } = useTranslation();
 
+
+
+
   
   //
   return(
@@ -52,34 +55,34 @@ const Header = (props) => {
       </label>
       <ul className="menu__box">
         <li>
-          <a className="menu__item" href="/">
+          <Link className="menu__item" to="/">
           {t('Header_Menue.home')}
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="menu__item" href="/about">
+          <Link className="menu__item" to="/about">
           {t('Header_Menue.about')}
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="menu__item" href="/pricing">
+          <Link className="menu__item" to="/pricing">
           {t('Header_Menue.pricing')}
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="menu__item" href="https://api.diool.com/">
+          <Link className="menu__item" to="https://api.diool.com/">
             API
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="menu__item" href="/distributor">
+          <Link className="menu__item" to="/distributor">
           {t('Header_Menue.distributor')}
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="menu__item" href="#">
+          <Link className="menu__item" to="#">
           {t('Header_Menue.signIn')}
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
