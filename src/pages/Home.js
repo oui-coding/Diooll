@@ -212,24 +212,28 @@ const Home = (props) => {
     useEffect(() => {
 
       var ua = navigator.userAgent.toLowerCase(); 
+
       if (ua.indexOf('safari') != -1) { 
-let selectOption = document.getElementById("selectOption");
-let shop = document.getElementById("what_shop")
+        if (ua.indexOf('chrome') > -1) {}
+        else {
 
-          if(selectOption !== undefined){
+          let selectOption = document.getElementById("selectOption");
+          let shop = document.getElementById("what_shop")
 
-            if(window.innerWidth <=767){
-         
-              selectOption.style.textIndent  = "22vw";
-              selectOption.style.fontSize = "3.7vw";
-              shop.style.textIndent ="22vw";
-              shop.style.fontSize = "3.7vw";
+        if(selectOption !== undefined){
+
+          if(window.innerWidth <=767){
+       
+            selectOption.style.textIndent  = "22vw";
+            selectOption.style.fontSize = "3.7vw";
+            shop.style.textIndent ="22vw";
+            shop.style.fontSize = "3.7vw";
+          
             
-              
+          }
             }
         }
-          
-        
+      
       }
 
       
@@ -254,17 +258,30 @@ let shop = document.getElementById("what_shop")
 
     const handlechangeShop = (e) => {
 
-      let shop = document.getElementById("what_shop")
 
-      if(shop.options[shop.selectedIndex].value === "0"){
+      var ua = navigator.userAgent.toLowerCase(); 
+        if (ua.indexOf('safari') != -1) { 
+          if (ua.indexOf('chrome') > -1) {
+            // Chrome
+          } else {
+            if(window.innerWidth <=767){
+              let shop = document.getElementById("what_shop")
 
-        shop.style.textIndent ="22vw";
-        shop.style.fontSize = "3.7vw";
-    }
-    else{
-      shop.style.textIndent ="3vw";
-        shop.style.fontSize = "3.7vw";
-    }
+                if(shop.options[shop.selectedIndex].value === "0"){
+          
+                  shop.style.textIndent ="22vw";
+                  shop.style.fontSize = "3.7vw";
+              }
+              else{
+                shop.style.textIndent ="3vw";
+                  shop.style.fontSize = "3.7vw";
+              }
+
+            }
+            
+          }
+        }
+ 
 
     setValue(e.target.value);
 
@@ -322,6 +339,7 @@ let shop = document.getElementById("what_shop")
                       id="what_shop"
                       defaultValue="0"
                       onChange={handlechangeShop}
+                      //value={capitals}
                     >
                       <option disabled={true} defaultValue>
                        {t('Home.option_0')}
