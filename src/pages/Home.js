@@ -211,30 +211,34 @@ const Home = (props) => {
 
     useEffect(() => {
 
-      var ua = navigator.userAgent.toLowerCase(); 
+        //detect safari browser
 
-      if (ua.indexOf('safari') != -1) { 
-        if (ua.indexOf('chrome') > -1) {}
-        else {
+        
+      let selectOption = document.getElementById("selectOption");
+      let shop = document.getElementById("what_shop")
 
-          let selectOption = document.getElementById("selectOption");
-          let shop = document.getElementById("what_shop")
-
+      if(window.innerWidth <=767){
+        
         if(selectOption !== undefined){
 
-          if(window.innerWidth <=767){
-       
-            selectOption.style.textIndent  = "22vw";
-            selectOption.style.fontSize = "3.7vw";
-            shop.style.textIndent ="22vw";
-            shop.style.fontSize = "3.7vw";
-          
-            
+          if (window.safari !== undefined) { 
+
+                  selectOption.style.textIndent  = "22vw";
+                  selectOption.style.fontSize = "3.7vw";
+
+                  shop.style.textIndent ="22vw";
+                  shop.style.fontSize = "3.7vw";
           }
+            
+          else {
+              selectOption.style.fontSize  = "3vw";
+              shop.style.fontSize = "3vw";
             }
+          
         }
       
       }
+     
 
       
       
@@ -258,26 +262,42 @@ const Home = (props) => {
 
     const handlechangeShop = (e) => {
 
+      let shop = document.getElementById("what_shop")
+      let selectOption = document.getElementById("selectOption");
 
-      var ua = navigator.userAgent.toLowerCase(); 
-        if (ua.indexOf('safari') != -1) { 
-          if (ua.indexOf('chrome') > -1) {
-            // Chrome
-          } else {
-            let shop = document.getElementById("what_shop")
+      if(window.innerWidth <=767){
+        
+        if(selectOption !== undefined){
 
-                if(shop.options[shop.selectedIndex].value === "0"){
-          
+              if (window.safari !== undefined) { 
+
+                if(shop.options[shop.selectedIndex].value === "0") {
                   shop.style.textIndent ="22vw";
                   shop.style.fontSize = "3.7vw";
-              }
-              else{
-                shop.style.textIndent ="3vw";
+                }
+                else {
+
+                  shop.style.textIndent ="3vw";
                   shop.style.fontSize = "3.7vw";
-              }
+                }
+             }
+
+            
+
           }
+            
+          else {
+            if(shop.options[shop.selectedIndex].value === "0") {
+              selectOption.style.fontSize  = "3vw";
+              shop.style.fontSize = "3vw";
+            }
+          }
+          
         }
- 
+      
+     
+
+      
 
     setValue(e.target.value);
 
