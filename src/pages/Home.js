@@ -269,6 +269,7 @@ const Home = (props) => {
         
         if(selectOption !== undefined){
 
+
               if (window.safari !== undefined) { 
 
                 if(shop.options[shop.selectedIndex].value === "0") {
@@ -291,9 +292,11 @@ const Home = (props) => {
               selectOption.style.fontSize  = "3vw";
               shop.style.fontSize = "3vw";
             }
-          }
+              }
+
+            }
+            
           
-        }
       
      
 
