@@ -8,7 +8,7 @@ import Distributor from './pages/Distributor'
 import About from './pages/About'
 import BecomPartner from './pages/BecomPartner'
 import "./App.css";
-
+import ScrollToTop from "./components/ScrollToTop"
 import { SharedDataContext } from './useContext';
 
 
@@ -25,7 +25,7 @@ function App() {
          
             
     <Router>
-    
+    <ScrollToTop />
     <Switch>
     <Route
             exact

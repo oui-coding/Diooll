@@ -8,10 +8,6 @@ import "./PreHome.css";
 
 const PreHome = () => {
 
-	
-	 
-
-	
   return (
   <div className="Home">
     <Header />
