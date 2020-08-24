@@ -264,7 +264,8 @@ const Home = (props) => {
           if (ua.indexOf('chrome') > -1) {
             // Chrome
           } else {
-            let shop = document.getElementById("what_shop")
+            if(window.innerWidth <=767){
+              let shop = document.getElementById("what_shop")
 
                 if(shop.options[shop.selectedIndex].value === "0"){
           
@@ -275,6 +276,9 @@ const Home = (props) => {
                 shop.style.textIndent ="3vw";
                   shop.style.fontSize = "3.7vw";
               }
+
+            }
+            
           }
         }
  
