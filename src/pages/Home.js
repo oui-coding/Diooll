@@ -421,7 +421,7 @@ const Home = (props) => {
                 ) : (
                   <input
                     type="submit"
-                    value="New estimate"
+                    value={t('Home.newEstiamte')}
                     onClick={(e) => {
                       e.preventDefault();
                       setValue("0");
