@@ -150,11 +150,15 @@
 	
 	
 	.pricing__container label {
-		font-family: 'SFProDisplay-bold';
-		font-size: 1.5vw;
+		/* font-family: 'SFProDisplay-bold'; */
+		font-family: 'Montserrat';
+		font-size: 1.75vw;
 		text-align: center;
-		letter-spacing: 1px;
+		letter-spacing: -0.0178vw;
 		display: block;
+		font-style: normal;
+		font-weight: bold;
+		line-height:   2.122vw;
 		
 	}
 	

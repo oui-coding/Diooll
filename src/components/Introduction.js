@@ -50,7 +50,8 @@ const language = localStorage.getItem('lang')
       <input className="sign-btn" type="button" value={t("introduction.button")} style={{marginTop:'0.5vw'}}/>
       <div className="btn_app_google">
         <div className="bouton-aligne">
-         <a href="https://play.google.com/store/apps/details?id=com.diool"> <input
+         <a href="https://play.google.com/store/apps/details?id=com.diool">
+            <input
             type="image"
             src={require("../images/static/app_store.png")}
             name="Submit_app"

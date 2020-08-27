@@ -89,8 +89,9 @@ const Footer = (props) => {
             <input
               className="subscribe-btn"
               type="submit"
-              placeholder={`${t('Footer.subscribe')}`}
+              value={t('Footer.subscribe')}
               style={{ paddingBottom: "9%" }}
+              
             />
           </form>
 
@@ -115,7 +116,7 @@ const Footer = (props) => {
             </li>
           </ul>
           <div style={{ display: "flex", alignItems: "center" }}>
-            <span className="switchlang-span">{t("Footer.switchLanguage")} : </span>
+            <span className="switchlang-span">{t("Footer.switchLanguage")}:</span>
 
             {/* <label class="labelselectstyle"> */}
             <select
@@ -124,14 +125,15 @@ const Footer = (props) => {
               value={langage}
               onChange={(e) => handleClick(e.target.value)}
             >
+              <option className="switch-lang-option" value="fr">
+               
+               {t('Footer.frensh')}
+             </option>
               <option className="switch-lang-option" value="en">
                 {t('Footer.english')}
               </option>
 
-              <option className="switch-lang-option" value="fr">
-               
-                {t('Footer.frensh')}
-              </option>
+              
             </select>
 
           </div>
