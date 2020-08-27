@@ -18,6 +18,7 @@
       "button" : "Essayez Gratuit"
   }, 
   "Home" : {
+    "newEstiamte" : "Nouvelle Estimation",
     "estimateTitle" : "Gagnez des commissions",
     "estimateTitle_2" : "Estimez vos gains",
     "question_1" : "Quelle boutique avez-vous ?",
