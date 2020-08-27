@@ -37,10 +37,10 @@
       "fifth_par" : "sur une période de "
     },
     "secondCardFeature" : {
-      "first_par" : "Recharge prepayées",
-      "second_par" : "Paiement de factures",
+      "first_par" : "Recharges Prepayées",
+      "second_par" : "Paiement de Factures",
       "third_par" : "Produits de consommation",
-      "fourth_par" : "Dépôts & Retraits d'argent"
+      "fourth_par" : "Dépôts & Retraits d’argent"
     },
     "estimateButton" : "Estimez",
     "accept_par" : "Acceptez les paiements marchands",
