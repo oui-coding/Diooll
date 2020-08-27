@@ -18,7 +18,7 @@
       "button" : "Essayez Gratuit"
   }, 
   "Home" : {
-    "newEstiamte" : "Nouvelle Estimation",
+    "newEstimate" : "Nouvelle Estimation",
     "estimateTitle" : "Gagnez des commissions",
     "estimateTitle_2" : "Estimez vos gains",
     "question_1" : "Quelle boutique avez-vous ?",
@@ -58,7 +58,8 @@
     "instant" : "Mise en compte instantanée dans votre compte Diool",
     "Settlement" : "Mise en compte en T+2 à votre banque",
     "combine_par" : "Combinez le tout pour gagner plus",
-    "features" : "Fonctionnalités"
+    "features" : "Fonctionnalités",
+    "mobile_money_without_in" : ""
   },
   "Features" : {
 

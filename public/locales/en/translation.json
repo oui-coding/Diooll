@@ -18,7 +18,7 @@
       "button" : "Try it for free"
   },
   "Home" : {
-
+    "newEstimate" : "New Estimate",
     "estimateTitle" : "Earn commissions",
     "estimateTitle_2" : "Estimate your revenues",
     "option_0" : "Please select an option",
@@ -61,7 +61,8 @@
     "Settlement" : "T+2 settlement to your bank account",
     "combine_par" : "Combine all to make more",
     "features" : "Features",
-    "flat_fee_per" : ""
+    "flat_fee_per" : "",
+    "mobile_money_without_in" :"mobile money"
   },
 
   "Features" : {
