@@ -232,7 +232,7 @@ const Home = (props) => {
             selectOption.style.textIndent  = "22vw";
             selectOption.style.fontSize = "3.7vw";
 
-            shop.style.textIndent ="22vw";
+            shop.style.textIndent ="8vw";
             shop.style.fontSize = "3.7vw"
             }
           
