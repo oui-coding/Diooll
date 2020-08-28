@@ -216,6 +216,7 @@ const Home = (props) => {
         
       let selectOption = document.getElementById("selectOption");
       let shop = document.getElementById("what_shop")
+      console.log("window", window.safari)
 
       if(window.innerWidth <=767){
         
@@ -264,7 +265,7 @@ const Home = (props) => {
 
       let shop = document.getElementById("what_shop")
       let selectOption = document.getElementById("selectOption")
-
+console.log("window", window.safari)
       if(window.innerWidth <=767){
         
         if(selectOption !== undefined){
