@@ -284,6 +284,18 @@ console.log("window", window.chrome)
                   shop.style.fontSize = "3.7vw";
                 }
              }
+             else{
+              if(shop.options[shop.selectedIndex].value === "0") {
+                shop.style.textIndent ="3vw";
+                shop.style.fontSize = "3.7vw"
+               
+              }
+              else {
+
+                shop.style.textIndent ="22vw";
+                shop.style.fontSize = "3.7vw";
+              }
+             }
 
             
 
