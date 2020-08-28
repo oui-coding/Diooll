@@ -60,19 +60,7 @@ function Chart({ data }) {
   // const [data, setData] = useState([{shop : '0', capital:50000, actifDay:15, transaction: 207, revenue:16350, recharge:16350, retrait:0, paiment:0,services:0 }])
   useEffect(() => {
 
-    let xafText = document.getElementById('xafText');
-    if(window.innerWidth >=767){
-        
-      if(xafText !== undefined){
-       
-            if (window.safari !== undefined) { 
-               console.log('safari')
-
-              xafText.style.marginLeft ="0.8vw";
-              xafText.style.fontWeight = "unset"
-            }
-          }
-    }
+   
 
     if (data !== undefined) {
       setState({
