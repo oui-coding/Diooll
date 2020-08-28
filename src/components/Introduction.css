@@ -31,7 +31,7 @@
 		text-align: center;
 		color: #fff;
 		-webkit-appearance: none;
-		background-color: #d9784c;
+		background-color: #E77340;
 		width: 26.5%;
 		margin: 1.5vw 0% 4vw 0%;
 		letter-spacing: 1.5px;
@@ -39,7 +39,7 @@
 		-webkit-border-radius: 5px;
 		-moz-border-radius: 5px;
 		border-radius: 5px;
-		border: 1px solid #d9784c; 
+		border: 1px solid #E77340; 
 	}
 	
 	input.sign-btn:hover {
