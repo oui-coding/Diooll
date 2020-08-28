@@ -1,11 +1,18 @@
+@font-face {
+  font-family: Montserrat-Alternates-semi-Bold;
+  src: url(../font/fonts/MontserratAlternates-SemiBold.ttf);
+}
+
+
+
 .aboutIntro {
   background: #ffffff;
   padding: 0 10vw;
 }
 
 .aboutIntro h1 {
-  font-family: 'MontserratAlternates-bold';
-  font-weight: bold;
+  font-family: 'Montserrat-Alternates-semi-Bold';
+  font-weight: 600;
   text-align: center;
   width : max-content
   /* width: 86%; */
