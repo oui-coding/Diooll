@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 
 const Pricing = () => {
   const [pricing, setPrincing] = useState(true)
-  const { t } = useTranslation(); 
+  const { t } = useTranslation()
 
   const handlechange = e=>{
   setPrincing(prevState=>!prevState)
@@ -39,19 +39,19 @@ const Pricing = () => {
               </p>
               <button className="sign-btn-pricing" style={{fontWeight:'500',letterSpacing: '0'}} >{t('pricing.group.text_5')}</button>
             </div>
-            <div className="pricing_01">
+            <div>
               <p>
-                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> {t('pricing.group.text_6')}
+                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /><span className="pricing_01">{t('pricing.group.text_6')}</span> 
               </p>
               <p>
-                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> {t('pricing.group.text_7')} <span className="span-xaf">  XAF </span> <span  style={{marginLeft:'11%'}}>1.000.000
+                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> <span className="pricing_01">{t('pricing.group.text_7')}</span> <span className="span-xaf">  XAF </span> <span className="pricing_01" style={{marginLeft:'11%'}}>1.000.000
   /{t('pricing.group.text_8')}</span>
               </p>
               <p>
-                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} />{t('pricing.group.sandbox')}
+                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> <span className="pricing_01">{t('pricing.group.sandbox')}</span>
               </p>
               <p>
-                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} />{t('pricing.group.support')}
+                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> <span className="pricing_01">{t('pricing.group.support')}</span>
               </p>
             </div>
           </div>

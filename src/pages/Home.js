@@ -21,7 +21,7 @@ const Home = (props) => {
       recharge: '16.350',
       retrait: 0,
       paiment: 0,
-      services: 0,
+      services: 0
     },
     {
       shop: "0",
@@ -32,7 +32,7 @@ const Home = (props) => {
       recharge: '20.300',
       retrait: '10.050',
       paiment: '6.450',
-      services: 0,
+      services: 0
     },
     {
       shop: "0",
@@ -43,7 +43,7 @@ const Home = (props) => {
       recharge: '21.175',
       retrait: '32.915',
       paiment: '8.950',
-      services: '18.760',
+      services: '18.760'
     },
     {
       shop: "0",
@@ -54,7 +54,7 @@ const Home = (props) => {
       recharge: '23.925',
       retrait: '83.700',
       paiment: '13.575',
-      services: '27.500',
+      services: '27.500'
     },
     {
       shop: "0",
@@ -65,7 +65,7 @@ const Home = (props) => {
       recharge: '23.430',
       retrait: '118.095',
       paiment: '15.575',
-      services: '29.500',
+      services: '29.500'
     },
     {
       shop: "1",
@@ -76,7 +76,7 @@ const Home = (props) => {
       recharge: '54.900',
       retrait: '2.500',
       paiment: '12.900',
-      services: 0,
+      services: 0
     },
     {
       shop: "1",
@@ -87,7 +87,7 @@ const Home = (props) => {
       recharge: '186.850',
       retrait: '20.250',
       paiment: '17.900',
-      services: 0,
+      services: 0
     },
     {
       shop: "1",
@@ -98,7 +98,7 @@ const Home = (props) => {
       recharge: '256.750',
       retrait: '76.000',
       paiment: '27.250',
-      services: 0,
+      services: 0
     },
     {
       shop: "2",
@@ -109,7 +109,7 @@ const Home = (props) => {
       recharge: '61.550',
       retrait: '2.600',
       paiment: '10.000',
-      services: 0,
+      services: 0
     },
     {
       shop: "2",
@@ -120,7 +120,7 @@ const Home = (props) => {
       recharge: '172.125',
       retrait: '17.875',
       paiment: '15.000',
-      services: 0,
+      services: 0
     },
     {
       shop: "2",
@@ -131,7 +131,7 @@ const Home = (props) => {
       recharge: '283.000',
       retrait: '80.200',
       paiment: '25.000',
-      services: 0,
+      services: 0
     },
     {
       shop: "3",
@@ -142,7 +142,7 @@ const Home = (props) => {
       recharge: '14.485',
       retrait: '28.315',
       paiment: '15.000',
-      services: 0,
+      services: 0
     },
     {
       shop: "3",
@@ -153,7 +153,7 @@ const Home = (props) => {
       recharge: '9.060',
       retrait: '120.315',
       paiment: '17.000',
-      services: 0,
+      services: 0
     },
     {
       shop: "3",
@@ -164,7 +164,7 @@ const Home = (props) => {
       recharge: '8.930',
       retrait: '160.252',
       paiment: '20.000',
-      services: 0,
+      services: 0
     },
     {
       shop: "3",
@@ -175,39 +175,39 @@ const Home = (props) => {
       recharge: '4.584',
       retrait: '194.734',
       paiment: '25.000',
-      services: 0,
+      services: 0
     },
   ];
   
  
 
-  const [estimate, setEstimate] = useState(true);
-  const [value, setValue] = useState("0");
+  const [estimate, setEstimate] = useState(true)
+  const [value, setValue] = useState("0")
   const [capitals, setCapitals] = useState([
     { value: "0", dropvalues: ['150.000', '400.000', '1.000.000', '2.000.000'] },
   ]);
-  const [capitalsvalue, setCapitalsvalue] = useState("150.000");
-  const [data, setData] = useState([]);
+  const [capitalsvalue, setCapitalsvalue] = useState("150.000")
+  const [data, setData] = useState([])
   const capitalsValues = [
     { value: "0", dropvalues: ['150.000', '400.000', '1.000.000', '2.000.000'] },
     { value: "1", dropvalues: ['150.000', '400.000', '1.000.000'] },
     { value: "2", dropvalues: ['150.000', '400.0000', '1.000.000'] },
-    { value: "3", dropvalues: ['500.000', '1.250.000', '2.500.000', '3.000.000'] },
+    { value: "3", dropvalues: ['500.000', '1.250.000', '2.500.000', '3.000.000'] }
   ];
 
   const size = useWindowSize();
   //hook
   function useWindowSize() {
-    const isClient = typeof window === "object";
+    const isClient = typeof window === "object"
 
     function getSize() {
       return {
         width: isClient ? window.innerWidth : undefined,
-        height: isClient ? window.innerHeight : undefined,
+        height: isClient ? window.innerHeight : undefined
       };
     }
 
-    const [windowSize, setWindowSize] = useState(getSize);
+    const [windowSize, setWindowSize] = useState(getSize)
 
     useEffect(() => {
 
@@ -227,12 +227,12 @@ const Home = (props) => {
                   selectOption.style.fontSize = "3.7vw";
 
                   shop.style.textIndent ="22vw";
-                  shop.style.fontSize = "3.7vw";
+                  shop.style.fontSize = "3.7vw"
           }
             
           else {
               selectOption.style.fontSize  = "3vw";
-              shop.style.fontSize = "3vw";
+              shop.style.fontSize = "3vw"
             }
           
         }
@@ -243,16 +243,16 @@ const Home = (props) => {
       
       
         
-      setValue("0");
+      setValue("0")
       if (!isClient) {
-        return false;
+        return false
       }
       setData([]);
       function handleResize() {
-        setWindowSize(getSize());
+        setWindowSize(getSize())
       }
-      window.addEventListener("resize", handleResize);
-      return () => window.removeEventListener("resize", handleResize);
+      window.addEventListener("resize", handleResize)
+      return () => window.removeEventListener("resize", handleResize)
 
 
     }, []); // Empty array ensures that effect is only run on mount and unmount
@@ -263,7 +263,7 @@ const Home = (props) => {
     const handlechangeShop = (e) => {
 
       let shop = document.getElementById("what_shop")
-      let selectOption = document.getElementById("selectOption");
+      let selectOption = document.getElementById("selectOption")
 
       if(window.innerWidth <=767){
         
@@ -279,7 +279,7 @@ const Home = (props) => {
                 else {
 
                   shop.style.textIndent ="3vw";
-                  shop.style.fontSize = "3.7vw";
+                  shop.style.fontSize = "3.7vw"
                 }
              }
 
@@ -290,7 +290,7 @@ const Home = (props) => {
           else {
             if(shop.options[shop.selectedIndex].value === "0") {
               selectOption.style.fontSize  = "3vw";
-              shop.style.fontSize = "3vw";
+              shop.style.fontSize = "3vw"
             }
               }
 
@@ -302,28 +302,28 @@ const Home = (props) => {
 
       
 
-    setValue(e.target.value);
+    setValue(e.target.value)
 
-    const capt = capitalsValues.filter((elm) => elm.value === e.target.value);
-    const result = capt[0].dropvalues;
-    setCapitalsvalue(result[0]);
-    setCapitals(capt);
+    const capt = capitalsValues.filter((elm) => elm.value === e.target.value)
+    const result = capt[0].dropvalues
+    setCapitalsvalue(result[0])
+    setCapitals(capt)
   };
   const handlechangeCapital = (e) => {
-    setCapitalsvalue(e.target.value);
-    setData([]);
+    setCapitalsvalue(e.target.value)
+    setData([])
   };
 
   const estimateToChart = (e) => {
-    setData([]);
+    setData([])
     
-    e.preventDefault();
+    e.preventDefault()
     setData(
       InitialData.filter(
         (elm) => elm.shop == value && elm.capital == capitalsvalue
       )
     );
-    setEstimate(false);
+    setEstimate(false)
   };
 
   
@@ -352,7 +352,7 @@ const Home = (props) => {
                 }
               > <div>
                 <h2>{t('Home.question_1')}</h2>
-                <div className="select_activity_sector" >
+                <div className="select_activity_sector">
                   <label className="labelselectstyle">
                     <select
                       id="what_shop"
@@ -493,7 +493,7 @@ const Home = (props) => {
                 </div>
         <FeatureList component="home"/>
       </div>
-      <Footer   />
+      <Footer/>
     </div>
   );
 };

@@ -32,7 +32,7 @@
 
 
       "homeCard" : {
-        "first_par" : "you may earn",
+        "first_par" : "You may earn",
         "second_par" : "by doing",
         "third_par" : "transactions per month",
         "fourth_par" : "days per month",
@@ -142,14 +142,13 @@
     "thirdTitle_1" : "pay monthly",
     "fourthTitle_1" : "pay annually",
     "user" : "user",
-
     "group" : {
       "text_1" : "Starter",
       "text_2" : "Free",
       "text_3" : "Standard",
       "text_4" : "Advanced",
       "text_5" : "Sign up",
-      "text_6" : "Limited to 3 users",
+      "text_6" : " Limited to 3 users",
       "text_7" : "Limited to",
       "text_8" : "month",
       "sandbox" :" Sandbox API Tokens",

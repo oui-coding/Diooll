@@ -131,7 +131,7 @@ const Footer = (props) => {
               </option>
               <option className="switch-lang-option" value="fr">
                
-               {t('Footer.frensh')}
+                {t('Footer.frensh')}
              </option>
 
               
