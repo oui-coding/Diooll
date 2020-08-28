@@ -125,13 +125,14 @@ const Footer = (props) => {
               value={langage}
               onChange={(e) => handleClick(e.target.value)}
             >
+              
+              <option className="switch-lang-option" value="en">
+                {t('Footer.english')}
+              </option>
               <option className="switch-lang-option" value="fr">
                
                {t('Footer.frensh')}
              </option>
-              <option className="switch-lang-option" value="en">
-                {t('Footer.english')}
-              </option>
 
               
             </select>
