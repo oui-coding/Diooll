@@ -222,18 +222,18 @@ const Home = (props) => {
         
         if(selectOption !== undefined){
 
-          if (window.safari !== undefined) { 
-
-                  selectOption.style.textIndent  = "22vw";
-                  selectOption.style.fontSize = "3.7vw";
-
-                  shop.style.textIndent ="22vw";
-                  shop.style.fontSize = "3.7vw"
+          if (window.chrome !== undefined) { 
+            selectOption.style.fontSize  = "3vw";
+            shop.style.fontSize = "3vw"
+                 
           }
             
           else {
-              selectOption.style.fontSize  = "3vw";
-              shop.style.fontSize = "3vw"
+            selectOption.style.textIndent  = "22vw";
+            selectOption.style.fontSize = "3.7vw";
+
+            shop.style.textIndent ="22vw";
+            shop.style.fontSize = "3.7vw"
             }
           
         }
