@@ -44,7 +44,7 @@ const Pricing = () => {
                 <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> {t('pricing.group.text_6')}
               </p>
               <p>
-                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> {t('pricing.group.text_7')} <span style={{fontSize:'0.6vw',position: 'absolute'}}>  XAF </span> <span  style={{marginLeft:'11%'}}>1.000.000
+                <img className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> {t('pricing.group.text_7')} <span className="span-xaf">  XAF </span> <span  style={{marginLeft:'11%'}}>1.000.000
   /{t('pricing.group.text_8')}</span>
               </p>
               <p>

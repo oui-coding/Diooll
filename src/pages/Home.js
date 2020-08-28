@@ -386,7 +386,7 @@ const Home = (props) => {
                       style={{paddingLeft:'15%'}}
                     >
                       <option disabled={true} defaultValue>
-                        Please select an option
+                        {t('Home.option_0')}
                       </option>
                       {capitals.length > 0 && capitals[0] !== undefined
                         ? capitals[0].dropvalues.map((elm, i) => {

@@ -240,6 +240,11 @@
 	} 
 	
 	@media (min-width: 500px) and (max-width: 767px) { 
+
+		.pricing_01 span {
+			
+			font-size: 2.6 vw !important;
+		}
 	
 		.pricing_ {
 			width: 48% !important;
@@ -301,7 +306,7 @@
 		}
 		
 		.pricing_ .pricing__container p.sup {font-size: 3.25vw !important;margin-bottom: 12%;}
-		.pricing_01 p {font-size: 3.5vw !important;}
+		.pricing_01 p {font-size: 3.5vw }
 		
 		.checkIcon{
 			width: 3vw;
@@ -320,6 +325,21 @@
 			margin-bottom: 5% !important;
 		}
 		
+	}
+
+
+
+	.pricing_01 span {
+		position : absolute;
+		font-size: 0.6 vw !important;
+	}
+
+
+	@media screen and (max-width: 769px) {
+		.pricing_01 span {
+			
+			font-size: 2.6 vw !important;
+		}
 	}
 	
 	
