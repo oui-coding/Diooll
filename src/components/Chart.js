@@ -66,6 +66,7 @@ function Chart({ data }) {
         
       if(xafText !== undefined){
             if (window.safari !== undefined) { 
+              console.log('safari')
               xafText.style.marginLeft ="0.8vw !important";
               xafText.style.fontWeight = "unset"
             }
