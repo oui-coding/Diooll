@@ -27,7 +27,7 @@
 .aboutIntro-firstTitle {
   color: #1a1f3a;
   font-size: 3.34vw;
-  margin-bottom: 0;
+  margin-bottom: -16px;
 }
 .aboutIntro-secondTitle {
   color: #e56b36;
@@ -37,8 +37,7 @@
 
 }
 .first-SecondTitle{
-  margin-bottom: 0px;
-  margin-bottom: 0;
+  margin-bottom: -23px;
 }
 
 .aboutIntro-text {
