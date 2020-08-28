@@ -61,10 +61,11 @@ function Chart({ data }) {
   useEffect(() => {
 
     let xafText = document.getElementById('xafText');
-
-    if(window.innerWidth <=767){
+ console.log('safari')
+    if(window.innerWidth >=767){
         
-      if(xafText !== undefined){console.log('safari')
+      if(xafText !== undefined){
+       
             if (window.safari !== undefined) { 
               
               xafText.style.marginLeft ="0.8vw !important";
