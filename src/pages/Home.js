@@ -265,7 +265,7 @@ const Home = (props) => {
 
       let shop = document.getElementById("what_shop")
       let selectOption = document.getElementById("selectOption")
-console.log("window", window.safari)
+console.log("window", window.chrome)
       if(window.innerWidth <=767){
         
         if(selectOption !== undefined){
@@ -280,7 +280,7 @@ console.log("window", window.safari)
                 }
                 else {
 
-                  shop.style.textIndent ="22vw";
+                  shop.style.textIndent ="-4vw";
                   shop.style.fontSize = "3.7vw";
                 }
              }
