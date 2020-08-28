@@ -447,11 +447,11 @@ const Home = (props) => {
 				<thead>
 					<tr>
            <th><label>{t('Home.monthly')}<br/>{t('Home.transaction')}</label></th>
-           <th><label><span>500.000</span><br/><span className="table-headtab-text2">xaf / {t('Home.month')}</span></label></th>
-						<th><label><span>2.500.000</span><br/><span className="table-headtab-text2">xaf / {t('Home.month')}</span></label></th>
-						<th><label><span>5.000.000</span><br/><span className="table-headtab-text2">xaf / {t('Home.month')}</span></label></th>
-						<th><label><span>10.000.000</span><br/><span className="table-headtab-text2">xaf / {t('Home.month')}</span></label></th>
-						<th><label><span>>50.000.000</span><br/><span className="table-headtab-text2">xaf / {t('Home.month')}</span></label></th>
+           <th><label><span>500'000</span><br/><span className="table-headtab-text2">xaf / {t('Home.month')}</span></label></th>
+						<th><label><span>2'500'000</span><br/><span className="table-headtab-text2">xaf / {t('Home.month')}</span></label></th>
+						<th><label><span>5'000'000</span><br/><span className="table-headtab-text2">xaf / {t('Home.month')}</span></label></th>
+						<th><label><span>10'000'000</span><br/><span className="table-headtab-text2">xaf / {t('Home.month')}</span></label></th>
+						<th><label><span>>50'000'000</span><br/><span className="table-headtab-text2">xaf / {t('Home.month')}</span></label></th>
 					</tr>
 				</thead>  
 				<tbody>
