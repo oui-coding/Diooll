@@ -216,14 +216,14 @@ const Home = (props) => {
         
       let selectOption = document.getElementById("selectOption");
       let shop = document.getElementById("what_shop")
-      
+      let xafTextt = document.getElementById("xafText");
+        
 
       if(window.innerWidth <=767){
         
         if(selectOption !== undefined){
-console.log("window.chrome",window.chrome)
+
           if (window.chrome !== undefined) { 
-            console.log('chrome')
             selectOption.style.fontSize  = "3vw";
             shop.style.fontSize = "3vw"
                  
@@ -234,12 +234,17 @@ console.log("window.chrome",window.chrome)
             selectOption.style.fontSize = "3.7vw";
 
             shop.style.textIndent ="22vw";
-            shop.style.fontSize = "3.7vw"
+            shop.style.fontSize = "3.7vw";
+
+            xafTextt.style.marginLeft ="0.8vw !important";
+            xafTextt.style.fontWeight = "unset"
             }
           
         }
       
       }
+
+
      
 
       
@@ -266,7 +271,6 @@ console.log("window.chrome",window.chrome)
 
       let shop = document.getElementById("what_shop")
       let selectOption = document.getElementById("selectOption")
-console.log("window", window.chrome)
       if(window.innerWidth <=767){
         
         if(selectOption !== undefined){

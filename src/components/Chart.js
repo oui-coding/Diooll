@@ -59,6 +59,9 @@ function Chart({ data }) {
   // const dataLegend = data.filter((elm,i)=>i!==data.length-1);
   // const [data, setData] = useState([{shop : '0', capital:50000, actifDay:15, transaction: 207, revenue:16350, recharge:16350, retrait:0, paiment:0,services:0 }])
   useEffect(() => {
+
+    
+
     if (data !== undefined) {
       setState({
         dataChart: [
@@ -77,7 +80,7 @@ function Chart({ data }) {
   return (
     <div className="BlockChat-contain">
       <div className="estimation-result">
-        <p className="estimation-textCont"><span className="small-text-white">{t('Home.homeCard.first_par')} : </span> <span className="XAF-text"> XAF </span> <span className="number-earn">{state.revenue}</span></p>
+        <p className="estimation-textCont"><span className="small-text-white">{t('Home.homeCard.first_par')} : </span> <span className="XAF-text" id="xafText"> XAF </span> <span className="number-earn">{state.revenue}</span></p>
         <p className="estimation-textCont secondtext-estim firstestim"><span className="small-text-white">{t('Home.homeCard.second_par')} : </span><span className="small-text-white"> {state.transaction} {t('Home.homeCard.third_par')}</span></p>
         <p className="estimation-textCont secondtext-estim" style={{ marginTop: '0vw' }}><span className="small-text-white">{t('Home.homeCard.fifth_par')} :</span><span className="small-text-white"> {state.actifDay} {t('Home.homeCard.fourth_par')}</span></p>
       </div>

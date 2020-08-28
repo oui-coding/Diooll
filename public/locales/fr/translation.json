@@ -30,7 +30,7 @@
     "costs" : "Estimez vos coûts",
     "question_2" : "Quel capital mettrez-vous ?",
     "homeCard" : {
-      "first_par" : "vous gagneriez",
+      "first_par" : "Vous gagneriez",
       "second_par" : "avec",
       "third_par" : "transactions par mois",
       "fourth_par" : "jours par mois",
