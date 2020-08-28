@@ -221,8 +221,9 @@ const Home = (props) => {
       if(window.innerWidth <=767){
         
         if(selectOption !== undefined){
-
+console.log("window.chrome",window.chrome)
           if (window.chrome !== undefined) { 
+            console.log('chrome')
             selectOption.style.fontSize  = "3vw";
             shop.style.fontSize = "3vw"
                  
@@ -285,6 +286,7 @@ console.log("window", window.chrome)
                 }
              }
              else{
+
               if(shop.options[shop.selectedIndex].value === "0") {
                 shop.style.textIndent ="3vw";
                 shop.style.fontSize = "3.7vw"
@@ -292,7 +294,7 @@ console.log("window", window.chrome)
               }
               else {
 
-                shop.style.textIndent ="22vw";
+                shop.style.textIndent ="4vw";
                 shop.style.fontSize = "3.7vw";
               }
              }
