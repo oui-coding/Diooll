@@ -88,14 +88,14 @@
 		border: 0;
 		background-color: #d9784c;
 		color: #FFFFFF;
-		padding: 0 4%;
+		padding: 0 20px;
 		display: block;
 		font-size: 1vw;
-		letter-spacing: 1.5px;
+		letter-spacing:  -0.208798px;
 		-webkit-border-radius: 5px;
 		-moz-border-radius: 5px;
 		border-radius: 5px;
-		width: 35%;
+		font-weight: 400;
 		margin: 0;
 		margin-left: 2%;
 		line-height: 2.5vw;
