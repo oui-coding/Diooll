@@ -216,7 +216,6 @@ const Home = (props) => {
         
       let selectOption = document.getElementById("selectOption");
       let shop = document.getElementById("what_shop")
-      let xafText = document.getElementById('xafText');
 
       if(window.innerWidth <=767){
         
@@ -235,9 +234,6 @@ const Home = (props) => {
             shop.style.textIndent ="22vw";
             shop.style.fontSize = "3.7vw";
 
-
-            xafText.style.marginLeft ="0.8vw";
-            xafText.style.fontWeight = "unset"
 
             
             }
