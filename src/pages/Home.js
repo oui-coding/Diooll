@@ -271,16 +271,17 @@ console.log("window", window.safari)
         if(selectOption !== undefined){
 
 
-              if (window.safari !== undefined) { 
+              if (window.chrome !== undefined) { 
 
                 if(shop.options[shop.selectedIndex].value === "0") {
-                  shop.style.textIndent ="22vw";
-                  shop.style.fontSize = "3.7vw";
+                  shop.style.textIndent ="3vw";
+                  shop.style.fontSize = "3.7vw"
+                 
                 }
                 else {
 
-                  shop.style.textIndent ="3vw";
-                  shop.style.fontSize = "3.7vw"
+                  shop.style.textIndent ="22vw";
+                  shop.style.fontSize = "3.7vw";
                 }
              }
 
