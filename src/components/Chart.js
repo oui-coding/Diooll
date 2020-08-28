@@ -61,14 +61,14 @@ function Chart({ data }) {
   useEffect(() => {
 
     let xafText = document.getElementById('xafText');
- console.log('safari')
     if(window.innerWidth >=767){
         
       if(xafText !== undefined){
        
             if (window.safari !== undefined) { 
-              
-              xafText.style.marginLeft ="0.8vw !important";
+               console.log('safari')
+
+              xafText.style.marginLeft ="0.8vw";
               xafText.style.fontWeight = "unset"
             }
           }
