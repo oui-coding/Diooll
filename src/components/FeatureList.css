@@ -114,6 +114,10 @@
     justify-content: space-between;
 }
 
+.item-featureCont h4{
+	text-align: center;
+}
+
 .block_Features span {
 	font-family: 'SFProDisplay-bold'!important;
 	text-align: center !important;
@@ -143,10 +147,32 @@
 	text-align: center !important;
 	margin-left: 40vw!important;
 	margin-top: 10vw !important;
-	margin-bottom: 7vw;
+	/* margin-bottom: 7vw; */
 }
 .block_Features h2 {
 font-size: 4.375vw !important;
 line-height: 5.313vw;
 }
 }
+
+
+
+/* added by yosser */
+
+
+.card {
+	/* Add shadows to create the "card" effect */
+	/* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+	transition: 0.3s;
+	width: 31%;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+	/* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+	/* padding: 2px 16px; */
+  }

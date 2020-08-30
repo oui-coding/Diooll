@@ -64,10 +64,6 @@ const featuresPartner = [{
 	title1: `${t('Features.group_2.title_2')}`,
 	text: `${t('Features.group_2.text_1')}`,
 	text1: `${t('Features.group_2.text_2')}`,
-	// title:'Realtime Data',
-	// title1:'on your products distribution',
-	// text:'Review resellers activity',
-	// text1:'based on location or other criteria',
 },
 {
 	logo:'images/localPromo.svg',
@@ -75,18 +71,82 @@ const featuresPartner = [{
 	title1: `${t('Features.group_3.title_2')}`,
 	text: `${t('Features.group_3.text_1')}`,
 	text1: `${t('Features.group_3.text_2')}`,
-	// title:'Localized Promos',
-	// title1:'to your customer base',
-	// text:'Boost product performance',
-	// text1:'using targeted props and coupons',
 }]
 
 
 	let featchTab = component === "partner" ? featuresPartner :  component ==="distributor" ? featuresDist : features
 	return (
+	
 	<div className="block_Features">
-		<h1 style={{marginTop: component!=="home" ? '6.532vw' : '2.432VW' }}>{t('Home.features')}</h1>
-		<div className="item-featureCont">
+		 <h1 style={{marginTop: component!=="home" ? '6.532vw' : '2.432VW' }}>{t('Home.features')}</h1>
+		 <div className="item-featureCont">
+		 {
+				 component === "home" ?
+					 
+				 features.map((home,key)=>{
+					 return(
+						 
+							 <div class="col-idool-3">
+									<img src={require('../'+home.logo)} alt="Avatar" style={{width:"25px",height:"25px	"}}/>
+							<div class="container">
+								<h4><b style={{lineHeight:"29px"}}>{home.title} <br/>
+										{home.title1}</b></h4>
+								<p style={{lineHeight:"18px"}}>{home.text} <br/>
+										{home.text1}</p>
+							</div>
+					</div>
+
+						
+					 )
+					
+				 })
+				
+				 
+		: 
+		
+		component === "distributor" ? 
+		featuresDist.map((distributor,key)=>{
+			return(
+				
+					<div class="col-idool-3">
+						   <img src={require('../'+distributor.logo)} alt="Avatar" style={{width:"25px",height:"25px	"}}/>
+				   <div class="container">
+					   <h4><b style={{lineHeight:"29px"}}>{distributor.title} <br/>
+							   {distributor.title1}</b></h4>
+					   <p style={{lineHeight:"18px"}}>{distributor.text} <br/>
+							   {distributor.text1}</p>
+				   </div>
+		   </div>
+
+			   
+			)
+		   
+		})
+		
+		: 
+
+		featuresPartner.map((partner,key)=>{
+			return(
+				
+					<div class="col-idool-3">
+						   <img src={require('../'+partner.logo)} alt="Avatar" style={{width:"25px",height:"25px	"}}/>
+				   <div class="container">
+					   <h4><b style={{lineHeight:"29px"}}>{partner.title} <br/>
+							   {partner.title1}</b></h4>
+					   <p style={{lineHeight:"18px"}}>{partner.text} <br/>
+							   {partner.text1}</p>
+				   </div>
+		   </div>
+
+			   
+			)
+		   
+		})
+		}
+		  </div>
+				
+
+	{/*	<div className="item-featureCont">
 	{
 	featchTab.map((elm,i)=>{
 		let str = elm.text1
@@ -121,7 +181,7 @@ const featuresPartner = [{
 	</div>
 	<div className="col-idool-12">
 					<a href="https://register.diool.com/#/login/merchant"><input className="sign-btn" type="button" value={component==="distributor" || component==="partner" ?`${t("Features.learnMoreButton")}`:`${t("Features.tryItButton")}`} /></a>
-				</div>
+				</div> */}
 	</div>
 );
 }
