@@ -129,21 +129,7 @@ class DoughnutChart extends React.Component {
   }
 
 
-  componentDidMount () {
-    let iconChart = document.getElementById('chartIcon')
-    if(window.innerWidth <=767){
-        
-      if(iconChart !== undefined){
-
-        if (window.chrome !== undefined) { iconChart.style.bottom  = "45%"; }
-          
-        else {
-          iconChart.style.bottom  = "56%"; }
-        
-      }
-    
-    }
-  }
+  
 
   componentWillReceiveProps=(nextProps)=>{
     
