@@ -66,7 +66,7 @@
 /* ==========================> 	END block_all_your_shop =================================================*/
 
 @media screen and (max-width: 767px) {
-.block_all_your_shop {margin-top: 0vw !important;float: none!important; height: 194.375vw;}
+.block_all_your_shop {margin-top: 0vw !important;float: none!important; height: 200.375vw;}
 	.block_all_your_shop_text {width:100% !important;float:none !important;height:auto !important;}
 	.block_all_your_shop h1 {
 		font-size: 6.250vw !important;
