@@ -399,7 +399,7 @@ height: 56.380vw !important;
   }
 
   .estimate_revenues_container{
-  height: 119vw !important;
+  height: 130vw !important;
   border-radius: 50px;
   }
   .estimate_revenues form,
@@ -559,7 +559,7 @@ display: none;
 
 @media screen and (max-width: 455px) {
   .estimate_revenues_container{
-    height: 130vw;
+    height: 140vw;
     border-radius: 50px;
     }
     .labelselectstyle-second:after {
