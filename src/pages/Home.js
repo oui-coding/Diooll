@@ -333,25 +333,7 @@ const Home = (props) => {
   };
 
   const estimateToChart = (e) => {
-    let btnEstimate = document.getElementById('btnEstimate')
-    if(window.innerWidth <=767){
-        
-      if(btnEstimate !== undefined){
 
-        if (window.chrome !== undefined) {}
-          
-        else {
-        
-          btnEstimate.style.height  = "113px";
-          
-        }
-        
-      }
-    
-    }
-   
-
-    
     setData([])
     
     e.preventDefault()
@@ -362,6 +344,33 @@ const Home = (props) => {
     );
     setEstimate(false)
   };
+
+  const NewEstimete = (e) =>{
+
+    e.preventDefault();
+    let containerInfo = document.getElementById('containerInfo')
+    if(window.innerWidth <=767){
+        
+      if(containerInfo !== undefined){
+
+        if (window.chrome !== undefined) {}
+          
+        else {
+          containerInfo.style.height  = "137px !important";
+          
+        }
+      }
+    }
+
+    setValue("0");
+    setCapitals([
+      {
+        value: "0",
+        dropvalues: ['150.000', '400.000', '1.000.000', '2.000.000'],
+      },
+    ]);
+    setEstimate(true);
+  }
 
   
 
@@ -378,7 +387,7 @@ const Home = (props) => {
         <h1 className="aboutIntro-secondTitle">{t('Home.estimateTitle')}</h1>
         </div>
             {/* <div className="estimate_revenues_container first-container" style={{height: "43.5vw"}}> */}
-            <div className="estimate_revenues_container first-container" >
+            <div className="estimate_revenues_container first-container" id="containerInfo">
               <h1>{t('Home.estimateTitle_2')}</h1>
               <form
                 action=""
@@ -437,11 +446,10 @@ const Home = (props) => {
                 </div>
                 </div>
                 <input
-                id="btnEstimate"
-                 className='btn-estimate'
-                  type="submit"
-                  value={t('Home.estimateButton')}
-				  onClick={estimateToChart}
+                          className='btn-estimate'
+                            type="submit"
+                            value={t('Home.estimateButton')}
+                    onClick={estimateToChart}
                 />
               </form>
               <div
@@ -460,17 +468,7 @@ const Home = (props) => {
                   <input
                     type="submit"
                     value={t('Home.newEstimate')}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setValue("0");
-                      setCapitals([
-                        {
-                          value: "0",
-                          dropvalues: ['150.000', '400.000', '1.000.000', '2.000.000'],
-                        },
-                      ]);
-                      setEstimate(true);
-                    }}
+                    onClick={NewEstimete}
                   />
                 )}
               </div>
