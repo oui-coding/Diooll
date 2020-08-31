@@ -22,7 +22,7 @@ const Pricing = () => {
       <div className="container-page pricing">
         <h1>{t('pricing.firstText')}</h1>
         <h3 style={{color: '#1A1F3A'}}>{t('pricing.secondTitle')}</h3>
-        <div className="checkbox_period" id="checkboxPeriod">
+        <div className="checkbox_period" id="checkboxPeriod" >
           <h2 style={{fontFamily:'MontserratAlternates-ExBold'}}>{t('pricing.thirdTitle_1')}</h2>
           <div className="check_pay">
             <input type="checkbox" hidden="hidden" id="username" onChange={handlechange} />

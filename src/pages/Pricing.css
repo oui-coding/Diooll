@@ -20,6 +20,10 @@
 	}
 	.checkbox_period {text-align: center}
 
+	#checkboxPeriod {
+		
+	}
+
 	.checkbox_period h2 {
 		font-size: 1.39vw;
 		padding: 0;
@@ -39,8 +43,7 @@
 		letter-spacing: 2px;
 		margin-bottom: 5vw
 	}
-	
-	
+
 	
 	
 /*=========================== START   button switch ==============================*/	

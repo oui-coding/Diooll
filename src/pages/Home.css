@@ -359,7 +359,7 @@ tr{
 }
 
 .first-container{
- height: 43.5vw !important;
+ height: 47.5vw !important;
 }
 
 @media screen and (max-width: 1024PX) {
@@ -420,6 +420,7 @@ height: 56.380vw !important;
     font-size: 4vw !important;
     margin-bottom: 0vw !important;
     text-align: center !important;
+    margin-left : 20px;
     /* padding-top: 7vw !important; */
   }
 
