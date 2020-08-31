@@ -333,7 +333,22 @@ const Home = (props) => {
   };
 
   const estimateToChart = (e) => {
+    let btnEstimate = document.getElementById('btnEstimate')
+    if(window.innerWidth <=767){
+        
+      if(btnEstimate !== undefined){
 
+        if (window.chrome !== undefined) {}
+          
+        else {
+        
+          btnEstimate.style.height  = "113px";
+          
+        }
+        
+      }
+    
+    }
    
 
     
@@ -422,6 +437,7 @@ const Home = (props) => {
                 </div>
                 </div>
                 <input
+                id="btnEstimate"
                  className='btn-estimate'
                   type="submit"
                   value={t('Home.estimateButton')}
