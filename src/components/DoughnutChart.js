@@ -128,6 +128,23 @@ class DoughnutChart extends React.Component {
     };
   }
 
+
+  componentDidMount () {
+    let iconChart = document.getElementById('chartIcon')
+    if(window.innerWidth <=767){
+        
+      if(iconChart !== undefined){
+
+        if (window.chrome !== undefined) { iconChart.style.bottom  = "45%"; }
+          
+        else {
+          iconChart.style.bottom  = "56%"; }
+        
+      }
+    
+    }
+  }
+
   componentWillReceiveProps=(nextProps)=>{
     
     if(nextProps===undefined){
@@ -142,8 +159,7 @@ class DoughnutChart extends React.Component {
   }
   render() {
     const { data } = this.props;
-//console.log(data);
-
+    // bottom: 56%;
     return (
       <div className="gabarit">
         <Piechart
@@ -153,7 +169,7 @@ class DoughnutChart extends React.Component {
           innerRadius={78}
           data={data}
         />
-        <img className="chart-icon"  src={require("../images/ChartHand.svg")} alt="messenger-icon"/>
+        <img id="chartIcon" className="chart-icon"  src={require("../images/ChartHand.svg")} alt="messenger-icon"/>
       </div>
     );
   }

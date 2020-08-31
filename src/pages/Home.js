@@ -333,6 +333,22 @@ const Home = (props) => {
   };
 
   const estimateToChart = (e) => {
+
+    let iconChart = document.getElementById('chartIcon')
+    if(window.innerWidth <=767){
+        
+      if(iconChart !== undefined){
+
+        if (window.chrome !== undefined) { iconChart.style.bottom  = "45%";  }
+          
+        else {
+          iconChart.style.bottom  = "56%"; }
+        
+      }
+    
+    }
+
+    
     setData([])
     
     e.preventDefault()
