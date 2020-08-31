@@ -151,7 +151,10 @@
 		
 	}
  
-
+	.lastText {
+	font-size: 0.633vw;
+	margin-left: 7% 
+	}
 	
 	.pricing_01 p.nb .fa, .pricing_01 p.plus_ .fa {visibility:hidden;}
 	
@@ -225,6 +228,10 @@
 			/* margin: 5vw 17.5% 4vw 17.5% !important; */
 	 		width: 65% !important;
 			height: 10.313vw  !important
+		}
+
+		.lastText{
+			font-size:9px
 		}
 
 		.checkIcon{

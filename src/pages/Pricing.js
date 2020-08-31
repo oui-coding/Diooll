@@ -91,7 +91,7 @@ const Pricing = () => {
               <p>
                 <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> {t('pricing.group.liveSupport')}
               </p>
-              <p class="nb" style={{fontSize: '0.633vw',marginLeft: '7%' }}>
+              <p class="nb lastText" >
                (*) {t('pricing.group.starting')}
               </p>
             </div>
@@ -133,7 +133,7 @@ const Pricing = () => {
               <p>
                 <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> {t('pricing.group.liveSupport')}
               </p>
-              <p class="nb" style={{fontSize: '0.633vw',marginLeft: '7%' }}>
+              <p class="nb lastText">
                (*) {t('pricing.group.starting')}
               </p>
             </div>
@@ -180,7 +180,7 @@ const Pricing = () => {
               <p>
                 <img  className="checkIcon" alt="check_yes icon" src={require("../images/check_yes.svg")} /> {t('pricing.group.liveSupport')}
               </p>
-              <p class="nb" style={{fontSize: '0.633vw',marginLeft: '7%' }}>
+              <p class="nb lastText">
                (*) {t('pricing.group.starting')}
               </p>
             </div>
