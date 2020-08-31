@@ -178,10 +178,10 @@ const featuresPartner = [{
 		
 	</div>	
 	})}
-	</div>
+	</div>*/}
 	<div className="col-idool-12">
 					<a href="https://register.diool.com/#/login/merchant"><input className="sign-btn" type="button" value={component==="distributor" || component==="partner" ?`${t("Features.learnMoreButton")}`:`${t("Features.tryItButton")}`} /></a>
-				</div> */}
+				</div> 
 	</div>
 );
 }
