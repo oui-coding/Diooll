@@ -3,13 +3,12 @@
 /* ==========================> 	START  block_Features =================================================*/
 @font-face {
 	font-family: "SFProDisplay-regular";
-	src: url("/src//font/fonts/SFProDisplay-Regular.woff")
-		  
+	src: url("/src/font/fonts/SFProDisplay-Regular.woff")	  
  }
 
  @font-face {
 	font-family: "Montserrat";
-	src: url("/src//font/fonts/Montserrat-SemiBold.ttf")
+	src: url("/src/font/fonts/Montserrat-SemiBold.ttf")
 		  
  }
  
