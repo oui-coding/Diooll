@@ -89,9 +89,9 @@ const featuresPartner = [{
 							 <div class="col-idool-3">
 									<img src={require('../'+home.logo)} alt="Avatar" style={{width:"25px",height:"25px	"}}/>
 							<div class="container">
-								<h4><b style={{lineHeight:"29px"}}>{home.title} <br/>
-										{home.title1}</b></h4>
-								<p style={{lineHeight:"18px"}}>{home.text} <br/>
+								<h4 className="featureListCards">{home.title} <br/>
+										{home.title1}</h4>
+								<p>{home.text} <br/>
 										{home.text1}</p>
 							</div>
 					</div>
@@ -111,9 +111,9 @@ const featuresPartner = [{
 					<div class="col-idool-3">
 						   <img src={require('../'+distributor.logo)} alt="Avatar" style={{width:"25px",height:"25px	"}}/>
 				   <div class="container">
-					   <h4><b style={{lineHeight:"29px"}}>{distributor.title} <br/>
-							   {distributor.title1}</b></h4>
-					   <p style={{lineHeight:"18px"}}>{distributor.text} <br/>
+					   <h4 className="featureListCards">{distributor.title} <br/>
+							   {distributor.title1}</h4>
+					   <p>{distributor.text} <br/>
 							   {distributor.text1}</p>
 				   </div>
 		   </div>
@@ -131,9 +131,9 @@ const featuresPartner = [{
 					<div class="col-idool-3">
 						   <img src={require('../'+partner.logo)} alt="Avatar" style={{width:"25px",height:"25px	"}}/>
 				   <div class="container">
-					   <h4><b style={{lineHeight:"29px"}}>{partner.title} <br/>
-							   {partner.title1}</b></h4>
-					   <p style={{lineHeight:"18px"}}>{partner.text} <br/>
+					   <h4 className="featureListCards">{partner.title} <br/>
+							   {partner.title1}</h4>
+					   <p>{partner.text} <br/>
 							   {partner.text1}</p>
 				   </div>
 		   </div>

@@ -1,6 +1,19 @@
 
 
 /* ==========================> 	START  block_Features =================================================*/
+@font-face {
+	font-family: "SFProDisplay-regular";
+	src: url("/src//font/fonts/SFProDisplay-Regular.woff")
+		  
+ }
+
+ @font-face {
+	font-family: "Montserrat";
+	src: url("/src//font/fonts/Montserrat-SemiBold.ttf")
+		  
+ }
+ 
+
 
 .block_Features {
 	background-color:#FFFFFF;
@@ -40,7 +53,7 @@
 .block_Features p {
 	text-align: left;
 	margin: 1.5vw auto 0vw auto;
-	font-size: 1.15vw;
+	font-size: 15px;
 	font-style: normal;
 	font-weight: 600;
 	line-height: 1.5vw;
@@ -150,9 +163,9 @@
 	/* margin-bottom: 7vw; */
 }
 .block_Features h2 {
-font-size: 4.375vw !important;
-line-height: 5.313vw;
-}
+	font-size: 4.375vw !important;
+	line-height: 5.313vw;
+	}
 }
 
 
@@ -175,4 +188,13 @@ line-height: 5.313vw;
   /* Add some padding inside the card container */
   .container {
 	/* padding: 2px 16px; */
+  }
+
+
+  .featureListCards  {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
   }
