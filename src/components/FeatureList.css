@@ -197,4 +197,13 @@
 	font-size: 24px;
 	line-height: 29px;
 	margin-top: 0;
+	height: 50px;
+  }
+
+  @media screen and (min-device-width: 1024px)  and (max-device-width: 1366px) {
+    .featureListCards{
+      height: 100px;
+     }
+  
+    
   }

@@ -1,11 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React,{useState} from "react";
+import { Link,NavLink } from "react-router-dom";
 import "./Header.css";
 import { useTranslation } from "react-i18next";
 
 const Header = (props) => {
  
   const { t  } = useTranslation();
+  const [active,setActive] = useState()
+  const activeStyle = { color: '#ff3333' };
+  
 
   return(
   <header>
@@ -17,24 +20,26 @@ const Header = (props) => {
     </div>
     <nav className="navbar navbar_plane">
       <ul className="navbar-nav">
-        <li className="active">
+        <li>
         {/* <Link to="/">Home</Link> */}
-          <Link to="/">{t('Header_Menue.home')}</Link>
+        
+          <NavLink 
+              to="/">{t('Header_Menue.home')}</NavLink>
         </li>
         <li>
         {/* <Link to="/about">About</Link> */}
-          <Link to="/about">{t('Header_Menue.about')}</Link>
+          <NavLink to="/about" activeClassName="activeClass">{t('Header_Menue.about')}</NavLink>
         </li>
         <li>
         {/* <Link to="/pricing">Pricing</Link> */}
-          <Link to="/pricing">{t('Header_Menue.pricing')}</Link>
+          <NavLink to="/pricing" activeClassName="activeClass">{t('Header_Menue.pricing')}</NavLink>
         </li>
         <li>
           <a href="https://api.diool.com/">API</a>
         </li>
         <li>
         {/* <Link to="/distributor">For Distributors</Link> */}
-          <Link to="/distributor">{t('Header_Menue.distributor')}</Link>
+          <NavLink to="/distributor" activeClassName="activeClass">{t('Header_Menue.distributor')}</NavLink>
         </li> 
         <li>
           {/* <a href="#">Sign in</a> */}

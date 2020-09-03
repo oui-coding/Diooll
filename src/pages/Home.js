@@ -146,7 +146,7 @@ const Home = (props) => {
     },
     {
       shop: "3",
-      capital: '1.250.0000',
+      capital: '1.250.000',
       actifDay: 24,
       transaction: 683,
       revenue: '146.375',
@@ -179,19 +179,18 @@ const Home = (props) => {
     },
   ];
   
- 
-
+  const [disabled,setDisabled] = useState(true)
   const [estimate, setEstimate] = useState(true)
   const [value, setValue] = useState("0")
   const [capitals, setCapitals] = useState([
-    { value: "0", dropvalues: ['150.000', '400.000', '1.000.000', '2.000.000'] },
+    { value: "0", dropvalues: ['50.000','150.000', '400.000', '1.000.000', '2.000.000'] },
   ]);
-  const [capitalsvalue, setCapitalsvalue] = useState("150.000")
+  const [capitalsvalue, setCapitalsvalue] = useState("50.000")
   const [data, setData] = useState([])
   const capitalsValues = [
-    { value: "0", dropvalues: ['150.000', '400.000', '1.000.000', '2.000.000'] },
+    { value: "0", dropvalues: ['50.000','150.000', '400.000', '1.000.000', '2.000.000'] },
     { value: "1", dropvalues: ['150.000', '400.000', '1.000.000'] },
-    { value: "2", dropvalues: ['150.000', '400.0000', '1.000.000'] },
+    { value: "2", dropvalues: ['150.000', '400.000', '1.000.000'] },
     { value: "3", dropvalues: ['500.000', '1.250.000', '2.500.000', '3.000.000'] }
   ];
 
@@ -242,11 +241,6 @@ const Home = (props) => {
       
       }
 
-
-     
-
-      
-      
         
       setValue("0")
       if (!isClient) {
@@ -266,6 +260,8 @@ const Home = (props) => {
   }
 
     const handlechangeShop = (e) => {
+
+      setDisabled(false)
 
       let shop = document.getElementById("what_shop")
       let selectOption = document.getElementById("selectOption")
@@ -326,10 +322,14 @@ const Home = (props) => {
     const result = capt[0].dropvalues
     setCapitalsvalue(result[0])
     setCapitals(capt)
+
   };
   const handlechangeCapital = (e) => {
+    setDisabled(false)
     setCapitalsvalue(e.target.value)
     setData([])
+
+    console.log(capitalsValues)
   };
 
   const estimateToChart = (e) => {
@@ -342,6 +342,25 @@ const Home = (props) => {
       )
     );
     setEstimate(false)
+  };
+
+  const newEstimateToChart = (e) => {
+    // setValue("0");
+    //                   setCapitals([
+    //                     {
+    //                       value: "0",
+    //                       dropvalues: ['50.000','150.000', '400.000', '1.000.000', '2.000.000'],
+    //                     },
+    //                   ]);
+    setData([])
+    
+    e.preventDefault()
+    setData(
+      InitialData.filter(
+        (elm) => elm.shop == value && elm.capital == capitalsvalue
+      )
+    );
+    setEstimate(true);
   };
 
   
@@ -372,7 +391,7 @@ const Home = (props) => {
                 <h2>{t('Home.question_1')}</h2>
                 <div className="select_activity_sector">
                   <label className="labelselectstyle">
-                    <select
+                    <select 
                       id="what_shop"
                       defaultValue="0"
                       onChange={handlechangeShop}
@@ -396,7 +415,7 @@ const Home = (props) => {
                 {/* <span>XAF </span> */}
                   <label className="labelselectstyle labelselectstyle-second">
                     
-                    <select id="selectOption"
+                    <select id="selectOption" 
                       //id="mach_capital"
                       className="second-select"
                       defaultValue="150000"
@@ -406,22 +425,27 @@ const Home = (props) => {
                       <option disabled={true} defaultValue>
                         {t('Home.option_0')}
                       </option>
-                      {capitals.length > 0 && capitals[0] !== undefined
+                      {
+                      capitals.length > 0 && capitals[0] !== undefined
                         ? capitals[0].dropvalues.map((elm, i) => {
                             return <option value={elm} key={i}>{elm}</option>;
                           })
                         : capitalsValues.map((elm, i) => {
                             return <option value={elm}>{elm}</option>;
                           })}
+
+                          
                     </select>
                   </label>
                 </div>
                 </div>
-                <input
+                {/* disabled={disabled} */}
+                
+                <input id='btnEstimate'
                  className='btn-estimate'
                   type="submit"
                   value={t('Home.estimateButton')}
-				  onClick={estimateToChart}
+				              onClick={estimateToChart}
                 />
               </form>
               <div
@@ -440,17 +464,9 @@ const Home = (props) => {
                   <input
                     type="submit"
                     value={t('Home.newEstimate')}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setValue("0");
-                      setCapitals([
-                        {
-                          value: "0",
-                          dropvalues: ['150.000', '400.000', '1.000.000', '2.000.000'],
-                        },
-                      ]);
-                      setEstimate(true);
-                    }}
+                    onClick={newEstimateToChart}
+                  
+                    
                   />
                 )}
               </div>

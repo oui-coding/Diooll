@@ -39,6 +39,10 @@ ul.navbar-nav>li:last-child:hover {
 ul.navbar-nav>li:last-child:hover>a {color:#FFFFFF;}
 ul.navbar-nav>li:hover>a {color:#d9784c;}
 
+
+.activeClass  {
+	color:#d9784c !important
+}
 ul.navbar-nav>li>a {
 	display: block;
 	font-size: 1vw;
